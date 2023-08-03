@@ -3,21 +3,31 @@ import styles from './Header.module.css'
 const PhoneMenu = () => {
     return (
         <ul className={styles.phoneMenu}>
-            <li>
-                Home
-            </li>
-            <li>
-                Services
-            </li>
-            <li>
-                Projects
-            </li>
-            <li>
-                About
-            </li>
-            <li>
-                Contact
-            </li>
+            <a href="#main">
+                        <li>
+                            Home
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li>
+                            Services
+                        </li>
+                    </a>
+                    <a href="#projects">
+                        <li>
+                            Projects
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li>
+                            About
+                        </li>
+                    </a>
+                    <a href="#contact">
+                        <li>
+                            Contact
+                        </li>
+                    </a>
         </ul>
     )
 }

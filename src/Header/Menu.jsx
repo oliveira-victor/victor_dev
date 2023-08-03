@@ -23,7 +23,7 @@ const Menu = () => {
                     </a>
                     <a href="#">
                         <li>
-                            About me
+                            About
                         </li>
                     </a>
                     <a href="#contact">
