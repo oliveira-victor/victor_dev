@@ -16,6 +16,11 @@ h2 {
   font-weight: lighter;
   padding-top: 150px;
   color: #9e9e9e;
+
+  @media (max-width: 767px) {
+    font-size: 60px;
+    padding-top: 30px;
+  }
 }
 
 a {

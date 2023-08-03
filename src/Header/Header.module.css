@@ -12,6 +12,10 @@
     transform: translate(-50%, -50%);
     z-index: 100;
     transition: all 1s ease;
+
+    @media (max-width: 767px) {
+        display: none;
+    }
 }
 
 .header li {
