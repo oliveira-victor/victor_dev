@@ -11,6 +11,7 @@ function App() {
       <Header />
       <Hero />
       <Projects />
+      <div id="contact"></div>
       <Contact />
     </div>
   )

@@ -2,6 +2,10 @@ header {
     text-align: center;
 }
 
+.projects {
+    background-color: #f2f2f2;
+}
+
 .container {
     width: 80%;
     margin: 5% auto;

@@ -1,10 +1,14 @@
+import Footer from '../Footer'
 import styles from './Contact.module.css'
 
 const Contact = () => {
     return (
-        <div className={styles.contact} id='contact'>
-            <h2>Contact</h2>
-        </div>
+        <section className={styles.contact}>
+            <div className={styles.container}>
+                <h2>Contact</h2>
+            </div>
+                <Footer />
+        </section>
     )
 }
 
