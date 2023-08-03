@@ -1,0 +1,31 @@
+#card_img1 {
+    background-image: url('./assets/vfo-theme.jpg');
+}
+
+#card_img2 {
+    background-image: url('./assets/number.jpg');
+}
+
+#card_img3 {
+    background-image: url('./assets/bear.jpg');
+}
+
+#card_img4 {
+    background-image: url('./assets/cookies.jpg');
+}
+
+#card_img5 {
+    background-image: url('./assets/todo.jpg');
+}
+
+#card_img6 {
+    background-image: url('https://vfostudio.vercel.app/dist/images/portfolio/a05+.jpg');
+}
+
+#card_img7 {
+    background-image: url('https://vfostudio.vercel.app/dist/images/portfolio/a11+.jpg');
+}
+
+#card_img8 {
+    background-image: url('https://vfostudio.vercel.app/dist/images/portfolio/a17+.jpg');
+}
