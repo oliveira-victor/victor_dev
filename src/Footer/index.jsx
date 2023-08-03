@@ -6,6 +6,7 @@ const Footer = () => {
             <div className={styles.container}>
                 Footer text
             </div>
+            <div className={styles.emptyMobileSpace}></div>
         </footer>
     )
 }
