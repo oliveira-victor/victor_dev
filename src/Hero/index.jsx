@@ -9,6 +9,8 @@ import layer6 from "./assets/layer6.webp"
 import layer7 from "./assets/layer7.webp"
 import layer8 from "./assets/layer8.webp"
 
+import vfo from '../assets/vfo_white.svg'
+
 const Hero = () => {
 
     const refParallax = useRef();
@@ -24,6 +26,7 @@ const Hero = () => {
     return (
         <>
             <section className={styles.hero} id="main">
+                <img src={vfo} className={styles.vfoLogo} alt="VFO logo" />
                 <div className={styles.container}>
                     <div data-relative-input="true" id={styles.scene} ref={refParallax}>
                         <div className={styles.layer} data-depth="0.1"><img src={layer2} alt="" /></div>
