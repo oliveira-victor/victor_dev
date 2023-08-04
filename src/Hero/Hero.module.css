@@ -20,22 +20,27 @@
     .socialMedia {
         z-index: 2;
         position: absolute;
+        position: absolute;
         bottom: 5%;
-        left: 46vw;
-    
+        left: 50%;
+        transform: translate(-50%, -50%);
+
         & img {
             width: 40px;
             margin: 0 10px;
+            opacity: 0.5;
+            transition: all .2s ease;
 
             &:hover {
                 transform: translateY(-4px);
+                opacity: 0.9;
             }
         }
 
         @media (max-width: 767px) {
+            position: absolute;
             bottom: auto;
-            top: 20px;
-            left: 36vw;
+            top: 40px;
 
             & img {
                 width: 34px;
