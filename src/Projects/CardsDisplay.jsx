@@ -23,7 +23,7 @@ const CardsDisplay = () => {
                 text="This is an art and design studio page created by me, where I promote my services and post my artworks. The idea is to be simple, yet artistic and inspiring, with attention to the details. Languages available: English and Portuguese."  
             />
             <Card 
-                link="https://vfostudio.vercel.app/"
+                link="https://guessthenumber-game.vercel.app/"
                 id="card_img2" 
                 cardTitle="Guess The Number" 
                 techs1={html}
@@ -40,7 +40,7 @@ const CardsDisplay = () => {
                 text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eu ipsum ac lacus egestas rutrum ac eu eros. Proin ac tempus tortor. Morbi quam turpis, lobortis nec diam id, porta condimentum ante. Ut elementum placerat consequat. Integer luctus ipsum et tellus luctus vehicula."
             />
             <Card 
-                link="https://vfostudio.vercel.app/"
+                link="https://fortunecookies.vercel.app/"
                 id="card_img4" 
                 cardTitle="Fortune Cookies" 
                 techs1={html}
@@ -49,7 +49,7 @@ const CardsDisplay = () => {
                 text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eu ipsum ac lacus egestas rutrum ac eu eros. Proin ac tempus tortor. Morbi quam turpis, lobortis nec diam id, porta condimentum ante. Ut elementum placerat consequat. Integer luctus ipsum et tellus luctus vehicula."
             />
             <Card 
-                link="https://vfostudio.vercel.app/"
+                link="https://todolist-vfo.vercel.app/"
                 id="card_img5" 
                 cardTitle="To Do List" 
                 techs1={html}

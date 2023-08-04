@@ -116,5 +116,9 @@
         display: flex;
         width: 100%;
         justify-content: space-between;
+
+        & img {
+            height: 30px;
+        }
     }
 }
