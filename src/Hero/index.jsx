@@ -10,6 +10,8 @@ import layer7 from "./assets/layer7.webp"
 import layer8 from "./assets/layer8.webp"
 
 import vfo from '../assets/vfo_white.svg'
+import github from './assets/github.svg'
+import linkedin from './assets/linkedin.svg'
 
 const Hero = () => {
 
@@ -27,6 +29,14 @@ const Hero = () => {
         <>
             <section className={styles.hero} id="main">
                 <img src={vfo} className={styles.vfoLogo} alt="VFO logo" />
+                <div className={styles.socialMedia}>
+                    <a href="https://github.com/oliveira-victor" target="_blank" rel="noreferrer">
+                        <img src={github} alt="GitHub icon" title="GitHub" />
+                    </a>
+                    <a href="https://www.linkedin.com/in/victor-fo/" target="_blank" rel="noreferrer">
+                        <img src={linkedin} alt="LinkedIn icon" title="LinkedIn" />
+                    </a>
+                </div>
                 <div className={styles.container}>
                     <div data-relative-input="true" id={styles.scene} ref={refParallax}>
                         <div className={styles.layer} data-depth="0.1"><img src={layer2} alt="" /></div>

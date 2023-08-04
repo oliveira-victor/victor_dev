@@ -16,6 +16,32 @@
             margin-top: 20px;
         }
     }
+
+    .socialMedia {
+        z-index: 2;
+        position: absolute;
+        bottom: 5%;
+        left: 50vw;
+    
+        & img {
+            width: 40px;
+            margin: 0 10px;
+
+            &:hover {
+                transform: translateY(-4px);
+            }
+        }
+
+        @media (max-width: 767px) {
+            bottom: auto;
+            top: 20px;
+            left: 36vw;
+
+            & img {
+                width: 34px;
+            }
+        }
+    }
 }
 
 .container {
