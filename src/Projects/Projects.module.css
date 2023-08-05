@@ -35,7 +35,7 @@ header {
     transform: translateY(-17px);
 
     @media (max-width: 1024px) {
-        transform: unset;
+        transform: initial;
     }
 }
 
@@ -76,7 +76,7 @@ header {
     transform: translateY(-3px);
 
     @media (max-width: 1024px) {
-        transform: unset;
+        transform: initial;
     }
 }
 
@@ -98,7 +98,7 @@ header {
     transform: translateY(50px);
 
     @media (max-width: 1024px) {
-        transform: unset;
+        transform: initial;
     }
 }
 
