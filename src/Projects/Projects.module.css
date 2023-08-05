@@ -33,6 +33,10 @@ header {
 
 .card:hover {
     transform: translateY(-17px);
+
+    @media (max-width: 1024px) {
+        transform: none;
+    }
 }
 
 .move_card {
@@ -70,6 +74,10 @@ header {
 
 .card__techs img:hover {
     transform: translateY(-3px);
+
+    @media (max-width: 1024px) {
+        transform: none;
+    }
 }
 
 .card__content {
@@ -88,6 +96,10 @@ header {
 
 .card:hover .card__content {
     transform: translateY(50px);
+
+    @media (max-width: 1024px) {
+        transform: none;
+    }
 }
 
 .card__content__wrapper {
