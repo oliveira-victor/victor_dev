@@ -39,6 +39,10 @@ header {
     transform: translateY(-17px);
 }
 
+.moveCardContent {
+    transform: translateY(50px);
+}
+
 .card__img {
     position: relative;
     width: 300px;
