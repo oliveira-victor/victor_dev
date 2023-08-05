@@ -31,11 +31,9 @@ header {
     transition: all 0.7s ease;
 }
 
-.card:hover {
-    transform: translateY(-17px);
-
-    @media (max-width: 1024px) {
-        transform: initial;
+@media (hover: hover) {
+    .card:hover {
+        transform: translateY(-17px);
     }
 }
 
@@ -74,10 +72,6 @@ header {
 
 .card__techs img:hover {
     transform: translateY(-3px);
-
-    @media (max-width: 1024px) {
-        transform: initial;
-    }
 }
 
 .card__content {
@@ -94,11 +88,9 @@ header {
     transition: all 0.7s ease-in-out;
 }
 
-.card:hover .card__content {
-    transform: translateY(50px);
-
-    @media (max-width: 1024px) {
-        transform: initial;
+@media (hover: hover) {
+    .card:hover .card__content {
+        transform: translateY(50px);
     }
 }
 
