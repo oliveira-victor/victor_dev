@@ -13,7 +13,6 @@ header {
     flex-wrap: wrap;
     justify-content: space-around;
     gap: 2em;
-
 }
 
 .card_container {
