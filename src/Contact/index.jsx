@@ -7,7 +7,7 @@ const Contact = () => {
             <div className={styles.container}>
                 <h2>Contact</h2>
             </div>
-                <Footer />
+            <Footer />
         </section>
     )
 }

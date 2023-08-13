@@ -10,13 +10,13 @@ const Footer = () => {
             <div className={styles.container}>
                 <img src={vfo} alt="VFO logo" />
                 <div className={styles.footerTxt}>
-                    &copy; Victor Freire Oliveira • Front-end developer | Multimedia Designer • All rights reserved
+                    &copy;2023 Victor Freire Oliveira • Front-end developer | Multimedia Designer • All rights reserved
                 </div>
                 <div className="footerIcons">
-                    <a href="https://github.com/oliveira-victor" target="_blank" rel="noreferrer">
+                    <a href="https://www.linkedin.com/in/victor-fo/" target="_blank" rel="noreferrer">
                         <img src={linkedin} alt="LinkedIn icon" />
                     </a>
-                    <a href="https://www.linkedin.com/in/victor-fo/" target="_blank" rel="noreferrer">
+                    <a href="https://github.com/oliveira-victor" target="_blank" rel="noreferrer">
                         <img src={github} alt="GitHub icon" />
                     </a>
                 </div>

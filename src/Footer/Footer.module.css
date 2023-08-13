@@ -16,11 +16,16 @@
 
         .footerTxt {
             margin: auto;
+            text-align: center;
         }
 
         & img {
             width: 30px;
             margin: 0 6px;
+
+            &:hover {
+                transform: scale(1.1);
+            }
         }
     }
 
@@ -30,7 +35,7 @@
         @media (max-width: 767px) {
             display: block;
             height: 90px;
-            background-color: #131313;
+            background-color: #222222;
         }
     }
 }

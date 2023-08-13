@@ -33,5 +33,5 @@ li {
 }
 
 .container {
-  position: relative;
+  position: sticky;
 }
