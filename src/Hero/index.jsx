@@ -38,14 +38,12 @@ const Hero = () => {
                     </a>
                 </div>
                 <div className={styles.container}>
+                    <div data-depth="0.4" className={styles.title}>
+                        <h1>VICTOR FREIRE OLIVEIRA</h1>
+                        <p>Front-end developer</p>
+                    </div>
                     <div data-relative-input="true" id={styles.scene} ref={refParallax}>
-                        <div className={styles.layer} data-depth="0.1"><img src={layer2} alt="" /></div>
-                        <div className={styles.layer} data-depth-x="0.2"><img src={layer3} alt="" /></div>
-                        <div className={styles.layer} data-depth="0.3"><img src={layer4} alt="" /></div>
-                        <div className={styles.layer} data-depth="0.4"><img src={layer5} alt="" /></div>
-                        <div className={styles.layer} data-depth="0.5"><img src={layer6} alt="" /></div>
-                        <div className={styles.layer} data-depth="0.6"><img src={layer7} alt="" /></div>
-                        <div className={styles.layer} data-depth="0.7"><img src={layer8} alt="" /></div>
+                        <div className={styles.layer} data-depth="0.4"><img src={layer5} id={styles.layer5} alt="" /></div>
                     </div>
                 </div>
             </section>

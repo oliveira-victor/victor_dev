@@ -60,7 +60,7 @@
     left: -10%;
     width: 120%;
     height: 100vh;
-    background-image: url(./assets/layer1.webp);
+    background-color: #141e33;
 }
 
 
@@ -75,9 +75,27 @@
 
 .container #scene .layer img {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+}
+
+.title {
+    font-size: 3em;
+    color: #b9b9b9;
+    position: absolute;
+    top: 70%;
+    left: 15%;
+    z-index: 3;
+
+    @media (max-width: 767px) {
+        top: 20%;
+        z-index: 0;
+
+        & p {
+            font-size: 40px;
+        }
+    }
+}
+
+#layer5 {
+    width: 250px;
+    transform: translate(50vw, 15vh);
 }
