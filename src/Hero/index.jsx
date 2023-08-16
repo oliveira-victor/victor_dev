@@ -1,7 +1,7 @@
 import { useRef, useEffect } from "react"
 import styles from "./Hero.module.css"
 
-import layer2 from "./assets/layer2.webp"
+import layer1 from "./assets/layer1.png"
 import layer3 from "./assets/layer3.webp"
 import layer4 from "./assets/layer4.webp"
 import layer5 from "./assets/layer5.webp"
@@ -38,12 +38,11 @@ const Hero = () => {
                     </a>
                 </div>
                 <div className={styles.container}>
-                    <div data-depth="0.4" className={styles.title}>
-                        <h1>VICTOR FREIRE OLIVEIRA</h1>
-                        <p>Front-end developer</p>
-                    </div>
                     <div data-relative-input="true" id={styles.scene} ref={refParallax}>
-                        <div className={styles.layer} data-depth="0.4"><img src={layer5} id={styles.layer5} alt="" /></div>
+                        <div className={styles.layer} data-depth="0.5"><button className={styles.titlePaper} id={styles.layer2}>Victor Freire Oliveira</button></div>
+                        <div className={styles.layer} data-depth="0.4"><button className={styles.titlePaper} id={styles.layer3}>Front-end developer</button></div>
+                        <div className={styles.layer} data-depth="0.3"><button className={styles.titlePaper} id={styles.layer4}>Multimedia designer</button></div>
+                        <div className={styles.layer} data-depth="0.6"><img src={layer1} id={styles.layer5} alt="Victor's picture" /></div>
                     </div>
                 </div>
             </section>
