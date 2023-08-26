@@ -32,8 +32,18 @@ const CardsDisplay = () => {
                 text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eu ipsum ac lacus egestas rutrum ac eu eros. Proin ac tempus tortor. Morbi quam turpis, lobortis nec diam id, porta condimentum ante. Ut elementum placerat consequat. Integer luctus ipsum et tellus luctus vehicula."
             />
             <Card 
-                link="https://vfostudio.vercel.app/"
+                link="https://mamimoon.vercel.app/"
                 id="card_img3" 
+                cardTitle="Mami Moon" 
+                techs1={html}
+                techs2={javascript}
+                techs3={sass}
+                techs4={gulp}
+                text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eu ipsum ac lacus egestas rutrum ac eu eros. Proin ac tempus tortor. Morbi quam turpis, lobortis nec diam id, porta condimentum ante. Ut elementum placerat consequat. Integer luctus ipsum et tellus luctus vehicula."
+            />
+            <Card 
+                link="https://vfostudio.vercel.app/"
+                id="card_img4" 
                 cardTitle="Bear Adventure" 
                 techs1={react}
                 techs2={styledComponents}
@@ -41,7 +51,7 @@ const CardsDisplay = () => {
             />
             <Card 
                 link="https://vfo-parallax.vercel.app/"
-                id="card_img4" 
+                id="card_img5" 
                 cardTitle="Parallax JS Templates" 
                 techs1={html}
                 techs2={css}
@@ -50,7 +60,7 @@ const CardsDisplay = () => {
             />
             <Card 
                 link="https://fortunecookies.vercel.app/"
-                id="card_img5" 
+                id="card_img6" 
                 cardTitle="Fortune Cookies" 
                 techs1={html}
                 techs2={css}
@@ -59,7 +69,7 @@ const CardsDisplay = () => {
             />
             <Card 
                 link="https://todolist-vfo.vercel.app/"
-                id="card_img6" 
+                id="card_img7" 
                 cardTitle="To Do List" 
                 techs1={html}
                 techs2={css}
