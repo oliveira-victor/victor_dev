@@ -29,17 +29,17 @@ const CardsDisplay = () => {
                 techs1={html}
                 techs2={css}
                 techs3={javascript}
-                text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eu ipsum ac lacus egestas rutrum ac eu eros. Proin ac tempus tortor. Morbi quam turpis, lobortis nec diam id, porta condimentum ante. Ut elementum placerat consequat. Integer luctus ipsum et tellus luctus vehicula."
+                text="This game is a personal project built entirely in Vanilla JavaScript, as a self challenge to test and improve my coding skills, creating all the logics, rules and challenges involved. All the images were made by me, including the characters and the animations. Language available: English"
             />
             <Card 
-                link="https://mamimoon.vercel.app/"
+                link="https://doulamamimoon.com"
                 id="card_img3" 
                 cardTitle="Mami Moon" 
                 techs1={html}
                 techs2={javascript}
                 techs3={sass}
                 techs4={gulp}
-                text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eu ipsum ac lacus egestas rutrum ac eu eros. Proin ac tempus tortor. Morbi quam turpis, lobortis nec diam id, porta condimentum ante. Ut elementum placerat consequat. Integer luctus ipsum et tellus luctus vehicula."
+                text="This is a service ordered by a client. For this project I had to come up with all the UX/UI part, including the creation of the logo and the icons. Also, I decided the most appropriated technologies for an efficient, responsive and fast webpage, working on the SEO and keeping a high performance."
             />
             <Card 
                 link="https://vfostudio.vercel.app/"

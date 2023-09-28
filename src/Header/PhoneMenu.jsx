@@ -17,7 +17,7 @@ const PhoneMenu = () => {
                     </div>
                 </li>
             </a>
-            <a href="#">
+            <a href="#services">
                 <li>
                     <div><img src={services} alt="Services icon" /></div>
                     <div>
@@ -33,7 +33,7 @@ const PhoneMenu = () => {
                     </div>
                 </li>
             </a>
-            <a href="#">
+            <a href="#about">
                 <li>
                     <div><img src={about} alt="About icon" /></div>
                     <div>

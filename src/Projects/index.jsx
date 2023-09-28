@@ -8,6 +8,7 @@ function Projects() {
             <div className={styles.container}>
                 <Cards />
             </div>
+            <br />
         </section>
     )
 }

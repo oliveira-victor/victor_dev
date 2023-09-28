@@ -11,7 +11,7 @@ const Menu = () => {
                             Home
                         </li>
                     </a>
-                    <a href="#">
+                    <a href="#services">
                         <li>
                             Services
                         </li>
@@ -21,7 +21,7 @@ const Menu = () => {
                             Projects
                         </li>
                     </a>
-                    <a href="#">
+                    <a href="#about">
                         <li>
                             About
                         </li>
