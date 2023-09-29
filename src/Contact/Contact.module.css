@@ -14,9 +14,13 @@ h2 {
 
     .container {
         width: 70%;
-        margin: 50px auto;
+        margin: 0 auto;
         line-height: 1.4;
         text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
 
         .iconsContainer {
             width: fit-content;
@@ -30,7 +34,7 @@ h2 {
                 transition: all .3s ease;
 
                 &:hover {
-                    transform: translateY(-4px);
+                    transform: translateY(-5px);
                 }
             }
         }
@@ -46,7 +50,7 @@ h2 {
             width: 90%;
 
             .iconsContainer {
-                margin: 60px auto;
+                margin: 40px auto;
             }
         }
     }
