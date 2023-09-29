@@ -14,7 +14,7 @@ function Projects() {
             <div className={styles.projectsTxt}>
                 <img className={styles.reactLogo}src={react} alt="React icon" />
                 <p>
-                    This page was designed and developed with ReactJS and the graphic tools Gimp and Inskacape.
+                    This page was designed and developed with ReactJS + Vite and the graphic tools Gimp and Inkscape.
                 </p>
             </div>
         </section>
