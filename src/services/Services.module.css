@@ -1,4 +1,54 @@
 .services {
     min-height: 100vh;
     background-color: #EBECEF;
+
+    .servicesContainer {
+        width: 80%;
+        margin: 30px auto;
+
+        @media (max-width: 767px) {
+            width: 90%;
+        }
+
+        .buttonsWrapper {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 40px;
+
+            & h3 {
+                color: #9e9e9e;
+
+                @media (max-width: 767px) {
+                    font-size: 20px;
+                }
+            }
+
+            .servicesBtn {
+                cursor: pointer;
+                font-size: 30px;
+                font-family: 'Federo', sans-serif;
+                font-weight: bolder;
+                border: none;
+                border-bottom: 3px solid #9e9e9e;
+            }
+
+            .serviceBtn_isSelected {
+                border-bottom: 3px solid #70c2b7;
+                background-color: transparent;
+            }
+        }
+
+        .DevCanvas {
+        }
+
+        .designCanvas {
+        }
+    }
+}
+
+.selectedBtn {
+    background: -webkit-linear-gradient(#7be29e, #70c2b7, #57a879);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
