@@ -4,7 +4,7 @@
 
     .servicesContainer {
         width: 80%;
-        margin: 30px auto;
+        margin: 60px auto;
 
         @media (max-width: 767px) {
             width: 90%;
@@ -18,10 +18,10 @@
 
             & h3 {
                 color: #9e9e9e;
-                transition: all .5s ease;
+                transition: all .5s ease-in;
 
                 @media (max-width: 767px) {
-                    font-size: 20px;
+                    font-size: 30px;
                 }
             }
 
@@ -29,7 +29,6 @@
                 cursor: pointer;
                 font-size: 30px;
                 font-family: 'Federo', sans-serif;
-                font-weight: bolder;
                 border: none;
                 border-bottom: 3px solid #9e9e9e;
             }
@@ -40,11 +39,28 @@
             }
         }
 
-        .DevCanvas {
+        .canvas {
+            margin-top: 100px;
+            display: grid;
+            grid-template-columns: 40% auto;
+            gap: 2%;
+
+            @media (max-width: 767px) {
+                display: block;
+            }
         }
 
-        .designCanvas {
+        .leftSide {
         }
+
+        .rightSide {
+
+            
+        }
+
+        .DevCanvas {}
+
+        .designCanvas {}
     }
 }
 

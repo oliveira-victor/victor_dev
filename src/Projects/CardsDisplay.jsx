@@ -1,12 +1,12 @@
 import Card from "./Card"
 
-import html from './assets/logo-html.svg'
-import css from './assets/logo-css.svg'
-import javascript from './assets/logo-javascript.svg'
-import react from './assets/logo-react.svg'
-import gulp from './assets/logo-gulp.svg'
-import sass from './assets/logo-sass.svg'
-import styledComponents from './assets/logo-styledComponents.png'
+import html from '../assets/logo-html.svg'
+import css from '../assets/logo-css.svg'
+import javascript from '../assets/logo-javascript.svg'
+import react from '../assets/logo-react.svg'
+import gulp from '../assets/logo-gulp.svg'
+import sass from '../assets/logo-sass.svg'
+import styledComponents from '../assets/logo-styledComponents.png'
 
 const CardsDisplay = () => {
 

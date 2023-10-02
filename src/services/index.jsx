@@ -29,14 +29,20 @@ const Services = () => {
                     </div>
                 </div>
                 {toggleWebdev &&
-                    <div className={`${styles.DevCanvas} fadeIn`}>
-                        Web dev
+                    <div className={`${styles.DevCanvas} fadeIn ${styles.canvas}`}>
+                        <div className={styles.leftSide}>
+                            left side
+                        </div>
+                        <div className={styles.rightSide}>
+                            right side
+                        </div>
                     </div>}
                 {toggleDesign &&
-                    <div className={`${styles.designCanvas} fadeIn`}>
+                    <div className={`${styles.designCanvas} fadeIn ${styles.canvas}`}>
                         Design
                     </div>}
             </div>
+            <br />
         </section>
     )
 }

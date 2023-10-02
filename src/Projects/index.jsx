@@ -1,7 +1,7 @@
 import styles from "./Projects.module.css"
 import Cards from "./CardsDisplay"
 
-import react from "./assets/logo-react.svg"
+import react from "../assets/logo-react.svg"
 
 function Projects() {
     return (

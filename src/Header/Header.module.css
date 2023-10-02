@@ -90,9 +90,9 @@
 .menu li {
     margin: auto 30px;
     font-size: 22px;
+    transition: all .5s ease;
 
     &:hover {
-        transform: scale(1.07);
         color: #70c2b7;
     }
 }
