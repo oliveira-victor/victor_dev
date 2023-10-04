@@ -4,6 +4,21 @@
     height: 100vh;
     overflow: hidden;
 
+    .mainLayer {
+        width: 90%;
+        z-index: 2;
+        position: absolute;
+        bottom: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+
+        .subtitle {
+            font-size: 2.5vh;
+            color: #a3a3a3;
+        }
+    }
+
     .vfoLogo {
         display: none;
 
@@ -19,7 +34,6 @@
 
     .socialMedia {
         z-index: 2;
-        position: absolute;
         position: absolute;
         bottom: 5%;
         left: 50%;
@@ -38,6 +52,7 @@
         }
 
         @media (max-width: 767px) {
+            padding-top: 10px;
             position: absolute;
             bottom: auto;
             top: 40px;
@@ -60,10 +75,8 @@
     left: -10%;
     width: 120%;
     height: 100vh;
-    background-color: #141e33;
+    background-color: #252525;
 }
-
-
 
 .container #scene .layer {
     position: absolute;

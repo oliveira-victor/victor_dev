@@ -28,6 +28,9 @@ const Hero = () => {
     return (
         <>
             <section className={styles.hero} id="main">
+                <div className={styles.mainLayer}>
+                    <h1>Victor Freire Oliveira<br /><span className={styles.subtitle}>Front-End Developer</span></h1>
+                </div>
                 <img src={vfo} className={styles.vfoLogo} alt="VFO logo" />
                 <div className={styles.socialMedia}>
                     <a href="https://github.com/oliveira-victor" target="_blank" rel="noreferrer">
@@ -39,10 +42,7 @@ const Hero = () => {
                 </div>
                 <div className={styles.container}>
                     <div data-relative-input="true" id={styles.scene} ref={refParallax}>
-                        <div className={styles.layer} data-depth="0.5"><button className={styles.titlePaper} id={styles.layer2}>Victor Freire Oliveira</button></div>
-                        <div className={styles.layer} data-depth="0.4"><button className={styles.titlePaper} id={styles.layer3}>Front-end developer</button></div>
-                        <div className={styles.layer} data-depth="0.3"><button className={styles.titlePaper} id={styles.layer4}>Multimedia designer</button></div>
-                        <div className={styles.layer} data-depth="0.6"><img src={layer1} id={styles.layer5} alt="Victor's picture" /></div>
+                        <div className={styles.layer} data-depth="0.5"></div>
                     </div>
                 </div>
             </section>

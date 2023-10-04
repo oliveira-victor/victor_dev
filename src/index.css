@@ -12,6 +12,12 @@ body {
   font-size: 20px;
 }
 
+h1 {
+  color: #fff;
+  font-family: 'Federo', sans-serif;
+  font-size: 4vh;
+}
+
 h2 {
   font-family: 'Federo', sans-serif;
   text-align: center;
