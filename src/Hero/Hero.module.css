@@ -3,19 +3,41 @@
     width: 100%;
     height: 100vh;
     overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     .mainLayer {
         width: 90%;
         z-index: 2;
-        position: absolute;
-        bottom: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
         text-align: center;
 
         .subtitle {
             font-size: 2.5vh;
             color: #a3a3a3;
+            font-weight: lighter;
+        }
+
+        .startBtn {
+            cursor: pointer;
+            width: 200px;
+            padding: 16px 0;
+            margin-top: 80px;
+            font-size: 16px;
+            text-transform: uppercase;
+            transition: 0.5s;
+            background-size: 200% auto;
+            color: #252525;
+            border: none;
+            border-radius: 6px;
+
+            &:hover {
+                background-position: right center;
+            }
+        }
+
+        .btn1 {
+            background-image: linear-gradient(to right, #84fab0 0%, #8fd3f4 51%, #84fab0 100%);
         }
     }
 
@@ -25,15 +47,13 @@
         @media (max-width: 767px) {
             display: block;
             width: 30px;
-            position: absolute;
-            z-index: 2;
-            margin-left: 20px;
-            margin-top: 20px;
+            margin: 0 auto;
+            margin-bottom: 20px;
         }
     }
 
     .socialMedia {
-        z-index: 2;
+        z-index: 5;
         position: absolute;
         bottom: 5%;
         left: 50%;
@@ -86,61 +106,13 @@
     height: 100vh;
 }
 
-.container #scene .layer img {
-    position: absolute;
-}
-
-.titlePaper {
-    background-color: #fff;
-    padding: 12px 26px;
-    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.3);
-    border: none;
-}
-
 #layer2 {
-    font-size: 50px;
-    transform: translate(58vw, 32vh);
+    transform: translate(50vw, 32vh);
 
     @media (max-width: 767px) {
         font-size: 1.8em;
         padding: 6px;
         width: 350px;
         transform: translate(15vw, 58vh);
-    }
-}
-
-#layer3 {
-    font-size: 40px;
-    transform: translate(60vw, 46vh);
-    color: #a3a3a3;
-
-    @media (max-width: 767px) {
-        font-size: 1.4em;
-        padding: 6px;
-        width: 300px;
-        transform: translate(22vw, 68vh);
-    }
-}
-
-#layer4 {
-    font-size: 40px;
-    transform: translate(58vw, 58vh);
-    color: #a3a3a3;
-
-    @media (max-width: 767px) {
-        font-size: 1.4em;
-        padding: 6px;
-        width: 300px;
-        transform: translate(22vw, 76vh);
-    }
-}
-
-#layer5 {
-    width: 450px;
-    transform: translate(30vw, 15vh);
-
-    @media (max-width: 767px) {
-        width: 300px;
-        transform: translate(30%, 24%);
     }
 }
