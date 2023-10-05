@@ -26,7 +26,9 @@ const Hero = () => {
                         <br /><span className={styles.subtitle}>Front-End Developer</span>
                     </h1>
                     <a href="#services">
-                        <button className={`${styles.startBtn} ${styles.btn1}`}>Get started</button>
+                        <button className={`${styles.startBtn} ${styles.btn1}`}>Get started
+                        </button>
+                        <button className={styles.btn2}></button>
                     </a>
                 </div>
                 <div className={styles.socialMedia}>
