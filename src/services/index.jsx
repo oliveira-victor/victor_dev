@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import styles from './Services.module.css'
 
+import devices from './assets/devices.svg'
+
 const Services = () => {
 
     const [toggleWebdev, setToggleWebdev] = useState(true);
@@ -31,10 +33,10 @@ const Services = () => {
                 {toggleWebdev &&
                     <div className={`${styles.DevCanvas} fadeIn ${styles.canvas}`}>
                         <div className={styles.leftSide}>
-                            left side
+                            <img src={devices} alt="Devices" />
                         </div>
                         <div className={styles.rightSide}>
-                            right side
+                            <span>I design and build digital products!</span>
                         </div>
                     </div>}
                 {toggleDesign &&
