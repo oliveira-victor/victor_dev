@@ -22,8 +22,8 @@ const Hero = () => {
             <section className={styles.hero} id="main">
                 <div className={styles.mainLayer}>
                 <img src={vfo} className={styles.vfoLogo} alt="VFO logo" />
-                    <h1>Victor Freire Oliveira
-                        <br /><span className={styles.subtitle}>Front-End Developer</span>
+                    <h1 className="fadeIn">Victor Freire Oliveira
+                        <br /><span className={`${styles.subtitle} fadeIn2`}>Front-End Developer</span>
                     </h1>
                     <a href="#services">
                         <button className={`${styles.startBtn} ${styles.btn1}`}>Get started

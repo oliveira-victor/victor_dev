@@ -46,9 +46,17 @@ li {
 }
 
 /* Effects */
-.fadeIn { animation: fadeIn 1s; }
+.fadeIn { animation: fadeIn 1.5s; }
 
 @keyframes fadeIn {
     0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.fadeIn2 { animation: fadeIn2 2s; }
+
+@keyframes fadeIn2 {
+    0% { opacity: 0; }
+    50% { opacity: 0; }
     100% { opacity: 1; }
 }

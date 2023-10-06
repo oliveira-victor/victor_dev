@@ -119,8 +119,10 @@ header {
 }
 
 .projectsTxt {
-    justify-content: center;
+    width: 90%;
+    margin: 0 auto;
     padding: 60px 0;
+    justify-content: center;
     display: flex;
     gap: 20px;
 
