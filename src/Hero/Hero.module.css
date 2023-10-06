@@ -43,6 +43,7 @@
             z-index: -1;
             filter: blur(30px);
             animation: fadeInGlow 2s linear;
+            opacity: 0.7;
         }
     }
 
@@ -121,6 +122,8 @@
     }
 }
 
+/* Animation */
+
 @keyframes anime {
     0% {
         background-position: 0% 50%;
@@ -134,8 +137,6 @@
         background-position: 0% 50%;
     }
 }
-
-/* 0% background-position 0% 50% 50% background-position 100% 50% 100% background-position 0% 50% */
 
 .fadeInGlow { animation: fadeInGlow 2s; }
 
