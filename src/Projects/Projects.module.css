@@ -126,11 +126,6 @@ header {
     display: flex;
     gap: 20px;
 
-    @media (max-width: 767px) {
-        width: 90%;
-        margin: 0 auto;
-    }
-
     .reactLogo {
         width: 40px;
         animation-name: spin;

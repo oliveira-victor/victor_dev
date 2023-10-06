@@ -28,7 +28,7 @@ const Hero = () => {
                     <a href="#services">
                         <button className={`${styles.startBtn} ${styles.btn1}`}>Get started
                         </button>
-                        <button className={styles.btn2}></button>
+                        <button className={`${styles.btn2} ${styles.fadeInGlow}`}></button>
                     </a>
                 </div>
                 <div className={styles.socialMedia}>
