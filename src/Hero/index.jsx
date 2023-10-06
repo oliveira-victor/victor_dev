@@ -1,7 +1,7 @@
 import { useRef, useEffect } from "react"
 import styles from "./Hero.module.css"
 
-import vfo from '../assets/vfo_white.svg'
+import vfo from '../assets/vfo.gif'
 import github from './assets/github.svg'
 import linkedin from './assets/linkedin.svg'
 
