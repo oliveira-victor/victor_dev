@@ -62,9 +62,12 @@
 
             .rightSideTitle {
                 font-size: 42px;
-                font-family: 'Federo', sans-serif;
                 display: block;
                 text-align: center;
+
+                @media (max-width: 767px) {
+                    margin-top: 40px;
+                }
             }
 
             .servicesIcons {
@@ -75,7 +78,7 @@
                 margin-top: 30px;
 
                 .servCard {
-                    flex: 1 1 200px;
+                    flex: 1 1 150px;
                     padding: 20px 0;
 
                     & img {
@@ -94,6 +97,10 @@
                         font-size: 16px;
                     }
                 }
+            }
+
+            & p {
+                margin-top: 30px;
             }
         }
 

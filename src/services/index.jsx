@@ -4,6 +4,8 @@ import styles from './Services.module.css'
 import devices from './assets/devices.svg'
 import service1 from './assets/service1.svg'
 import service2 from './assets/service2.svg'
+import service3 from './assets/service3.svg'
+import service4 from './assets/service4.svg'
 
 const Services = () => {
 
@@ -48,27 +50,30 @@ const Services = () => {
                                     </p>
                                 </div>
                                 <div className={styles.servCard}>
-                                    <img src={service2} alt="Laptop and smartphone icons" />
+                                    <img src={service2} alt="Clock icon" />
                                     <span className={styles.servCardTitle}>Fast</span>
                                     <p>
-                                    Technologies carefully chosen for better berformance
+                                        High performance web applications with short load time
                                     </p>
                                 </div>
                                 <div className={styles.servCard}>
-                                    <img src={service1} alt="Laptop and smartphone icons" />
-                                    <span className={styles.servCardTitle}>Responsive</span>
+                                    <img src={service3} alt="Thumb up icon" />
+                                    <span className={styles.servCardTitle}>User friendly</span>
                                     <p>
-                                        Sites that adapt to different screens for better experience
+                                        Intuitive interfaces will improve accessbility and usability
                                     </p>
                                 </div>
                                 <div className={styles.servCard}>
-                                    <img src={service1} alt="Laptop and smartphone icons" />
-                                    <span className={styles.servCardTitle}>Responsive</span>
+                                    <img src={service4} alt="Planets icon" />
+                                    <span className={styles.servCardTitle}>Dynamic</span>
                                     <p>
-                                        Sites that adapt to different screens for better experience
+                                        Interactive pages that engage the user with dynamism
                                     </p>
                                 </div>
                             </div>
+                            <p>
+                                I develop digital products keeping a clean and readable code, aiming to reach a high performance and minding the good syntax, SEO features and accessbility.
+                            </p>
                         </div>
                     </div>}
                 {toggleDesign &&
