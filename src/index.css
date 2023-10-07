@@ -60,3 +60,16 @@ li {
     50% { opacity: 0; }
     100% { opacity: 1; }
 }
+
+.upsideDown {
+  rotate: 180deg;
+}
+
+/*
+.upsideDown { animation: rotateAnim .5s; }
+
+@keyframes rotateAnim {
+  0% { rotate: 0; }
+  100% { rotate: 180deg; }
+}
+*/
