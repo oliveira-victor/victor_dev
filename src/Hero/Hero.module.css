@@ -138,9 +138,10 @@
     }
 }
 
-.fadeInGlow { animation: fadeInGlow 2s; }
+.fadeInGlow { animation: fadeInGlow 4s; }
 
 @keyframes fadeInGlow {
     0% { opacity: 0; }
+    50% { opacity: 0; }
     100% { opacity: 0.7; }
 }
