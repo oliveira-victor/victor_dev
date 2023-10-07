@@ -122,6 +122,10 @@
                     width: 100%;
                 }
 
+                & p {
+                    line-height: 1.6;
+                }
+
                 .accordionBox {
 
                     .question {
