@@ -94,7 +94,7 @@ const Services = () => {
                             />
                             <Accordion
                                 question="Web application"
-                                answer="Need to develop a practical app that will solve problems or entertain? A web app is great for it can be accessed anywhere on a device with a browser. If you need an app for automatizing tasks and solving problems, a fast and lightweight web app can help, and I can do that for you."
+                                answer="Need to develop a practical app that will solve problems or entertain? A web app is great for that, as it can be accessed anywhere on a device with a browser. If you need an app for automatizing tasks and solving problems, a fast and lightweight web app can help, and I can do that for you."
                             />
                             <Accordion
                                 question="Simple online game"
