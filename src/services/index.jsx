@@ -89,12 +89,12 @@ const Services = () => {
                         </div>
                         <div className={styles.downContainer}>
                             <div className={styles.techsContainer}>
-                                <Char tech={html} distance="90%" />
-                                <Char tech={css} distance="87%" />
-                                <Char tech={sass} distance="75%" />
-                                <Char tech={javascript} distance="60%" />
-                                <Char tech={react} distance="50%" />
-                                <Char tech={styledComponents} distance="44%" />
+                                <Char tech={html} distance={screen.availWidth > 767 ? '90%' : '90%'} />
+                                <Char tech={css} distance={screen.availWidth > 767 ? '87%' : '84%'} />
+                                <Char tech={sass} distance={screen.availWidth > 767 ? '75%' : '70%'} />
+                                <Char tech={javascript} distance={screen.availWidth > 767 ? '60%' : '52%'} />
+                                <Char tech={react} distance={screen.availWidth > 767 ? '50%' : '38%'} />
+                                <Char tech={styledComponents} distance={screen.availWidth > 767 ? '44%' : '17%'} />
                             </div>
                             <p>Here are some examples on how you can count on me:</p>
                             <Accordion
