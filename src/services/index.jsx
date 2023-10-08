@@ -16,6 +16,7 @@ import javascript from '../assets/logo-javascript.svg'
 import sass from '../assets/logo-sass.svg'
 import react from '../assets/logo-react.svg'
 import styledComponents from '../assets/logo-styledComponents.png'
+import typescript from '../assets/logo-typescript.svg'
 
 const Services = () => {
 
@@ -91,10 +92,11 @@ const Services = () => {
                             <div className={styles.techsContainer}>
                                 <Char tech={html} distance={screen.availWidth > 767 ? '90%' : '90%'} />
                                 <Char tech={css} distance={screen.availWidth > 767 ? '87%' : '84%'} />
-                                <Char tech={sass} distance={screen.availWidth > 767 ? '75%' : '70%'} />
-                                <Char tech={javascript} distance={screen.availWidth > 767 ? '60%' : '52%'} />
-                                <Char tech={react} distance={screen.availWidth > 767 ? '50%' : '38%'} />
-                                <Char tech={styledComponents} distance={screen.availWidth > 767 ? '44%' : '17%'} />
+                                <Char tech={sass} distance={screen.availWidth > 767 ? '75%' : '73%'} />
+                                <Char tech={javascript} distance={screen.availWidth > 767 ? '63%' : '57%'} />
+                                <Char tech={react} distance={screen.availWidth > 767 ? '55%' : '45%'} />
+                                <Char tech={styledComponents} distance={screen.availWidth > 767 ? '46%' : '32%'} />
+                                <Char tech={typescript} distance={screen.availWidth > 767 ? '27%' : '13%'} />
                             </div>
                             <p>Here are some examples on how you can count on me:</p>
                             <Accordion
