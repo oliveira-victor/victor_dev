@@ -126,6 +126,46 @@
                     line-height: 1.6;
                 }
 
+                .techsContainer {
+                    height: 300px;
+                    position: relative;
+                    border-bottom: 2px solid #000;
+                    margin-bottom: 100px;
+
+                    .char {
+                        width: 70px;
+                        height: 140px;
+                        position: absolute;
+                        bottom: 0;
+
+                        @media (max-width: 767px) {
+                            width: 50px;
+                            height: 100px;
+                        }
+
+                        .charUp, .charDown {
+                            width: 100%;
+                            height: 50%;
+                        }
+
+                        .charUp {
+                            transform: translateY(4px);
+                            position: relative;
+
+                            & img {
+                                width: 76%;
+                                rotate: -4deg;
+                                position: absolute;
+                                bottom: 0;
+                            }
+                        }
+
+                        .runningChar {
+                            width: 100%;
+                        }
+                    }
+                }
+
                 .accordionBox {
 
                     .question {
@@ -155,7 +195,7 @@
 
                     @media (hover: hover) {
                         &:hover {
-                            box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+                            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
                             transform: translateY(-2px);
                         }
                     }

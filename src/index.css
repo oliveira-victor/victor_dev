@@ -65,11 +65,9 @@ li {
   rotate: 180deg;
 }
 
-/*
-.upsideDown { animation: rotateAnim .5s; }
+.running { animation: run .3s infinite; }
 
-@keyframes rotateAnim {
-  0% { rotate: 0; }
-  100% { rotate: 180deg; }
+@keyframes run {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-5px) ; }
 }
-*/

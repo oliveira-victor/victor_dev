@@ -1,12 +1,21 @@
 import { useState } from 'react'
 import styles from './Services.module.css'
 
+import Accordion from './Accordion'
+import Char from './Char'
+
 import devices from './assets/devices.svg'
 import service1 from './assets/service1.svg'
 import service2 from './assets/service2.svg'
 import service3 from './assets/service3.svg'
 import service4 from './assets/service4.svg'
-import Accordion from './Accordion'
+
+import html from '../assets/logo-html.svg'
+import css from '../assets/logo-css.svg'
+import javascript from '../assets/logo-javascript.svg'
+import sass from '../assets/logo-sass.svg'
+import react from '../assets/logo-react.svg'
+import styledComponents from '../assets/logo-styledComponents.png'
 
 const Services = () => {
 
@@ -79,9 +88,17 @@ const Services = () => {
                             </div>
                         </div>
                         <div className={styles.downContainer}>
+                            <div className={styles.techsContainer}>
+                                <Char tech={html} distance="90%" />
+                                <Char tech={css} distance="87%" />
+                                <Char tech={sass} distance="75%" />
+                                <Char tech={javascript} distance="60%" />
+                                <Char tech={react} distance="50%" />
+                                <Char tech={styledComponents} distance="44%" />
+                            </div>
                             <p>Here are some examples on how you can count on me:</p>
                             <Accordion
-                                question="Regular web page"
+                                question="Regular web site"
                                 answer="Whether you need a personal or professional web site of any kind to show your content to the world, I can make you a high performance page that will engage the user with beautiful and interactive content, as well as a great care for the accessbility and easy way of browsing."
                             />
                             <Accordion
@@ -93,7 +110,7 @@ const Services = () => {
                                 answer="This is a platform, an information management tool that will display various types of visual data from a database in one place in an easy way to understand. A great tool for businesses."
                             />
                             <Accordion
-                                question="Web application"
+                                question="Interactive web application"
                                 answer="Need to develop a practical app that will solve problems or entertain? A web app is great for that, as it can be accessed anywhere on a device with a browser. If you need an app for automatizing tasks and solving problems, a fast and lightweight web app can help, and I can do that for you."
                             />
                             <Accordion
