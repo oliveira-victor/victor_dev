@@ -12,7 +12,7 @@ const Char = (props) => {
                 <img src={tech} alt="Tech icon" />
             </div>
             <div className={styles.charDown}>
-                <img className={styles.runningChar} src={runningChar} alt="" />
+                <img className={styles.runningChar} src={runningChar} alt="Running character" />
             </div>
         </div>
     )

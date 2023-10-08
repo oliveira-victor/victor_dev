@@ -90,6 +90,17 @@ const Services = () => {
                         </div>
                         <div className={styles.downContainer}>
                             <div className={styles.techsContainer}>
+                                <h4>Some of my skills:</h4>
+                                <button className={styles.skillsBtn}>HTML</button>
+                                <button className={styles.skillsBtn}>CSS</button>
+                                <button className={styles.skillsBtn}>JavaScript</button>
+                                <button className={styles.skillsBtn}>Sass</button>
+                                <button className={styles.skillsBtn}>React</button>
+                                <button className={styles.skillsBtn}>Styled Components</button>
+                                <button className={styles.skillsBtn}>Git/GitHub</button>
+                                <button className={styles.skillsBtn}>Typescript</button>
+                            </div>
+                            <div className={styles.charsContainer}>
                                 <Char tech={html} distance={screen.availWidth > 767 ? '90%' : '90%'} />
                                 <Char tech={css} distance={screen.availWidth > 767 ? '87%' : '84%'} />
                                 <Char tech={sass} distance={screen.availWidth > 767 ? '75%' : '73%'} />
