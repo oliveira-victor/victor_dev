@@ -13,8 +13,8 @@ const Accordion = (props) => {
     }
 
     return (
-        <div className={styles.accordionBox} onClick={accordionHandler}>
-            <div className={styles.question}>
+        <div className={styles.accordionBox}>
+            <div className={styles.question} onClick={accordionHandler}>
                 {question}
                 <img src={arrow} alt="Arrow icon" className={activeAccordion && "upsideDown"} />
             </div>

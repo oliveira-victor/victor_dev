@@ -96,7 +96,7 @@ const Services = () => {
                                 <Char tech={javascript} distance={screen.availWidth > 767 ? '63%' : '57%'} />
                                 <Char tech={react} distance={screen.availWidth > 767 ? '55%' : '45%'} />
                                 <Char tech={styledComponents} distance={screen.availWidth > 767 ? '46%' : '32%'} />
-                                <Char tech={typescript} distance={screen.availWidth > 767 ? '27%' : '13%'} />
+                                <Char tech={typescript} distance={screen.availWidth > 767 ? '23%' : '10%'} />
                             </div>
                             <p>Here are some examples on how you can count on me:</p>
                             <Accordion
