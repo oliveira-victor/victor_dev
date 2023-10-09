@@ -1,4 +1,52 @@
 .about {
     min-height: 100vh;
     background-color: #EBECEF;
+    padding-bottom: 100px;
+
+    @media (max-width: 767px) {
+        padding-bottom: 10px;
+    }
+
+    .aboutContent {
+        width: 70%;
+        margin: 70px auto;
+        display: grid;
+        grid-template-columns: 30% auto;
+        gap: 4%;
+
+        @media (max-width: 767px) {
+            width: 90%;
+            display: block;
+            margin-top: 40px;
+        }
+
+        .imgContainer {
+
+            & img {
+                width: 100%;
+                rotate: -2deg;
+                box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.3);
+                border-radius: 6px;
+
+                @media (max-width: 767px) {
+                    width: 80%;
+                    display: block;
+                    margin: 0 auto;
+                    rotate: none;
+                }
+            }
+        }
+
+        .aboutTxtContainer {
+            display: flex;
+            align-items: center;
+            padding: 40px 0;
+
+            .aboutTxt {
+                line-height: 1.6;
+                background-color: #f1eac1;
+                padding: 24px;
+            }
+        }
+    }
 }

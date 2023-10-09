@@ -106,6 +106,7 @@ const Services = () => {
                                     <li>Styled Components</li>
                                     <li>Git/GitHub</li>
                                     <li>Typescript</li>
+                                    <li>VS Code</li>
                                 </ul>
                             </div>
                             <div className={styles.charsContainer}>
