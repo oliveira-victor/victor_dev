@@ -157,28 +157,28 @@ const Services = () => {
                                 <span className={styles.rightSideTitle}>I create graphic interfaces and beautiful artworks!</span>
                                 <div className={styles.servicesIcons}>
                                     <div className={styles.servCard}>
-                                        <img src={art1} alt="" />
+                                        <img src={art1} alt="Ui and UX icon" />
                                         <span className={styles.servCardTitle}>UI/UX</span>
                                         <p>
                                             Beautiful and functional visual elements for web and apps
                                         </p>
                                     </div>
                                     <div className={styles.servCard}>
-                                        <img src={art2} alt="" />
+                                        <img src={art2} alt="Graphic design icon" />
                                         <span className={styles.servCardTitle}>Graphic Design</span>
                                         <p>
                                             From interfaces to logo creation and image manipulation
                                         </p>
                                     </div>
                                     <div className={styles.servCard}>
-                                        <img src={art3} alt="" />
+                                        <img src={art3} alt="Illustration icon" />
                                         <span className={styles.servCardTitle}>Illustration</span>
                                         <p>
                                             Enchanting digital art to brighten graphical pieces
                                         </p>
                                     </div>
                                     <div className={styles.servCard}>
-                                        <img src={art4} alt="" />
+                                        <img src={art4} alt="Animation icon" />
                                         <span className={styles.servCardTitle}>Animation</span>
                                         <p>
                                             Short animation in looping for various projects needs
