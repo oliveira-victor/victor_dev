@@ -214,7 +214,7 @@ const Services = () => {
                                 answer="This is a platform, an information management tool that will display various types of visual data from a database in one place in an easy way to understand. A great tool for businesses."
                             />
                             <Accordion
-                                question="Logo creation"
+                                question="Book illustration"
                                 answer="Need to develop a practical app that will solve problems or entertain? A web app is great for that, as it can be accessed anywhere on a device with a browser. If you need an app for automatizing tasks and solving problems, a fast and lightweight web app can help, and I can do that for you."
                             />
                             <Accordion
