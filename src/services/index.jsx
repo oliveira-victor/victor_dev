@@ -200,6 +200,9 @@ const Services = () => {
                                     <li>InkScape</li>
                                 </ul>
                             </div>
+                            <div className={styles.artBanner}>
+                                Img
+                            </div>
                             <p>Here are some examples on how you can count on me:</p>
                             <Accordion
                                 question="Design for interfaces"

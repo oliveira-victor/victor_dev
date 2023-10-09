@@ -200,6 +200,13 @@
                     }
                 }
 
+                .artBanner {
+                    width: 100%;
+                    height: 300px;
+                    background-color: #7be29e;
+                    margin: 40px auto;
+                }
+
                 .accordionBox {
 
                     .question {
