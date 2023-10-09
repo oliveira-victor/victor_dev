@@ -104,7 +104,8 @@ const Services = () => {
                                     <li>Sass</li>
                                     <li>React</li>
                                     <li>Styled Components</li>
-                                    <li>Git/GitHub</li>
+                                    <li>Gulp</li>
+                                    <li>Git</li>
                                     <li>Typescript</li>
                                     <li>VS Code</li>
                                 </ul>

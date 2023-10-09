@@ -17,7 +17,7 @@ const About = () => {
                         </p>
                         <br />
                         <p>
-                            My experience started back in high school, learning HTML and CSS for fun (old HotDog and Dreamweaver), creating my own websites about whatever subject I enjoyed. The following years I kept developing skills in different areas, including Graphic Design and digital art. Nowadays I make use of all those skills to bring solution to people through technology, keeping curious and thirsty for learning new things and sharing my ideas.
+                            My experience started back in high school, learning HTML and CSS for fun, creating my own websites about whatever subject I enjoyed (old HotDog and Dreamweaver). The following years I kept developing skills in different areas, including Graphic Design and digital art. Nowadays, I make use of all those skills to bring solution to people through technology, keeping curious and thirsty for learning new things and sharing my ideas.
                         </p>
                         <br />
                         <p>
