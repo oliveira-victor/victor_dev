@@ -10,6 +10,12 @@ import service2 from './assets/service2.svg'
 import service3 from './assets/service3.svg'
 import service4 from './assets/service4.svg'
 
+import artwork from './assets/artwork.webp'
+import art1 from './assets/art1.jpg'
+import art2 from './assets/art2.jpg'
+import art3 from './assets/art3.jpg'
+import art4 from './assets/art4.jpg'
+
 import html from '../assets/logo-html.svg'
 import css from '../assets/logo-css.svg'
 import javascript from '../assets/logo-javascript.svg'
@@ -46,7 +52,7 @@ const Services = () => {
                     </div>
                 </div>
                 {toggleWebdev &&
-                    <div className={`${styles.DevCanvas} fadeIn ${styles.canvas}`}>
+                    <div className={`fadeIn ${styles.canvas}`}>
                         <div className={styles.upContainer}>
                             <div className={styles.leftSide}>
                                 <img src={devices} alt="Devices" />
@@ -91,14 +97,16 @@ const Services = () => {
                         <div className={styles.downContainer}>
                             <div className={styles.techsContainer}>
                                 <h4>Some of my skills:</h4>
-                                <button className={styles.skillsBtn}>HTML</button>
-                                <button className={styles.skillsBtn}>CSS</button>
-                                <button className={styles.skillsBtn}>JavaScript</button>
-                                <button className={styles.skillsBtn}>Sass</button>
-                                <button className={styles.skillsBtn}>React</button>
-                                <button className={styles.skillsBtn}>Styled Components</button>
-                                <button className={styles.skillsBtn}>Git/GitHub</button>
-                                <button className={styles.skillsBtn}>Typescript</button>
+                                <ul>
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>JavaScript</li>
+                                    <li>Sass</li>
+                                    <li>React</li>
+                                    <li>Styled Components</li>
+                                    <li>Git/GitHub</li>
+                                    <li>Typescript</li>
+                                </ul>
                             </div>
                             <div className={styles.charsContainer}>
                                 <Char tech={html} distance={screen.availWidth > 767 ? '90%' : '90%'} />
@@ -134,11 +142,93 @@ const Services = () => {
                                 question="Custom social media links page"
                                 answer="That's a great way to avoid those over used social links pages you see in people's bio on social media. You can have your own unique customized and interactive links page, that will represent you or your company in a professional way."
                             />
+                            <a href='#services' onClick={handleToggleDesign}>
+                                <button className={styles.changeServiceLink}>See also my multimedia design service</button>
+                            </a>
                         </div>
                     </div>}
                 {toggleDesign &&
-                    <div className={`${styles.designCanvas} fadeIn ${styles.canvas}`}>
-                        Design
+                    <div className={`fadeIn ${styles.canvas}`}>
+                        <div className={styles.upContainer}>
+                            <div className={styles.leftSide}>
+                                <img src={artwork} alt="Digital art" />
+                            </div>
+                            <div className={styles.rightSide}>
+                                <span className={styles.rightSideTitle}>I create graphic interfaces and beautiful artworks!</span>
+                                <div className={styles.servicesIcons}>
+                                    <div className={styles.servCard}>
+                                        <img src={art1} alt="" />
+                                        <span className={styles.servCardTitle}>UI/UX</span>
+                                        <p>
+                                            Beautiful and functional visual elements for web and apps
+                                        </p>
+                                    </div>
+                                    <div className={styles.servCard}>
+                                        <img src={art2} alt="" />
+                                        <span className={styles.servCardTitle}>Graphic Design</span>
+                                        <p>
+                                            From interfaces to logo creation and image manipulation
+                                        </p>
+                                    </div>
+                                    <div className={styles.servCard}>
+                                        <img src={art3} alt="" />
+                                        <span className={styles.servCardTitle}>Illustration</span>
+                                        <p>
+                                            Enchanting digital art to brighten graphical pieces
+                                        </p>
+                                    </div>
+                                    <div className={styles.servCard}>
+                                        <img src={art4} alt="" />
+                                        <span className={styles.servCardTitle}>Animation</span>
+                                        <p>
+                                            Short animation in looping for various projects needs
+                                        </p>
+                                    </div>
+                                </div>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur labore neque asperiores assumenda, provident adipisci ipsam modi tempora praesentium? Aut illo nostrum dignissimos sint vel consectetur quibusdam, ratione eius molestiae.
+                                </p>
+                            </div>
+                        </div>
+                        <div className={styles.downContainer}>
+                            <div className={styles.techsContainer}>
+                                <h4>Tools I use for graphic creation:</h4>
+                                <ul>
+                                    <li>Figma</li>
+                                    <li>GIMP</li>
+                                    <li>Krita</li>
+                                    <li>InkScape</li>
+                                </ul>
+                            </div>
+                            <p>Here are some examples on how you can count on me:</p>
+                            <Accordion
+                                question="Design for interfaces"
+                                answer="Whether you need a personal or professional web site of any kind to show your content to the world, I can make you a high performance page that will engage the user with beautiful and interactive content, as well as a great care for the accessbility and easy way of browsing."
+                            />
+                            <Accordion
+                                question="Logo creation"
+                                answer="Do you need to promote a product, a course, an event or any other kind of service? This single and straight to the point kind of page will do it. This is a great and fast solution and you can expect practicality."
+                            />
+                            <Accordion
+                                question="Digital art"
+                                answer="This is a platform, an information management tool that will display various types of visual data from a database in one place in an easy way to understand. A great tool for businesses."
+                            />
+                            <Accordion
+                                question="Logo creation"
+                                answer="Need to develop a practical app that will solve problems or entertain? A web app is great for that, as it can be accessed anywhere on a device with a browser. If you need an app for automatizing tasks and solving problems, a fast and lightweight web app can help, and I can do that for you."
+                            />
+                            <Accordion
+                                question="Minimalist animation"
+                                answer="If you need an online game, I can develop a low complexity and efficient one in JavaScript, whether you need it for educational purposes or just for pure entertainment, just bring the concept and I'll turn it into something playable and fun."
+                            />
+                            <Accordion
+                                question="Illustration for custom products"
+                                answer="That's a great way to avoid those over used social links pages you see in people's bio on social media. You can have your own unique customized and interactive links page, that will represent you or your company in a professional way."
+                            />
+                            <a href='#services' onClick={handleToggleWebdev}>
+                                <button className={styles.changeServiceLink}>See also my frontend development service</button>
+                            </a>
+                        </div>
                     </div>}
             </div>
             <br />

@@ -88,6 +88,7 @@
                                 display: block;
                                 margin: 0 auto;
                                 margin-bottom: 6px;
+                                border-radius: 50%;
                             }
 
                             .servCardTitle {
@@ -138,16 +139,19 @@
                         font-size: 30px;
                         text-align: center;
                         text-decoration: underline;
-                        margin-bottom: 20px;
+                        margin-bottom: 30px;
                     }
 
-                    .skillsBtn {
-                        padding: 10px 30px;
-                        font-family: 'Roboto Condensed', sans-serif;
-                        font-size: 20px;
-                        font-weight: bold;
-                        border: none;
-                        background-color: transparent;
+                    & ul {
+                        display: flex;
+                        flex-wrap: wrap;
+                        gap: 4%;
+                        justify-content: center;
+
+                        & li {
+                            padding: 6px;
+                            font-weight: bold;
+                        }
                     }
                 }
 
@@ -230,12 +234,29 @@
                         }
                     }
                 }
+
+                .changeServiceLink {
+                    cursor: pointer;
+                    color: #70c2b7;
+                    padding: 10px;
+                    margin: 60px auto;
+                    display: block;
+                    text-align: center;
+                    font-size: 24px;
+                    border: 2px solid #70c2b7;
+                    border-radius: 10px;
+                    font-family: 'Roboto Condensed', sans-serif;
+                    transition: all .5s ease;
+
+                    &:hover {
+                        background-color: #70c2b7;
+                        color: #fff;
+                        border: 2px solid transparent;
+                        transform: scale(1.05);
+                    }
+                }
             }
         }
-
-        .DevCanvas {}
-
-        .designCanvas {}
     }
 }
 
