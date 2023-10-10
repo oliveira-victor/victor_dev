@@ -13,10 +13,10 @@ function Card(props) {
     useEffect(() => {
         const observer = new IntersectionObserver((entries) => {
             if (entries[0].isIntersecting === true) {
-                setCardIsVisible(cardIsVisible = true)
+                setCardIsVisible(true)
 
             } else {
-                setCardIsVisible(cardIsVisible = false)
+                setCardIsVisible(false)
             }
         }, { threshold: [1] })
         observer.observe(cardRef.current)
