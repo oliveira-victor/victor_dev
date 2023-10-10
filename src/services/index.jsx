@@ -216,7 +216,7 @@ const Services = () => {
                                     </div>
                                 </div>
                             </div>
-                            <p>Here are some examples on how you can count on me:</p>
+                            <p>Here are some examples of related services:</p>
                             <Accordion
                                 question="User interface design"
                                 answer="This is a service for those who have an idea of a project that needs to interact with users, through a screen, with an intuitive and clean interface. I design user interfaces focusing on maximizing usability and user experience."
