@@ -215,16 +215,18 @@
 
                         @media (max-width: 767px) {
                             display: block;
-                            width: 90%;
+                            width: 100%;
                         }
 
                         .vfoLeft {
                             width: 200px;
+                            display: flex;
+                            justify-content: center;
+                            text-align: center;
+                            width: 100%;
 
                             & img {
-                                width: 100%;
-                                display: block;
-                                margin: 0 auto;
+                                width: 70%;
                             }
                         }
 
