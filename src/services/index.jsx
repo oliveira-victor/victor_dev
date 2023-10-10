@@ -15,6 +15,7 @@ import art1 from './assets/art1.jpg'
 import art2 from './assets/art2.jpg'
 import art3 from './assets/art3.jpg'
 import art4 from './assets/art4.jpg'
+import vfologo from './assets/vfologo.svg'
 
 import html from '../assets/logo-html.svg'
 import css from '../assets/logo-css.svg'
@@ -203,7 +204,17 @@ const Services = () => {
                                 </ul>
                             </div>
                             <div className={styles.artBanner}>
-                                Img
+                                <div className={styles.vfoContainer}>
+                                    <div className={styles.vfoLeft}>
+                                        <img src={vfologo} alt="VFO Studio logo" />
+                                    </div>
+                                    <div className={styles.vfoRight}>
+                                        <div>
+                                            <p>If you are interested, visit VFO Studio page to learn more about this kind of service.</p>
+                                            <a href="https://vfostudio.vercel.app/"><button className={styles.visitVfoBtn}>Visit VFO Studio</button></a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <p>Here are some examples on how you can count on me:</p>
                             <Accordion

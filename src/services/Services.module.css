@@ -201,9 +201,54 @@
 
                 .artBanner {
                     width: 100%;
-                    height: 300px;
-                    background-color: #7be29e;
                     margin: 40px auto;
+
+                    .vfoContainer {
+                        display: flex;
+                        justify-content: center;
+                        gap: 6%;
+                        width: 50%;
+                        margin: 0 auto;
+                        padding: 40px;
+                        background-color: #fff;
+                        border-radius: 20px;
+
+                        @media (max-width: 767px) {
+                            display: block;
+                            width: 90%;
+                        }
+
+                        .vfoLeft {
+                            width: 200px;
+
+                            & img {
+                                width: 100%;
+                                display: block;
+                                margin: 0 auto;
+                            }
+                        }
+
+                        .vfoRight {
+                            text-align: center;
+
+                            @media (max-width: 767px) {
+                                margin-top: 40px;
+                            }
+                        }
+
+                        .visitVfoBtn {
+                            background-color: #252525;
+                            color: #fff;
+                            padding: 16px 30px;
+                            border: none;
+                            border-radius: 6px;
+                            font-size: 16px;
+                            display: block;
+                            margin: 0 auto;
+                            margin-top: 10px;
+                            cursor: pointer;
+                        }
+                    }
                 }
 
                 .accordionBox {
