@@ -41,24 +41,24 @@ const CardsDisplay = () => {
                 techs4={gulp}
                 text="This is a service ordered by a client. For this project I had to come up with all the UX/UI part, including the creation of the logo and the icons. Also, I decided the most appropriated technologies for an efficient, responsive and fast webpage, working on the SEO and keeping a high performance."
             />
-            <Card 
+            {/* <Card 
                 link="https://vfostudio.vercel.app/"
                 id="card_img4" 
                 cardTitle="Bear Adventure" 
                 techs1={react}
                 techs2={styledComponents}
                 text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eu ipsum ac lacus egestas rutrum ac eu eros. Proin ac tempus tortor. Morbi quam turpis, lobortis nec diam id, porta condimentum ante. Ut elementum placerat consequat. Integer luctus ipsum et tellus luctus vehicula."
-            />
+            /> */}
             <Card 
                 link="https://vfo-parallax.vercel.app/"
                 id="card_img5" 
-                cardTitle="Parallax JS Templates" 
+                cardTitle="Parallax JS Template" 
                 techs1={html}
                 techs2={css}
                 techs3={javascript}
-                text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eu ipsum ac lacus egestas rutrum ac eu eros. Proin ac tempus tortor. Morbi quam turpis, lobortis nec diam id, porta condimentum ante. Ut elementum placerat consequat. Integer luctus ipsum et tellus luctus vehicula."
+                text="This is a personal page illustrated by me and developed with the use of Parallax JS plugin, experimenting effects with mouse hover and smartphone movement, causing the parallax effect, making interfaces more appealing and interactive. Here is possible to see what can be done using some beautiful visual content."
             />
-            <Card 
+            {/* <Card 
                 link="https://fortunecookies.vercel.app/"
                 id="card_img6" 
                 cardTitle="Fortune Cookies" 
@@ -66,8 +66,8 @@ const CardsDisplay = () => {
                 techs2={css}
                 techs3={javascript}
                 text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eu ipsum ac lacus egestas rutrum ac eu eros. Proin ac tempus tortor. Morbi quam turpis, lobortis nec diam id, porta condimentum ante. Ut elementum placerat consequat. Integer luctus ipsum et tellus luctus vehicula."
-            />
-            <Card 
+            /> */}
+            {/* <Card 
                 link="https://todolist-vfo.vercel.app/"
                 id="card_img7" 
                 cardTitle="To Do List" 
@@ -75,7 +75,7 @@ const CardsDisplay = () => {
                 techs2={css}
                 techs3={javascript}
                 text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eu ipsum ac lacus egestas rutrum ac eu eros. Proin ac tempus tortor. Morbi quam turpis, lobortis nec diam id, porta condimentum ante. Ut elementum placerat consequat. Integer luctus ipsum et tellus luctus vehicula."
-            />
+            /> */}
         </>
     )
 }
