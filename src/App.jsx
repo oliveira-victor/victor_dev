@@ -3,7 +3,7 @@ import Contact from "./Contact"
 import Header from "./Header"
 import Hero from "./Hero"
 import Projects from "./Projects"
-import Services from "./services"
+import Services from "./Services"
 
 function App() {
 
