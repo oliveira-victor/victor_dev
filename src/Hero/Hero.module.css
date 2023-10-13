@@ -94,6 +94,37 @@
             }
         }
     }
+
+    .langSwitcher {
+        z-index: 2;
+        cursor: pointer;
+        padding: 10px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translate(-50px, 20px);
+        font-size: 14px;
+        text-align: center;
+        color: #fff;
+
+        & img {
+            width: 34px;
+            display: block;
+            margin: 6px;
+
+            @media (max-width: 767px) {
+                width: 24px;
+            }
+        }
+
+        @media (max-width: 767px) {
+            transform: translate(-10px, 10px);
+        }
+
+        @media screen and (min-width: 768px) and (max-width: 1300px) {
+            transform: translate(-50px, 100px);
+        }
+    }
 }
 
 .container {

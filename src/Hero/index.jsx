@@ -4,8 +4,12 @@ import styles from "./Hero.module.css"
 import vfo from '../assets/vfo_white.svg'
 import github from './assets/github.svg'
 import linkedin from './assets/linkedin.svg'
+import LangSwitcher from "./LangSwitcher"
+import { useTranslation } from "react-i18next"
 
 const Hero = () => {
+
+    const { t } = useTranslation();
 
     const refParallax = useRef();
 
@@ -23,10 +27,10 @@ const Hero = () => {
                 <div className={styles.mainLayer}>
                 <img src={vfo} className={styles.vfoLogo} alt="VFO logo" />
                     <h1 className="fadeIn">Victor Freire Oliveira
-                        <br /><span className={`${styles.subtitle} fadeIn2`}>Front-End Developer</span>
+                        <br /><span className={`${styles.subtitle} fadeIn2`}>{t('VFOsubtitle')}</span>
                     </h1>
                     <a href="#services">
-                        <button className={`${styles.startBtn} ${styles.btn1}`}>Get started
+                        <button className={`${styles.startBtn} ${styles.btn1}`}>{t('startBtn')}
                         </button>
                         <button className={`${styles.btn2} ${styles.fadeInGlow}`}></button>
                     </a>
@@ -39,6 +43,7 @@ const Hero = () => {
                         <img src={linkedin} alt="LinkedIn icon" title="LinkedIn" />
                     </a>
                 </div>
+                <LangSwitcher />
                 <div className={styles.container}>
                     <div data-relative-input="true" id={styles.scene} ref={refParallax}>
                         <div className={styles.layer} data-depth="0.2">

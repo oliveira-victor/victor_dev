@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next'
 import styles from './Header.module.css'
 
 import about from './assets/icon-about.svg'
@@ -7,13 +8,16 @@ import services from './assets/icon-services.svg'
 import projects from './assets/icon-projects.svg'
 
 const PhoneMenu = () => {
+
+    const { t } = useTranslation()
+
     return (
         <ul className={styles.phoneMenu}>
             <a href="#main">
                 <li>
                     <div><img src={home} alt="Home icon" /></div>
                     <div>
-                        Home
+                        {t('home')}
                     </div>
                 </li>
             </a>
@@ -21,7 +25,7 @@ const PhoneMenu = () => {
                 <li>
                     <div><img src={services} alt="Services icon" /></div>
                     <div>
-                        Services
+                        {t('services')}
                     </div>
                 </li>
             </a>
@@ -29,7 +33,7 @@ const PhoneMenu = () => {
                 <li>
                     <div><img src={projects} alt="Projects icon" /></div>
                     <div>
-                        Projects
+                        {t('projects')}
                     </div>
                 </li>
             </a>
@@ -37,7 +41,7 @@ const PhoneMenu = () => {
                 <li>
                     <div><img src={about} alt="About icon" /></div>
                     <div>
-                        About
+                        {t('about')}
                     </div>
                 </li>
             </a>
@@ -45,7 +49,7 @@ const PhoneMenu = () => {
                 <li>
                     <div><img src={contact} alt="Contact icon" /></div>
                     <div>
-                        Contact
+                        {t('contact')}
                     </div>
                 </li>
             </a>

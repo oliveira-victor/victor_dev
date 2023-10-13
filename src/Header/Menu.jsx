@@ -1,6 +1,10 @@
+import { useTranslation } from 'react-i18next'
 import styles from './Header.module.css'
 
 const Menu = () => {
+
+    const { t } = useTranslation()
+
     return (
         <>
             <div className={styles.logo}></div>
@@ -8,27 +12,27 @@ const Menu = () => {
                 <ul className={styles.menu}>
                     <a href="#main">
                         <li>
-                            Home
+                            {t('home')}
                         </li>
                     </a>
                     <a href="#services">
                         <li>
-                            Services
+                            {t('services')}
                         </li>
                     </a>
                     <a href="#projects">
                         <li>
-                            Projects
+                            {t('projects')}
                         </li>
                     </a>
                     <a href="#about">
                         <li>
-                            About
+                            {t('about')}
                         </li>
                     </a>
                     <a href="#contact">
                         <li>
-                            Contact
+                            {t('contact')}
                         </li>
                     </a>
                 </ul>

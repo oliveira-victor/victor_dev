@@ -5,7 +5,7 @@ const Footer = () => {
         <footer className={styles.footer}>
             <div className={styles.container}>
                 <div className={styles.footerTxt}>
-                    &copy;2023 Victor Freire Oliveira • Front-end developer | Multimedia Designer • All rights reserved
+                    &copy; 2023 Victor Freire Oliveira • Front-end developer | Multimedia Designer
                 </div>
             </div>
             <div className={styles.emptyMobileSpace}></div>

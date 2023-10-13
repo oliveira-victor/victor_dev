@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next"
 import Card from "./Card"
 
 import html from '../assets/logo-html.svg'
@@ -10,6 +11,8 @@ import styledComponents from '../assets/logo-styledComponents.png'
 
 const CardsDisplay = () => {
 
+    const { t } = useTranslation("projectsSection")
+
     return (
         <>
             <Card 
@@ -20,7 +23,7 @@ const CardsDisplay = () => {
                 techs2={javascript}
                 techs3={sass}
                 techs4={gulp}
-                text="This is an art and design studio page created by me, where I promote my services and post my artworks. The idea is to be simple, yet artistic and inspiring, with attention to the details. Languages available: English and Portuguese."  
+                text={t('cardVFOstudio')}  
             />
             <Card 
                 link="https://guessthenumber-game.vercel.app/"
@@ -29,7 +32,7 @@ const CardsDisplay = () => {
                 techs1={html}
                 techs2={css}
                 techs3={javascript}
-                text="This game is a personal project built entirely in Vanilla JavaScript, as a self challenge to test and improve my coding skills, creating all the logics, rules and challenges involved. All the images were made by me, including the characters and the animations. Language available: English"
+                text={t('cardNumbersGame')}
             />
             <Card 
                 link="https://doulamamimoon.com"
@@ -39,7 +42,7 @@ const CardsDisplay = () => {
                 techs2={javascript}
                 techs3={sass}
                 techs4={gulp}
-                text="This is a service ordered by a client. For this project I had to come up with all the UX/UI part, including the creation of the logo and the icons. Also, I decided the most appropriated technologies for an efficient, responsive and fast webpage, working on the SEO and keeping a high performance."
+                text={t('cardMamiMoon')}
             />
             {/* <Card 
                 link="https://vfostudio.vercel.app/"
@@ -56,7 +59,7 @@ const CardsDisplay = () => {
                 techs1={html}
                 techs2={css}
                 techs3={javascript}
-                text="This is a personal page illustrated by me and developed with the use of Parallax JS plugin, experimenting effects with mouse hover and smartphone movement, causing the parallax effect, making interfaces more appealing and interactive. Here is possible to see what can be done using some beautiful visual content."
+                text={t('cardParallaxJs')}
             />
             {/* <Card 
                 link="https://fortunecookies.vercel.app/"
