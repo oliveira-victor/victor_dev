@@ -24,7 +24,7 @@
         "dynamicSub": "Páginas interativas que envolvem o usuário com dinamismo",
         "devTxt": "Eu desenvolvo produtos digitais mantendo códigos limpos e legíveis, visando alcançar um resultado de alta performance e com atenção às boas práticas, recursos de SEO e acessibilidade. De páginas da web comuns às aplicações mais complexas com a implementação de APIs, o uso de tecnologias de programação poderosas e modernas",
         "mySkills": "Algumas de minhas habilidades:",
-        "someExamples": "Aqui estão alguns exemplos de como posso oferecer:",
+        "someExamples": "Aqui estão alguns exemplos do que posso oferecer:",
         "question1": "Site comum",
         "answer1": "Não importa se é um site pessoal ou profissional de qualquer conteúdo que você queira apresentar ao mundo, posso fazer uma página de alta performance que irá envolver o usuário com conteúdos belos e interativos, assim como proporcionar um grande cuidado pela acessibilidade e facilidade de navegação.",
         "question2": "Landing page",
@@ -35,7 +35,7 @@
         "answer4": "Precisando desenvolver um aplicativo prático que resolve problemas reais ou para entretenimento? Um web app é ótimo para isso, pois pode ser acessado de qualquer local por um dispositivo com um navegador.  Se você precisa de um app pra automatizar tarefas e resolver problemas, um web app rápido e leve pdoe ajudar, e eu posso fazê-lo para você.",
         "question5": "Jogo online simples",
         "answer5": "Se você precisa de um jogo online, eu posso desenvolver um de baixa complexidade e eficiente com JavaScript, não importa se é para fins educativos ou apenas para diversão, apenas traga o conceito e o tornarei em algo jogável e divertido.",
-        "question6": "Página de links sociais personalizada",
+        "question6": "Página de links personalizada",
         "answer6": "É uma ótima maneira de evitar aquelas páginas de links sociais sempre usadas que você vê nos links de bios nas mídias sociais. Você pode ter sua página de links personalizada e interativa, que vai representar você ou seu negócio de maneira profissional.",
         "seeAlsoDesign": "Confira também meus serviços de design multimídia",
         "designTitle": "Eu crio interfaces gráficas e belas artes!",
@@ -68,8 +68,8 @@
     },
     "projectsSection": {
         "projects": "Projetos",
-        "cardVFOstudio": "Este é um estúdio de arte e design criado por mim, onde eu divulgo meus serviços e posto minhas artes. A ideia é ser simples, porém artistico e inspirador, com atenção aos detalhes. Idiomas disponíveis: inglês e português.",
-        "cardNumbersGame": "Um projeto pessoal de jogo construído inteiramente em Vanilla JavaScript, como um desafio próprio para testar e melhorar minhas habilidades de programação, criando toda a lógica, regras e desafios involvidos. Todas as imagens foram feitas por mim, incluindo os personagens e animações. Idioma disponível: inglês",
+        "cardVFOstudio": "Este é um portfólio, um estúdio de arte e design criado por mim, onde eu divulgo meus serviços e posto minhas artes. A ideia é ser simples, porém artistico e inspirador, com atenção aos detalhes.",
+        "cardNumbersGame": "Um projeto pessoal de jogo construído inteiramente em Vanilla JavaScript, como um desafio próprio para testar e melhorar minhas habilidades de programação, criando toda a lógica, regras e desafios involvidos. Todas as imagens foram feitas por mim, incluindo os personagens e animações.",
         "cardMamiMoon": "Serviço encomendado por cliente. Para este projeto eu tive que criar toda a parte de UI/UX, incluindo a criação da logo e dos ícones. Além disso, decidi quais tecnologias seriam mais apropriadas para um site rápido, responsivo e eficiente, trabalhando no SEO e mantendo uma alta performance.",
         "cardParallaxJs": "Esta é uma página pessoal ilustrada por mim e desenvolvida com o uso do plugin Parallax JS, experimentando efeitos com mouse hover e movimentos do smartphone, causando o efeito parallax, tornando as interfaces mais atrativas e interativas. Aqui é possível ver o que pode ser feito usando alguns belos conteúdos visuais.",
         "vfoDevNote": "Esta página foi desenhada e desenvolvida com ReactJS + Vite, e as ferramentas gráficas Gimp e Inkscape."
