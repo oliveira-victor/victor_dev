@@ -102,8 +102,17 @@ header {
 
 .card__content__wrapper {
     width: 85%;
+    height: 85%;
     margin: 0 auto;
     padding-bottom: 16px;
+    position: relative;
+
+    .linkIcon {
+        width: 24px;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
 }
 
 @media (max-width: 767px) {

@@ -17,7 +17,7 @@ const CardsDisplay = () => {
         <>
             <Card 
                 link="https://vfostudio.vercel.app/"
-                id="card_img1" 
+                id="vfostudio" 
                 cardTitle="VFO Studio" 
                 techs1={html}
                 techs2={javascript}
@@ -26,23 +26,31 @@ const CardsDisplay = () => {
                 text={t('cardVFOstudio')}  
             />
             <Card 
-                link="https://guessthenumber-game.vercel.app/"
-                id="card_img2" 
-                cardTitle="Guess The Number" 
-                techs1={html}
-                techs2={css}
-                techs3={javascript}
-                text={t('cardNumbersGame')}
+                link="https://theavatarmaker.vercel.app/"
+                id="avatarmaker" 
+                cardTitle="Avatar Maker" 
+                techs1={react}
+                techs2={styledComponents}
+                text={t('cardAvatarMaker')}
             />
             <Card 
                 link="https://doulamamimoon.com"
-                id="card_img3" 
+                id="mamimoon" 
                 cardTitle="Mami Moon" 
                 techs1={html}
                 techs2={javascript}
                 techs3={sass}
                 techs4={gulp}
                 text={t('cardMamiMoon')}
+            />
+            <Card 
+                link="https://guessthenumber-game.vercel.app/"
+                id="guessthenumber" 
+                cardTitle="Guess The Number" 
+                techs1={html}
+                techs2={css}
+                techs3={javascript}
+                text={t('cardNumbersGame')}
             />
             {/* <Card 
                 link="https://vfostudio.vercel.app/"
@@ -54,7 +62,7 @@ const CardsDisplay = () => {
             /> */}
             <Card 
                 link="https://vfo-parallax.vercel.app/"
-                id="card_img5" 
+                id="parallaxjs" 
                 cardTitle="Parallax JS Template" 
                 techs1={html}
                 techs2={css}

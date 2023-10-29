@@ -69,9 +69,10 @@
     "projectsSection": {
         "projects": "Projects",
         "cardVFOstudio": "This is a portfolio page, an art and design studio created by me, where I promote my services and post my artworks. The idea is to be simple, yet artistic and inspiring, with attention to the details.",
-        "cardNumbersGame": "This game is a personal project built entirely in Vanilla JavaScript, as a self challenge to test and improve my coding skills, creating all the logics, rules and challenges involved. All the images were made by me, including the characters and the animations.",
-        "cardMamiMoon": "This is a service ordered by a client. For this project I had to come up with all the UX/UI part, including the creation of the logo and the icons. Also, I decided the most appropriated technologies for an efficient, responsive and fast webpage, working on the SEO and keeping a high performance.",
-        "cardParallaxJs": "This is a personal page illustrated by me and developed with the use of Parallax JS plugin, experimenting effects with mouse hover and smartphone movement, causing the parallax effect, making interfaces more appealing and interactive. Here is possible to see what can be done using some beautiful visual content.",
+        "cardAvatarMaker": "An interactive web application which I created the concept, developed of all the code and the visual aspects, including the digital illustration. You can create different avatars and save them (with the implementation of html-to-image).",
+        "cardMamiMoon": "For this project I had to come up with all the UX/UI part, including the creation of the logo and the icons. Also, I decided the most appropriated technologies for an efficient, responsive and fast webpage, working on the SEO and keeping a high performance.",
+        "cardNumbersGame": "This game is a personal project built entirely in Vanilla JavaScript, as a self challenge to test and improve my coding skills, creating all the logics, rules and challenges involved. All the visual elements were created by me.",
+        "cardParallaxJs": "This is a personal page illustrated by me and developed with the use of Parallax JS plugin, experimenting effects with mouse hover and smartphone movement, causing an appealing and interactive parallax effect.",
         "vfoDevNote": "This page was designed and developed with ReactJS + Vite and the graphic tools Gimp and Inkscape."
     },
     "aboutSection": {

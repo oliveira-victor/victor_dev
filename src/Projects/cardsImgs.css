@@ -1,12 +1,16 @@
-#card_img1 {
+#vfostudio {
     background-image: url('./assets/vfo-theme.webp');
 }
 
-#card_img2 {
+#avatarmaker {
+    background-image: url('./assets/avatarmaker.webp');
+}
+
+#guessthenumber {
     background-image: url('./assets/number.webp');
 }
 
-#card_img3 {
+#mamimoon {
     background-image: url('./assets/mamimoon.webp');
 }
 
@@ -14,7 +18,7 @@
     background-image: url('./assets/bear.webp');
 }
 
-#card_img5 {
+#parallaxjs {
     background-image: url('./assets/parallax.webp');
 }
 
