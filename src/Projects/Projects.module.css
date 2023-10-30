@@ -7,18 +7,41 @@ header {
 }
 
 .container {
-    width: 80%;
-    margin: 20px auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 2em;
+
+
+    .mainCardsContainer {
+        width: 80%;
+        margin: 20px auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 2em;
+    }
+
+    .loadMoreCards {
+        width: fit-content;
+        margin: 0 auto;
+        padding: 20px 40px;
+        border-radius: 25px;
+        box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
+        cursor: pointer;
+        background-color: #fff;
+        color: #9e9e9e;
+        font-size: 26px;
+        display: flex;
+        justify-content: center;
+
+        & img {
+            width: 20px;
+            margin-top: 10px;
+            margin-left: 10px;
+        }
+    }
 }
 
 .card_container {
     width: 300px;
     height: 500px;
-    margin: 20px auto;
 }
 
 .card {
@@ -151,9 +174,10 @@ header {
 
 @keyframes spin {
     from {
-        transform:rotate(0deg);
+        transform: rotate(0deg);
     }
+
     to {
-        transform:rotate(360deg);
+        transform: rotate(360deg);
     }
 }

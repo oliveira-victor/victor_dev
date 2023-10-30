@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import styles from './Services.module.css'
 
-import arrow from './assets/arrow.svg'
+import arrow from '../assets/arrow.svg'
 
 const Accordion = (props) => {
 
