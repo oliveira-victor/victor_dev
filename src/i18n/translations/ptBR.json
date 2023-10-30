@@ -73,6 +73,7 @@
         "cardMamiMoon": "Para este projeto eu tive que criar toda a parte de UI/UX, incluindo a criação da logo e dos ícones. Além disso, decidi quais tecnologias seriam mais apropriadas para um site rápido, responsivo e eficiente, trabalhando no SEO e mantendo uma alta performance.",
         "cardNumbersGame": "Um projeto pessoal de jogo construído inteiramente em Vanilla JavaScript, como um desafio próprio para testar e melhorar minhas habilidades de programação, criando toda a lógica, regras e desafios involvidos. Todas as imagens foram feitas por mim.",
         "cardParallaxJs": "Esta é uma página pessoal ilustrada por mim e desenvolvida com o uso do plugin Parallax JS, experimentando efeitos com mouse hover e movimentos do smartphone, causando o efeito parallax, tornando as interfaces mais atrativas e interativas.",
+        "loadMoreCards": "Ver mais projetos",
         "vfoDevNote": "Esta página foi desenhada e desenvolvida com ReactJS + Vite, e as ferramentas gráficas Gimp e Inkscape."
     },
     "aboutSection": {

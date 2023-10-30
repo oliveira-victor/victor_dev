@@ -78,7 +78,7 @@ const CardsDisplay = () => {
                 }
             </div>
             {!toggleExtraCards ?
-                <div className={styles.loadMoreCards} onClick={() => setToggleExtraCards(true)}><span>See more projects</span> <img className="float" src={arrow} alt="Arrow down icon" /></div>
+                <div className={styles.loadMoreCards} onClick={() => setToggleExtraCards(true)}><span>{t('loadMoreCards')}</span> <img className="float" src={arrow} alt="Arrow down icon" /></div>
                 : ''
             }
 
