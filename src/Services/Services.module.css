@@ -49,6 +49,7 @@
 
                 @media (max-width: 767px) {
                     display: block;
+                    margin-top: 0;
                 }
 
                 .leftSide {

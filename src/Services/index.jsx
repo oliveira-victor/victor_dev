@@ -4,7 +4,7 @@ import styles from './Services.module.css'
 import Accordion from './Accordion'
 import Char from './Char'
 
-import devices from './assets/devices.svg'
+import avatar3d from './assets/vfo-ai.webp'
 import service1 from './assets/service1.svg'
 import service2 from './assets/service2.svg'
 import service3 from './assets/service3.svg'
@@ -59,7 +59,7 @@ const Services = () => {
                     <div className={`fadeIn ${styles.canvas}`}>
                         <div className={styles.upContainer}>
                             <div className={styles.leftSide}>
-                                <img src={devices} alt="Devices" />
+                                <img src={avatar3d} alt="Victor 3D avatar" />
                             </div>
                             <div className={styles.rightSide}>
                                 <span className={styles.rightSideTitle}>{t('devTitle')}</span>
