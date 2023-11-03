@@ -111,7 +111,7 @@ const Services = () => {
                                     <li>Gulp</li>
                                     <li>Git</li>
                                     <li>Typescript</li>
-                                    <li>VS Code</li>
+                                    <li>Linux Ubuntu</li>
                                 </ul>
                             </div>
                             <div className={styles.charsContainer}>
