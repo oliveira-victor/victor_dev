@@ -1,4 +1,3 @@
-import { useRef, useEffect } from "react"
 import styles from "./Hero.module.css"
 
 import vfo from '../assets/vfo_white.svg'
@@ -10,16 +9,6 @@ import { useTranslation } from "react-i18next"
 const Hero = () => {
 
     const { t } = useTranslation();
-
-    const refParallax = useRef();
-
-    useEffect(() => {
-        let scene = refParallax.current;
-
-        var parallaxInstance = new Parallax(scene, {
-            relativeInput: true
-        });
-    })
 
     return (
         <>
@@ -44,13 +33,6 @@ const Hero = () => {
                     </a>
                 </div>
                 <LangSwitcher />
-                <div className={styles.container}>
-                    <div data-relative-input="true" id={styles.scene} ref={refParallax}>
-                        <div className={styles.layer} data-depth="0.2">
-                            {/* <h1 id={styles.layer2}>Victor Freire Oliveira<br /><span className={styles.subtitle}>Front-End Developer</span></h1> */}
-                        </div>
-                    </div>
-                </div>
             </section>
         </>
     )
