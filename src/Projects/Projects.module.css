@@ -82,7 +82,7 @@ header {
     bottom: 0;
     text-align: center;
     font-size: 26px;
-    background-color: rgba(92.5, 92.5, 92.5, 0.5);
+    background-color: rgba(0, 0, 0, 0.7);
     backdrop-filter: blur(3px);
 
     & img {
