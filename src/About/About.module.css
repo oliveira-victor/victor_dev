@@ -1,6 +1,6 @@
 .about {
     min-height: 100vh;
-    background-color: #EBECEF;
+    background-color: #f2f2f2;
     padding-bottom: 100px;
 
     @media (max-width: 767px) {

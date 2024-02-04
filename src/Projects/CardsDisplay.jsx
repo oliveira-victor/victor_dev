@@ -34,6 +34,7 @@ const CardsDisplay = () => {
                     techs3={typescript}
                     techs4={styledComponents}
                     text={t('digitalDice')}
+                    api={true}
                 />
                 <Card
                     link="https://theavatarmaker.vercel.app/"
@@ -42,6 +43,7 @@ const CardsDisplay = () => {
                     techs1={react}
                     techs2={styledComponents}
                     text={t('cardAvatarMaker')}
+                    api={false}
                 />
                 <Card
                     link="https://doulamamimoon.com"
@@ -52,19 +54,34 @@ const CardsDisplay = () => {
                     techs3={sass}
                     techs4={gulp}
                     text={t('cardMamiMoon')}
+                    api={false}
                 />
                 <Card
-                    link="https://vfostudio.vercel.app/"
-                    id="vfostudio"
-                    cardTitle="VFO Studio"
+                    link="https://vfostories.vercel.app/"
+                    id="vfostories"
+                    cardTitle="VFO Stories"
                     techs1={html}
                     techs2={javascript}
                     techs3={sass}
                     techs4={gulp}
-                    text={t('cardVFOstudio')}
+                    text={t('cardVFOstories')}
+                    api={true}
                 />
                 {toggleExtraCards ?
                     <>
+                        <div className="fadeIn">
+                            <Card
+                                link="https://vfostudio.vercel.app/"
+                                id="vfostudio"
+                                cardTitle="VFO Studio"
+                                techs1={html}
+                                techs2={javascript}
+                                techs3={sass}
+                                techs4={gulp}
+                                text={t('cardVFOstudio')}
+                                api={false}
+                            />
+                        </div>
                         <div className="fadeIn">
                             <Card
                                 link="https://guessthenumber-game.vercel.app/"
@@ -74,17 +91,7 @@ const CardsDisplay = () => {
                                 techs2={css}
                                 techs3={javascript}
                                 text={t('cardNumbersGame')}
-                            />
-                        </div>
-                        <div className="fadeIn">
-                            <Card
-                                link="https://vfo-parallax.vercel.app/"
-                                id="parallaxjs"
-                                cardTitle="Parallax JS Template"
-                                techs1={html}
-                                techs2={css}
-                                techs3={javascript}
-                                text={t('cardParallaxJs')}
+                                api={false}
                             />
                         </div>
                     </>

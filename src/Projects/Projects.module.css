@@ -130,12 +130,33 @@ header {
     padding-bottom: 16px;
     position: relative;
 
-    .linkIcon {
-        width: 24px;
+    .bottom {
+        width: 100%;
         position: absolute;
         bottom: 0;
         right: 0;
+        display: flex;
+        justify-content: space-between;
+
+        button {
+            width: 40px;
+            height: 24px;
+            background-color: #8f8f8f;
+            border-radius: 12px;
+            border: none;
+            color: #fff;
+        }
+
+        img {
+            width: 24px;
+        }
+
+        .hideBtn {
+            visibility: hidden;
+        }
     }
+
+    
 }
 
 @media (max-width: 767px) {

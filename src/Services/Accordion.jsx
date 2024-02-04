@@ -16,7 +16,7 @@ const Accordion = (props) => {
         <div className={styles.accordionBox}>
             <div className={styles.question} onClick={accordionHandler}>
                 {question}
-                <img src={arrow} alt="Arrow icon" className={activeAccordion && "upsideDown"} />
+                <img src={arrow} alt="Arrow icon" className={activeAccordion ? "upsideDown" : ''} />
             </div>
             {activeAccordion &&
                 <div className={styles.answer}>

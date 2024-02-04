@@ -7,7 +7,7 @@ import linkIcon from '../assets/link-icon.svg'
 
 function Card(props) {
 
-    const { link, id, techs1, techs2, techs3, techs4, techs5, cardTitle, text } = props
+    const { link, id, techs1, techs2, techs3, techs4, techs5, cardTitle, text, api } = props
     let [cardIsVisible, setCardIsVisible] = useState()
 
     const cardRef = useRef()
@@ -43,7 +43,10 @@ function Card(props) {
                             <p>
                                 {text}
                             </p>
-                            <img className={styles.linkIcon} src={linkIcon} alt="Link icon" />
+                            <div className={styles.bottom}>
+                                <button className={api ? '' : styles.hideBtn}>API</button>
+                                <img src={linkIcon} alt="Link icon" />
+                            </div>
                         </div>
                     </div>
                 </div>
