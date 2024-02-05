@@ -32,6 +32,10 @@ const Hero = () => {
                         <img src={linkedin} alt="LinkedIn icon" title="LinkedIn" />
                     </a>
                 </div>
+                <div className={styles.sectionDivider}>
+                    <div className={styles.top}></div>
+                    <div className={styles.bottom}></div>
+                </div>
                 <LangSwitcher />
             </section>
         </>

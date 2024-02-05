@@ -95,6 +95,27 @@
         }
     }
 
+    .sectionDivider {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 60px;
+
+        .top {
+            height: 100%;
+            clip-path: polygon(0 0, 100% 0, 100% calc(100% - 50px), 50% 100%, 0 calc(100% - 50px));
+            background-color: #181818;
+        }
+
+        .bottom {
+            height: 100%;
+            clip-path: polygon(0 0, 50% 50px, 100% 0, 100% 100%, 0 100%);
+            margin-top: -50px;
+            background-color: #f2f2f2;
+        }
+    }
+
     .langSwitcher {
         z-index: 2;
         cursor: pointer;
@@ -169,10 +190,20 @@
     }
 }
 
-.fadeInGlow { animation: fadeInGlow 4s; }
+.fadeInGlow {
+    animation: fadeInGlow 4s;
+}
 
 @keyframes fadeInGlow {
-    0% { opacity: 0; }
-    50% { opacity: 0; }
-    100% { opacity: 0.7; }
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0.7;
+    }
 }
