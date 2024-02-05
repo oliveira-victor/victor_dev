@@ -79,8 +79,8 @@
     },
     "aboutSection": {
         "about": "About",
-        "aboutP1": "My name is Victor Freire Oliveira and I am a creative Software Engineer from Maceió, AL - Brazil. My focus is frontend development, which means I build digital products that users see and interact with. Since I found out how fun coding can be, I started developing my skills and working on different personal projects and doing freelance services.",
-        "aboutP2": "My experience started back in high school, learning HTML and CSS for fun, creating my own websites (old HotDog and Dreamweaver) about whatever subject I enjoyed. The following years I kept developing skills in different areas, including Graphic Design and digital art. Nowadays, I make use of all those skills to bring solution to people through technology, keeping curious and thirsty for learning new things and sharing my ideas.",
+        "aboutP1": "My name is <strong>Victor Freire Oliveira</strong> and I am a creative <strong>Software Engineer</strong> from Maceió, AL - Brazil. My focus is frontend development, which means I build <strong>digital products</strong> that users see and interact with. Since I found out how fun coding can be, I started developing my skills and working on different personal projects and doing freelance services.",
+        "aboutP2": "My experience started back in high school, learning HTML and CSS for fun, creating my own websites (old HotDog and Dreamweaver) about whatever subject I enjoyed. The following years I kept developing skills in different areas, including <strong>Graphic Design</strong> and <strong>digital art</strong>. Nowadays, I make use of all those skills to <strong>bring solution</strong> to people through technology, keeping curious and thirsty for learning new things and sharing my ideas.",
         "aboutP3": "For further information and updates, visit my",
         "aboutLink": "LinkedIn profile"
     },

@@ -1,6 +1,8 @@
 import { useTranslation } from 'react-i18next'
 import styles from './About.module.css'
 
+import { Trans } from 'react-i18next'
+
 import me from './assets/me.webp'
 
 const About = () => {
@@ -17,15 +19,15 @@ const About = () => {
                 <div className={styles.aboutTxtContainer}>
                     <div className={styles.aboutTxt}>
                         <p>
-                            {t('aboutP1')}
+                            <Trans i18nKey={t('aboutP1')} />
                         </p>
                         <br />
                         <p>
-                            {t('aboutP2')}
+                            <Trans i18nKey={t('aboutP2')} />
                         </p>
                         <br />
                         <p>
-                            {t('aboutP3')} <a href="https://www.linkedin.com/in/victor-fo/" target='_blank' rel="noreferrer">{t('aboutLink')}</a>.
+                            {t('aboutP3')} <a href="https://www.linkedin.com/in/victor-fo/" target='_blank' rel="noreferrer"><b>{t('aboutLink')}</b></a>.
                         </p>
                     </div>
                 </div>

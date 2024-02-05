@@ -79,8 +79,8 @@
     },
     "aboutSection": {
         "about": "Sobre",
-        "aboutP1": "Meu nome é Victor Freire Oliveira e sou um engenheiro de software criativo de Maceió, AL - Brasil. Meu foco é desenvolvimento front-end, o que significa que eu desenvolvo produtos digitais que os usuários vêem e com os quais interagem. Desde que eu descobri como criar códigos pode ser divertido, comecei a desenvolver minhas habilidades e a trabalhar em diferentes projetos pessoais e fazer serviços freelance.",
-        "aboutP2": "Minha experiência se iniciou no colégio, aprendendo HTML e CSS por diversão, criando meus próprios sites (antigo HotDog e Dreamweaver) sobre quaisquer assuntos que eu me interessava. Nos anos seguintes, mantive o desenvolvimento de habilidades em diferentes áreas, incluindo Design Gráfico e arte digital. Atualmente, faço uso de todas essas habilidades para trazer soluções a pessoas através da tecnologia, me mantendo curioso e sedento por aprender coisas novas e compartilhar minhas ideias.",
+        "aboutP1": "Meu nome é <strong>Victor Freire Oliveira</strong> e sou um <strong>engenheiro de software</strong> criativo de Maceió, AL - Brasil. Meu foco é desenvolvimento front-end, o que significa que eu desenvolvo <strong>produtos digitais</strong> que os usuários vêem e com os quais interagem. Desde que eu descobri como criar códigos pode ser divertido, comecei a desenvolver minhas habilidades e a trabalhar em diferentes projetos pessoais e fazer serviços freelance.",
+        "aboutP2": "Minha experiência se iniciou no colégio, aprendendo HTML e CSS por diversão, criando meus próprios sites (antigo HotDog e Dreamweaver) sobre quaisquer assuntos que eu me interessava. Nos anos seguintes, mantive o desenvolvimento de habilidades em diferentes áreas, incluindo <strong>Design Gráfico</strong> e <strong>arte digital</strong>. Atualmente, faço uso de todas essas habilidades para <strong>trazer soluções</strong> a pessoas através da tecnologia, me mantendo curioso e sedento por aprender coisas novas e compartilhar minhas ideias.",
         "aboutP3": "Para mais informações, visite meu",
         "aboutLink": "perfil no LinkedIn"
     },
