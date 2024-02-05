@@ -117,10 +117,10 @@ const Services = () => {
                             <div className={styles.charsContainer}>
                                 <Char tech={html} distance={screen.availWidth > 767 ? '90%' : '90%'} />
                                 <Char tech={css} distance={screen.availWidth > 767 ? '87%' : '84%'} />
-                                <Char tech={sass} distance={screen.availWidth > 767 ? '75%' : '73%'} />
+                                <Char tech={sass} distance={screen.availWidth > 767 ? '80%' : '73%'} />
                                 <Char tech={javascript} distance={screen.availWidth > 767 ? '63%' : '57%'} />
                                 <Char tech={react} distance={screen.availWidth > 767 ? '55%' : '45%'} />
-                                <Char tech={styledComponents} distance={screen.availWidth > 767 ? '46%' : '32%'} />
+                                <Char tech={styledComponents} distance={screen.availWidth > 767 ? '52%' : '36%'} />
                                 <Char tech={typescript} distance={screen.availWidth > 767 ? '23%' : '10%'} />
                             </div>
                             <p>{t('someExamples')}</p>

@@ -43,9 +43,12 @@
             padding: 40px 0;
 
             .aboutTxt {
-                line-height: 1.6;
-                background-color: #f1eac1;
-                padding: 24px;
+
+                p {
+                    line-height: 1.6;
+                    background-color: #f1eac1;
+                    padding: 24px;
+                }
 
                 & a {
                     color: #70c2b7;
