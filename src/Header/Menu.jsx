@@ -1,13 +1,20 @@
 import { useTranslation } from 'react-i18next'
 import styles from './Header.module.css'
 
-const Menu = () => {
+import lightLogo from '../assets/vfo_white.svg'
+import darkLogo from '../assets/vfo_dark.svg'
+
+const Menu = ({ transparentNavbar }) => {
 
     const { t } = useTranslation()
 
     return (
         <>
-            <div className={styles.logo}></div>
+            <div className={styles.logo}>
+                <h1>
+                    <img src={transparentNavbar ? darkLogo : lightLogo} alt="Victor Freire Oliveira - Front-End Developer" />
+                </h1>
+            </div>
             <div>
                 <ul className={styles.menu}>
                     <a href="#main">

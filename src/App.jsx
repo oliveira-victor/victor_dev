@@ -8,7 +8,7 @@ import Services from "./Services"
 function App() {
 
   return (
-    <div className="container">
+    <div className="wrapper">
       <Header />
       <Hero />
       <Services />

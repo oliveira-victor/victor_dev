@@ -16,7 +16,7 @@ const Header = () => {
     return (
         <header className={transparentNavbar ? styles.solidHeader : styles.header}>
             <nav className={styles.headerContainer}>
-                <Menu />
+                <Menu transparentNavbar={transparentNavbar} />
                 <PhoneMenu />
             </nav>
         </header>

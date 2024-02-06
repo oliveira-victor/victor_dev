@@ -68,11 +68,13 @@
 .logo {
     width: 40px;
     height: 100%;
-    background-image: url('../assets/vfo_white.svg');
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
     transition: all 1s ease;
+    display: flex;
+    align-items: center;
+
+    img {
+        width: 100%;
+    }
 
     @media (max-width: 767px) {
         display: none;
