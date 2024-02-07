@@ -20,7 +20,7 @@ const Contact = () => {
                     </p>
                     <div className={styles.iconsContainer}>
                         <a href="https://www.linkedin.com/in/victor-fo/" target="_blank" rel="noreferrer"><img src={linkedin} alt="LinkedIn icon" /></a>
-                        <a href="mailto:victor.freire.oliveira@gmail.com"><img src={gmail} alt="Gmail icon" /></a>
+                        <a href="mailto:dev.victor.fo@gmail.com"><img src={gmail} alt="Gmail icon" /></a>
                         <a href="https://github.com/oliveira-victor" target="_blank" rel="noreferrer"><img src={github} alt="Gmail icon" /></a>
                     </div>
                 </div>
