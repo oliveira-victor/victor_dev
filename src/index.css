@@ -44,7 +44,8 @@ li {
 .wrapper {
   max-width: 1920px;
   margin: 0 auto;
-  position: relative;
+  z-index: 1;
+  position: sticky;
 }
 
 /* Effects */
