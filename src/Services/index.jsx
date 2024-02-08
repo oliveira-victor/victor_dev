@@ -66,28 +66,28 @@ const Services = () => {
                                 <div className={styles.servicesIcons}>
                                     <div className={styles.servCard}>
                                         <img src={service1} alt="Laptop and smartphone icons" />
-                                        <span className={styles.servCardTitle}>{t('responsive')}</span>
+                                        <h3 className={styles.servCardTitle}>{t('responsive')}</h3>
                                         <p>
                                             {t('responsiveSub')}
                                         </p>
                                     </div>
                                     <div className={styles.servCard}>
                                         <img src={service2} alt="Clock icon" />
-                                        <span className={styles.servCardTitle}>{t('fast')}</span>
+                                        <h3 className={styles.servCardTitle}>{t('fast')}</h3>
                                         <p>
                                             {t('fastSub')}
                                         </p>
                                     </div>
                                     <div className={styles.servCard}>
                                         <img src={service3} alt="Thumb up icon" />
-                                        <span className={styles.servCardTitle}>{t('userFriendly')}</span>
+                                        <h3 className={styles.servCardTitle}>{t('userFriendly')}</h3>
                                         <p>
                                             {t('userFriendlySub')}
                                         </p>
                                     </div>
                                     <div className={styles.servCard}>
                                         <img src={service4} alt="Planets icon" />
-                                        <span className={styles.servCardTitle}>{t('dynamic')}</span>
+                                        <h3 className={styles.servCardTitle}>{t('dynamic')}</h3>
                                         <p>
                                             {t('dynamicSub')}
                                         </p>
