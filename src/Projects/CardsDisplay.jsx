@@ -67,6 +67,17 @@ const CardsDisplay = () => {
                     text={t('cardVFOstories')}
                     api={true}
                 />
+                {!toggleExtraCards ?
+                    <div className={styles.loadMoreCardsMobile}>
+                        <div>
+                            <button className={styles.loadMoreCardsMobile} onClick={() => setToggleExtraCards(true)}>
+                                +
+                            </button>
+                            <span>More</span>
+                        </div>
+                    </div>
+                    : ''
+                }
                 {toggleExtraCards ?
                     <>
                         <div className="fadeIn">
@@ -102,24 +113,6 @@ const CardsDisplay = () => {
                 <div className={styles.loadMoreCards} onClick={() => setToggleExtraCards(true)}><span>{t('loadMoreCards')}</span> <img className="float" src={arrow} alt="Arrow down icon" /></div>
                 : ''
             }
-            {/* <Card 
-            link="https://fortunecookies.vercel.app/"
-            id="card_img6" 
-            cardTitle="Fortune Cookies" 
-            techs1={html}
-            techs2={css}
-            techs3={javascript}
-            text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eu ipsum ac lacus egestas rutrum ac eu eros. Proin ac tempus tortor. Morbi quam turpis, lobortis nec diam id, porta condimentum ante. Ut elementum placerat consequat. Integer luctus ipsum et tellus luctus vehicula."
-        /> */}
-            {/* <Card 
-            link="https://todolist-vfo.vercel.app/"
-            id="card_img7" 
-            cardTitle="To Do List" 
-            techs1={html}
-            techs2={css}
-            techs3={javascript}
-            text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eu ipsum ac lacus egestas rutrum ac eu eros. Proin ac tempus tortor. Morbi quam turpis, lobortis nec diam id, porta condimentum ante. Ut elementum placerat consequat. Integer luctus ipsum et tellus luctus vehicula."
-        /> */}
         </>
     )
 }
