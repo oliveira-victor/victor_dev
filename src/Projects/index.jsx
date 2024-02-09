@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next"
-import Cards from "./CardsDisplay"
+import CardsDisplay from "./CardsDisplay"
 
 import styles from "./Projects.module.css"
 
@@ -14,7 +14,7 @@ function Projects() {
         <section className={styles.projects} id="projects">
             <h2>{t('projects')}</h2>
             <div className={styles.container}>
-                <Cards />
+                <CardsDisplay />
             </div>
             <br />
             <div className={styles.projectsTxt}>
