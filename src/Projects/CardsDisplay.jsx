@@ -73,7 +73,7 @@ const CardsDisplay = () => {
                             <button className={styles.loadMoreCardsMobile} onClick={() => setToggleExtraCards(true)}>
                                 +
                             </button>
-                            <span>More</span>
+                            <span>{t('loadMoreCardsMobile')}</span>
                         </div>
                     </div>
                     : ''

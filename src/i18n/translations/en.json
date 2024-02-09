@@ -75,6 +75,7 @@
         "cardNumbersGame": "This game is a personal project built entirely in Vanilla JavaScript, as a self challenge to test and improve my coding skills, creating all the logics, rules and challenges involved. All the visual elements were created by me.",
         "cardVFOstories": "A page with short stories illustrated by VFO Studio that include audio, listed through API data consumption. Animated parallax effects made with Parallax JS plugin.",
         "loadMoreCards": "See more projects",
+        "loadMoreCardsMobile": "More",
         "vfoDevNote": "This page was designed and developed with ReactJS + Vite and the graphic tools Gimp and Inkscape."
     },
     "aboutSection": {
