@@ -273,6 +273,7 @@
 
                         & img {
                             width: 20px;
+                            transition: all .3s ease;
                         }
                     }
 
