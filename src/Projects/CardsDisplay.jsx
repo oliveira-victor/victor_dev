@@ -41,7 +41,9 @@ const CardsDisplay = () => {
                     id="avatarmaker"
                     cardTitle="Avatar Maker"
                     techs1={react}
-                    techs2={styledComponents}
+                    techs2={redux}
+                    techs3={typescript}
+                    techs4={styledComponents}
                     text={t('cardAvatarMaker')}
                     api={false}
                 />
