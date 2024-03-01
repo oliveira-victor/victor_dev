@@ -171,6 +171,10 @@ header {
     padding-bottom: 16px;
     position: relative;
 
+    h3 {
+        font-family: 'Federo', sans-serif;
+    }
+
     .bottom {
         width: 100%;
         position: absolute;

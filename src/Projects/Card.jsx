@@ -39,7 +39,7 @@ function Card(props) {
                     </div>
                     <div className={`${styles.card__content} ${cardIsVisible && screen.availWidth < 1024 ? styles.moveCardContent : ''}`}>
                         <div className={styles.card__content__wrapper}>
-                            <h3>{cardTitle}</h3>
+                            <h3>- {cardTitle} -</h3>
                             <p>
                                 {text}
                             </p>

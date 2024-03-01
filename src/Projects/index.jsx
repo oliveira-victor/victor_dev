@@ -12,7 +12,7 @@ function Projects() {
 
     return (
         <section className={styles.projects} id="projects">
-            <h2>{t('projects')}</h2>
+            <h2 className="cardTitle">{t('projects')}</h2>
             <div className={styles.container}>
                 <CardsDisplay />
             </div>
