@@ -36,6 +36,7 @@
                 margin-bottom: 20px;
                 cursor: pointer;
                 border: none;
+                transition: all .5s ease;
             }
 
             .unselectedButton {
