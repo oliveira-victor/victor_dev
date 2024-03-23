@@ -336,3 +336,16 @@
         }
     }
 }
+
+@keyframes jump {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-25px); }
+    100% { transform: translateY(0); }
+}
+
+@keyframes shake {
+    25% { rotate: -5deg; }
+    50% { rotate: 5deg; }
+    75% { rotate: -5deg; }
+    100% { rotate: 5deg; }
+}
