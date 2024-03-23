@@ -37,12 +37,12 @@ const Services = () => {
             <h2>{t('servicesTitle')}</h2>
             <div className={styles.servicesContainer}>
                 <div className={styles.buttonsWrapper}>
-                    <div className={!switchTab ? `${styles.serviceBtn_isSelected} ${styles.servicesBtn}` : `${styles.servicesBtn}`} onClick={() => setSwitchTab(false)}>
-                        <h3 className={!switchTab ? `${styles.selectedBtn}` : ''}>{t('webdev')}</h3>
-                    </div>
-                    <div className={switchTab ? `${styles.serviceBtn_isSelected} ${styles.servicesBtn}` : `${styles.servicesBtn}`} onClick={() => setSwitchTab(true)}>
-                        <h3 className={switchTab ? `${styles.selectedBtn}` : ''}>{t('design')}</h3>
-                    </div>
+                    <button className={!switchTab ? styles.selectedButton : styles.unselectedButton} onClick={() => setSwitchTab(false)}>
+                        <h3 className={!switchTab ? styles.selectedBtn : ''}>{t('webdev')}</h3>
+                    </button>
+                    <button className={switchTab ? styles.selectedButton : styles.unselectedButton} onClick={() => setSwitchTab(true)}>
+                        <h3 className={switchTab ? styles.selectedBtn : ''}>{t('design')}</h3>
+                    </button>
                 </div>
                 {!switchTab &&
                     <div className={`fadeIn ${styles.canvas}`}>
