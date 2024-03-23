@@ -16,7 +16,7 @@ const Contact = () => {
                 <h2>{t('contact')}</h2>
                 <div className={styles.container}>
                     <p>
-                        {t('contactInfo')}
+                        {t('contactInfo')}<br />dev.victor.fo@gmail.com
                     </p>
                     <div className={styles.iconsContainer}>
                         <a href="https://www.linkedin.com/in/victor-fo/" target="_blank" rel="noreferrer"><img src={linkedin} alt="LinkedIn icon" /></a>

@@ -1,0 +1,244 @@
+.modal {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+
+    & .overlay {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    & .modalContainer {
+        background-color: #f0f0f0;
+        border-radius: 30px;
+        max-width: 1024px;
+        max-height: 90vh;
+        width: 94%;
+        height: 100%;
+        z-index: 101;
+        position: relative;
+
+        & .modalCover {
+            width: 100%;
+            height: 30vh;
+            border-radius: 30px 30px 0 0;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+
+            @media (max-width: 767px) {
+                height: 20vh;
+            }
+
+            img {
+                width: 40px;
+                position: absolute;
+                top: 0;
+                right: 0;
+                background-color: rgba(255, 255, 255, 0.6);
+                padding: 8px;
+                transform: translate(-10px, 10px);
+                border-radius: 50%;
+                cursor: pointer;
+                transition: all .3s ease;
+
+                &:hover {
+                    background-color: #fff;
+                }
+            }
+
+            & .modalTitle {
+                background-color: rgba(0, 0, 0, 0.6);
+                backdrop-filter: blur(10px);
+                color: #fff;
+                width: 100%;
+                padding: 24px 0;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+
+                @media (max-width: 767px) {
+                    padding: 10px 0;
+                }
+            }
+        }
+
+        .modalContent {
+            display: flex;
+            flex-direction: column;
+            height: 60vh;
+            padding: 20px;
+
+            @media (max-width: 767px) {
+                height: 70vh;
+            }
+
+            .upContainer {
+                display: grid;
+                grid-template-columns: 20% auto;
+                gap: 20px;
+                flex-grow: 1;
+                overflow-y: auto;
+
+                @media (max-width: 767px) {
+                    display: flex;
+                    flex-direction: column;
+                }
+
+                aside {
+
+                    @media (max-width: 767px) {
+                        display: flex;
+                        gap: 10px;
+                    }
+
+                    button {
+                        font-family: 'Roboto Condensed', sans-serif;
+                        width: 100%;
+                        padding: 10px 0;
+                        font-size: 24px;
+                        margin-bottom: 20px;
+                        cursor: pointer;
+                        border: none;
+                    }
+
+                    .unselectedButton {
+                        color: #a4a4a4;
+                        border-radius: 10px;
+                        background: #f0f0f0;
+                        box-shadow: 8px 8px 16px #cccccc,
+                            -8px -8px 16px #ffffff;
+                    }
+
+                    .selectedButton {
+                        color: #4c978d;
+                        border-radius: 10px;
+                        background: #f0f0f0;
+                        box-shadow: inset 8px 8px 16px #cccccc,
+                            inset -8px -8px 16px #ffffff;
+                    }
+                }
+
+                .mainContainer {
+
+                    @media (max-width: 767px) {
+                        font-size: 16px;
+                    }
+
+                    .mediaContainer {
+
+                        video {
+                            border-radius: 20px;
+                        }
+                    }
+
+                    .detailsTab {
+                        p {
+                            margin-bottom: 16px;
+                        }
+                    }
+                }
+            }
+
+
+            .bottomContainer {
+                background-color: #f0f0f0;
+                border-radius: 0 0 30px 30px;
+                padding-top: 20px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                z-index: 110;
+                flex-shrink: 0;
+
+                & img {
+                    height: 34px;
+                    margin-right: 10px;
+                }
+
+                & button {
+                    cursor: pointer;
+                    padding: 10px 40px;
+                    margin-left: 20px;
+                    font-size: 20px;
+                    font-weight: bold;
+                    font-family: 'Roboto Condensed', sans-serif;
+                    background-color: #70c2b7;
+                    color: #fff;
+                    border: none;
+                    border-radius: 6px;
+                }
+
+                .btnContainer {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    gap: 10px;
+
+                    .codeBtn {
+                        border: 1px solid #70c2b7;
+                        background-color: transparent;
+                        color: #70c2b7;
+
+                        &:hover {
+                            background-color: #70c2b7;
+                            color: #fff;
+                        }
+                    }
+
+                    .siteBtn {
+                        &:hover {
+                            background-color: #4c978d;
+                        }
+                    }
+
+                    .offBtn {
+                        border: 1px solid #a4a4a4;
+                        background-color: transparent;
+                        color: #a4a4a4;
+
+                        &:hover {
+                            background-color: transparent;
+                            text-decoration: line-through;
+                        }
+                    }
+                }
+
+                @media (max-width: 767px) {
+                    flex-direction: column;
+                    gap: 6px;
+                    text-align: center;
+
+                    img {
+                        height: 24px;
+                    }
+
+                    button {
+                        padding: 10px 10px;
+                        margin-left: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    h3 {
+        font-family: 'Federo', sans-serif;
+        text-align: center;
+        font-size: 40px;
+        font-weight: lighter;
+
+        @media (max-width: 767px) {
+            font-size: 30px;
+        }
+    }
+}

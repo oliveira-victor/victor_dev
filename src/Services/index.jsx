@@ -30,32 +30,21 @@ const Services = () => {
 
     const { t } = useTranslation('servicesSection')
 
-    const [toggleWebdev, setToggleWebdev] = useState(true);
-    const [toggleDesign, setToggleDesign] = useState(false);
-
-    const handleToggleWebdev = () => {
-        setToggleDesign(false);
-        setToggleWebdev(true);
-    }
-
-    const handleToggleDesign = () => {
-        setToggleWebdev(false);
-        setToggleDesign(true);
-    }
+    const [switchTab, setSwitchTab] = useState(false);
 
     return (
         <section className={styles.services} id="services">
             <h2>{t('servicesTitle')}</h2>
             <div className={styles.servicesContainer}>
                 <div className={styles.buttonsWrapper}>
-                    <div className={toggleWebdev ? `${styles.serviceBtn_isSelected} ${styles.servicesBtn}` : `${styles.servicesBtn}`} onClick={handleToggleWebdev}>
-                        <h3 className={toggleWebdev ? `${styles.selectedBtn}` : ''}>{t('webdev')}</h3>
+                    <div className={!switchTab ? `${styles.serviceBtn_isSelected} ${styles.servicesBtn}` : `${styles.servicesBtn}`} onClick={() => setSwitchTab(false)}>
+                        <h3 className={!switchTab ? `${styles.selectedBtn}` : ''}>{t('webdev')}</h3>
                     </div>
-                    <div className={toggleDesign ? `${styles.serviceBtn_isSelected} ${styles.servicesBtn}` : `${styles.servicesBtn}`} onClick={handleToggleDesign}>
-                        <h3 className={toggleDesign ? `${styles.selectedBtn}` : ''}>{t('design')}</h3>
+                    <div className={switchTab ? `${styles.serviceBtn_isSelected} ${styles.servicesBtn}` : `${styles.servicesBtn}`} onClick={() => setSwitchTab(true)}>
+                        <h3 className={switchTab ? `${styles.selectedBtn}` : ''}>{t('design')}</h3>
                     </div>
                 </div>
-                {toggleWebdev &&
+                {!switchTab &&
                     <div className={`fadeIn ${styles.canvas}`}>
                         <div className={styles.upContainer}>
                             <div className={styles.leftSide}>
@@ -148,12 +137,12 @@ const Services = () => {
                                 question={t('question6')}
                                 answer={t('answer6')}
                             />
-                            <a href='#services' onClick={handleToggleDesign}>
+                            <a href='#services' onClick={() => setSwitchTab(!switchTab)}>
                                 <button className={styles.changeServiceLink}>{t('seeAlsoDesign')}</button>
                             </a>
                         </div>
                     </div>}
-                {toggleDesign &&
+                {switchTab &&
                     <div className={`fadeIn ${styles.canvas}`}>
                         <div className={styles.upContainer}>
                             <div className={styles.leftSide}>
@@ -245,7 +234,7 @@ const Services = () => {
                                 answer={t('designAnswer6')}
                             />
                             
-                            <a href='#services' onClick={handleToggleWebdev}>
+                            <a href='#services' onClick={() => setSwitchTab(!switchTab)}>
                                 <button className={styles.changeServiceLink}>{t('seeAlsoDev')}</button>
                             </a>
                         </div>

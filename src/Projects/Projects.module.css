@@ -83,6 +83,7 @@ header {
 .card_container {
     width: 300px;
     height: 500px;
+    cursor: pointer;
 }
 
 .card {
@@ -183,21 +184,12 @@ header {
         display: flex;
         justify-content: space-between;
 
-        button {
-            width: 40px;
-            height: 24px;
-            background-color: #8f8f8f;
-            border-radius: 12px;
-            border: none;
-            color: #fff;
-        }
-
         img {
             width: 24px;
         }
 
-        .hideBtn {
-            visibility: hidden;
+        .apiBtn {
+            width: 32px;
         }
     }
 

@@ -1,9 +1,8 @@
-.solidHeader {
+.header {
     max-width: 1920px;
     width: 60%;
     height: 80px;
     border-radius: 25px;
-    background-color: #fff;
     display: flex;
     box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.3);
     position: fixed;
@@ -12,10 +11,6 @@
     transform: translate(-50%, -50%);
     z-index: 100;
     transition: all 1s ease;
-
-    .logo{
-        background-image: url('../assets/vfo_dark.svg');
-    }
 
     @media (max-width: 767px) {
         top: auto;
@@ -26,21 +21,25 @@
     }
 }
 
-.header {
-    max-width: 1920px;
-    width: 60%;
-    height: 80px;
-    border-radius: 25px;
+.transparentHeader {
     background-color: rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(7px);
-    display: flex;
-    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.3);
-    position: fixed;
-    top: 6%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 100;
-    transition: all 1s ease;
+
+    a {
+        color: #fff;
+    }
+}
+
+.solidHeader {
+    background-color: #fff;
+
+    a {
+        color: #aaa;
+    }
+
+    .logo {
+        background-image: url('../assets/vfo_dark.svg');
+    }
 
     @media (max-width: 767px) {
         top: auto;
@@ -48,14 +47,6 @@
         transform: translate(-50%, -10%);
         width: 95%;
         border-radius: 20px;
-    }
-
-    & li {
-        color: #fff;
-    }
-
-    a {
-        color: #000;
     }
 }
 
@@ -94,6 +85,9 @@
 .menu li {
     margin: auto 30px;
     font-size: 22px;
+}
+
+.menu a {
     transition: all .5s ease;
 
     &:hover {

@@ -39,7 +39,7 @@
         "answer6": "É uma ótima maneira de evitar aquelas páginas de links sociais sempre usadas que você vê nos links de bios nas mídias sociais. Você pode ter sua página de links personalizada e interativa, que vai representar você ou seu negócio de maneira profissional.",
         "seeAlsoDesign": "Confira também meus serviços de design multimídia",
         "designTitle": "Eu crio interfaces gráficas e belas artes!",
-        "uiux": "UI/UX",
+        "uiux": "Interface de usuário",
         "uiuxSub": "Elementos visuais que são belos e funcionais para a web e apps",
         "graphicDesign": "Design Gráfico",
         "graphicDesignSub": "De interfaces a criação de logo e manipulação de imagem",
@@ -68,15 +68,20 @@
     },
     "projectsSection": {
         "projects": "Projetos",
-        "digitalDice": "Um eCommerce fictício criado por mim com React JS, Redux, TypeScript e Styled-Components. Todos os jogos fictícios inclusos, consumidos por uma API, foram criados por mim e suas imagens geradas por I.A., a partir de prompts que forneci.",
+        "cardDigitalDice": "Um eCommerce fictício criado por mim com React JS, Redux, TypeScript e Styled-Components. Todos os jogos fictícios inclusos, consumidos por uma API, foram criados por mim e suas imagens geradas por I.A., a partir de prompts que forneci.",
         "cardVFOstudio": "Este é um portfólio, um estúdio de arte e design criado por mim, onde eu divulgo meus serviços e posto minhas artes. A ideia é ser simples, porém artistico e inspirador, com atenção aos detalhes.",
-        "cardAvatarMaker": "Uma aplicação web interativa na qual criei o conceito, desenvolvi todo o código e os aspectos visuais, inclusive fazendo todas as ilustrações digitais. É possível criar diferentes avatares e salvá-los (função possibilitada com a implementação do html-to-image).",
+        "cardAvatarMaker": "Uma aplicação web interativa na qual criei o conceito, desenvolvi todo o código e os aspectos visuais, inclusive fazendo todas as ilustrações digitais. É possível criar diferentes avatares e salvá-los (função possibilitada com a implementação do html2canvas).",
         "cardMamiMoon": "Para este projeto eu tive que criar toda a parte de UI/UX, incluindo a criação da logo e dos ícones. Além disso, decidi quais tecnologias seriam mais apropriadas para um site rápido, responsivo e eficiente, trabalhando no SEO e mantendo uma alta performance.",
-        "cardNumbersGame": "Um projeto pessoal de jogo construído inteiramente em Vanilla JavaScript, como um desafio próprio para testar e melhorar minhas habilidades de programação, criando toda a lógica, regras e desafios involvidos. Todas as imagens foram feitas por mim.",
+        "cardNumbersGame": "Um projeto pessoal de jogo construído inteiramente em Vanilla JavaScript, como um desafio próprio para testar e melhorar minhas habilidades de programação, criando toda a lógica, regras e desafios envolvidos. Todas as imagens foram feitas por mim.",
         "cardVFOstories": "Uma página com histórias ilustradas por VFO Studio que acompanham audio, listadas a partir de dados consumidos por meio de API. Efeitos animados de parallax com o plugin Parallax JS.",
         "loadMoreCards": "Ver mais projetos",
         "loadMoreCardsMobile": "Mais",
-        "vfoDevNote": "Esta página foi desenhada e desenvolvida com ReactJS + Vite, e as ferramentas gráficas Gimp e Inkscape."
+        "vfoDevNote": "Esta página foi desenhada e desenvolvida com ReactJS + Vite, e as ferramentas gráficas Gimp e Inkscape.",
+        "modalTab1": "Apresentação",
+        "modalTab2": "Descrição",
+        "listTitle": "Principais tecnologias usadas neste projeto:",
+        "codeBtn": "Código fonte",
+        "siteBtn": "Visite a página"
     },
     "aboutSection": {
         "about": "Sobre",
@@ -87,6 +92,6 @@
     },
     "contactSection": {
         "contact": "Contato",
-        "contactInfo": "Obrigado por visitar minha página! Você pode entrar em contato comigo pelas redes sociais ou apenas me enviando um email em: dev.victor.fo@gmail.com"
+        "contactInfo": "Obrigado por visitar minha página! Você pode entrar em contato comigo pelas redes sociais ou apenas me enviando um email em:"
     }
 }

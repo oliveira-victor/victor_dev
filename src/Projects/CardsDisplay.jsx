@@ -16,11 +16,100 @@ import typescript from '../assets/ico-typescript.svg'
 
 import arrow from '../assets/arrow.svg'
 
+import digitaldice from './assets/digitaldice.webp'
+import avatarmaker from './assets/avatarmaker.webp'
+import mamimoon from './assets/mamimoon.webp'
+import vfostories from './assets/vfostories.webp'
+import vfostudio from './assets/vfo-theme.webp'
+import number from './assets/number.webp'
+
+import digitalDiceVideo from './assets/digitaldice-video.mp4'
+import avatarMakerVideo from './assets/avatarmaker-video.mp4'
+import mamiMoonVideo from './assets/mamimoon-video.mp4'
+import VFOStoriesVideo from './assets/vfostories-video.mp4'
+import VFOStudioVideo from './assets/vfostudio-video.mp4'
+import guessTheNumberVideo from './assets/guessthenumber-video.mp4'
+
 const CardsDisplay = () => {
 
     const { t } = useTranslation("projectsSection")
 
     const [toggleExtraCards, setToggleExtraCards] = useState(false)
+
+    const modalData = [
+        {
+            id: 1,
+            title: "Digital Dice",
+            image: digitaldice,
+            media: digitalDiceVideo,
+            text: t('cardDigitalDice'),
+            techs: [react, redux, typescript, styledComponents],
+            list: ["React", "Redux", "TyoeScript", "Styled-Components", "React-Router-DOM", "Formik", "Yup", "API"],
+            api: true,
+            github: "https://github.com/oliveira-victor/digital_dice",
+            pageLink: "https://digitaldice.vercel.app/"
+        },
+        {
+            id: 2,
+            title: "Avatar Maker",
+            image: avatarmaker,
+            media: avatarMakerVideo,
+            text: t('cardAvatarMaker'),
+            techs: [react, redux, typescript, styledComponents],
+            list: ["React", "Redux", "TypeScript", "Styled-Components", "i18next", "html2canvas"],
+            api: false,
+            github: "https://github.com/oliveira-victor/avatar_maker",
+            pageLink: "https://theavatarmaker.vercel.app/"
+        },
+        {
+            id: 3,
+            title: "Mami Moon",
+            image: mamimoon,
+            media: mamiMoonVideo,
+            text: t('cardMamiMoon'),
+            techs: [html, javascript, sass, gulp],
+            list: ["HTML", "JavaScript", "Sass", "Gulp", "AOS", "Formsubmit"],
+            api: false,
+            github: "unavailable",
+            pageLink: "https://doulamamimoon.com/"
+        },
+        {
+            id: 4,
+            title: "VFO Stories",
+            image: vfostories,
+            media: VFOStoriesVideo,
+            text: t('cardVFOstories'),
+            techs: [html, javascript, sass, gulp],
+            list: ["HTML", "JavaScript", "Sass", "Gulp", "API"],
+            api: true,
+            github: "https://github.com/oliveira-victor/VFO_stories",
+            pageLink: "https://vfostories.vercel.app/"
+        },
+        {
+            id: 5,
+            title: "VFO Studio",
+            image: vfostudio,
+            media: VFOStudioVideo,
+            text: t('cardVFOstudio'),
+            techs: [html, javascript, sass, gulp],
+            list: ["HTML", "JavaScript", "Sass", "Gulp"],
+            api: false,
+            github: "https://github.com/oliveira-victor/VFO_Studio",
+            pageLink: "https://vfostudio.vercel.app/"
+        },
+        {
+            id: 6,
+            title: "Guess The Number",
+            image: number,
+            media: guessTheNumberVideo,
+            text: t('cardNumbersGame'),
+            techs: [html, css, javascript],
+            list: ["HTML", "CSS", "JavaScript"],
+            api: false,
+            github: "https://github.com/oliveira-victor/guess_the_number",
+            pageLink: "https://guessthenumber-game.vercel.app/"
+        }
+    ]
 
     return (
         <>
@@ -29,45 +118,37 @@ const CardsDisplay = () => {
                     link="https://digitaldice.vercel.app/"
                     id="digitaldice"
                     cardTitle="Digital Dice"
-                    techs1={react}
-                    techs2={redux}
-                    techs3={typescript}
-                    techs4={styledComponents}
-                    text={t('digitalDice')}
+                    image={digitaldice}
+                    text={t('cardDigitalDice')}
                     api={true}
+                    modal={modalData[0]}
                 />
                 <Card
                     link="https://theavatarmaker.vercel.app/"
                     id="avatarmaker"
                     cardTitle="Avatar Maker"
-                    techs1={react}
-                    techs2={redux}
-                    techs3={typescript}
-                    techs4={styledComponents}
+                    image={avatarmaker}
                     text={t('cardAvatarMaker')}
                     api={false}
+                    modal={modalData[1]}
                 />
                 <Card
                     link="https://doulamamimoon.com"
                     id="mamimoon"
                     cardTitle="Mami Moon"
-                    techs1={html}
-                    techs2={javascript}
-                    techs3={sass}
-                    techs4={gulp}
+                    image={mamimoon}
                     text={t('cardMamiMoon')}
                     api={false}
+                    modal={modalData[2]}
                 />
                 <Card
                     link="https://vfostories.vercel.app/"
                     id="vfostories"
                     cardTitle="VFO Stories"
-                    techs1={html}
-                    techs2={javascript}
-                    techs3={sass}
-                    techs4={gulp}
+                    image={vfostories}
                     text={t('cardVFOstories')}
                     api={true}
+                    modal={modalData[3]}
                 />
                 {!toggleExtraCards ?
                     <div className={styles.loadMoreCardsMobile}>
@@ -87,12 +168,10 @@ const CardsDisplay = () => {
                                 link="https://vfostudio.vercel.app/"
                                 id="vfostudio"
                                 cardTitle="VFO Studio"
-                                techs1={html}
-                                techs2={javascript}
-                                techs3={sass}
-                                techs4={gulp}
+                                image={vfostudio}
                                 text={t('cardVFOstudio')}
                                 api={false}
+                                modal={modalData[4]}
                             />
                         </div>
                         <div className="fadeIn">
@@ -100,11 +179,10 @@ const CardsDisplay = () => {
                                 link="https://guessthenumber-game.vercel.app/"
                                 id="guessthenumber"
                                 cardTitle="Guess The Number"
-                                techs1={html}
-                                techs2={css}
-                                techs3={javascript}
+                                image={number}
                                 text={t('cardNumbersGame')}
                                 api={false}
+                                modal={modalData[5]}
                             />
                         </div>
                     </>

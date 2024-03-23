@@ -17,31 +17,21 @@ const Menu = ({ transparentNavbar }) => {
             </div>
             <div>
                 <ul className={styles.menu}>
-                    <a href="#main">
-                        <li>
-                            {t('home')}
-                        </li>
-                    </a>
-                    <a href="#services">
-                        <li>
-                            {t('services')}
-                        </li>
-                    </a>
-                    <a href="#projects">
-                        <li>
-                            {t('projects')}
-                        </li>
-                    </a>
-                    <a href="#about">
-                        <li>
-                            {t('about')}
-                        </li>
-                    </a>
-                    <a href="#contact">
-                        <li>
-                            {t('contact')}
-                        </li>
-                    </a>
+                    <li>
+                        <a href="#main">{t('home')}</a>
+                    </li>
+                    <li>
+                        <a href="#services">{t('services')}</a>
+                    </li>
+                    <li>
+                        <a href="#projects">{t('projects')}</a>
+                    </li>
+                    <li>
+                        <a href="#about">{t('about')}</a>
+                    </li>
+                    <li>
+                        <a href="#contact">{t('contact')}</a>
+                    </li>
                 </ul>
             </div>
         </>

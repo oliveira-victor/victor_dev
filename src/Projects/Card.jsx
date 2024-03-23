@@ -1,14 +1,20 @@
 import { useRef, useEffect, useState } from "react"
 
+import Modal from "./Modal"
+
 import styles from "./Projects.module.css"
 import './cardsImgs.css'
 
 import linkIcon from '../assets/link-icon.svg'
+import apiIcon from '../assets/api.svg'
 
 function Card(props) {
 
-    const { link, id, techs1, techs2, techs3, techs4, techs5, cardTitle, text, api } = props
+    const { cardTitle, image, text, api, modal } = props
+
     let [cardIsVisible, setCardIsVisible] = useState()
+
+    const [modalIsOpen, setModalIsOpen] = useState(false)
 
     const cardRef = useRef()
 
@@ -24,17 +30,20 @@ function Card(props) {
         observer.observe(cardRef.current)
     }, [])
 
+    const closeModal = () => {
+        setModalIsOpen(false)
+    }
+
     return (
-        <a href={link} target="_blank" rel="noreferrer">
-            <div ref={cardRef} className={styles.card_container}>
+        <>
+            {modalIsOpen && <Modal closeModal={closeModal} modalData={modal} />}
+            <div ref={cardRef} className={styles.card_container} onClick={() => setModalIsOpen(true)}>
                 <div className={`${styles.card} ${cardIsVisible && screen.availWidth < 1024 ? styles.move_card : ''}`}>
-                    <div className={styles.card__img} id={id}>
+                    <div className={styles.card__img} style={{backgroundImage: `url(${image})`}}>
                         <div className={styles.card__techs}>
-                            <img src={techs1} />
-                            <img src={techs2} />
-                            <img src={techs3} />
-                            <img src={techs4} />
-                            <img src={techs5} />
+                            {modal.techs.map((tech) => (
+                                <img key={tech} src={tech} />
+                            ))}
                         </div>
                     </div>
                     <div className={`${styles.card__content} ${cardIsVisible && screen.availWidth < 1024 ? styles.moveCardContent : ''}`}>
@@ -44,14 +53,14 @@ function Card(props) {
                                 {text}
                             </p>
                             <div className={styles.bottom}>
-                                <button className={api ? '' : styles.hideBtn}>API</button>
+                                {api ? <img className={styles.apiBtn} src={apiIcon} /> : <span></span>}
                                 <img src={linkIcon} alt="Link icon" />
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </a>
+        </>
     )
 }
 

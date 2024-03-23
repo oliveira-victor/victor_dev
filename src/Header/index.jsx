@@ -14,7 +14,7 @@ const Header = () => {
     window.addEventListener('scroll', changeNavbar)
 
     return (
-        <header className={transparentNavbar ? styles.solidHeader : styles.header}>
+        <header className={`${styles.header} ${transparentNavbar ? styles.solidHeader : styles.transparentHeader}`}>
             <nav className={styles.headerContainer}>
                 <Menu transparentNavbar={transparentNavbar} />
                 <PhoneMenu />
