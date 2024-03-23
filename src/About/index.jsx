@@ -21,11 +21,9 @@ const About = () => {
                         <p>
                             <Trans i18nKey={t('aboutP1')} />
                         </p>
-                        <br />
                         <p>
                             <Trans i18nKey={t('aboutP2')} />
                         </p>
-                        <br />
                         <p>
                             {t('aboutP3')} <a href="https://www.linkedin.com/in/victor-fo/" target='_blank' rel="noreferrer"><b>{t('aboutLink')}</b></a>.
                         </p>
