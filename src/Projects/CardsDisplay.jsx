@@ -22,6 +22,7 @@ import mamimoon from './assets/mamimoon.webp'
 import vfostories from './assets/vfostories.webp'
 import vfostudio from './assets/vfo-theme.webp'
 import number from './assets/number.webp'
+import chef from './assets/mygoodchef.webp'
 
 import digitalDiceVideo from './assets/digitaldice-video.mp4'
 import avatarMakerVideo from './assets/avatarmaker-video.mp4'
@@ -29,6 +30,8 @@ import mamiMoonVideo from './assets/mamimoon-video.mp4'
 import VFOStoriesVideo from './assets/vfostories-video.mp4'
 import VFOStudioVideo from './assets/vfostudio-video.mp4'
 import guessTheNumberVideo from './assets/guessthenumber-video.mp4'
+import myGoodChef from './assets/mygoodchef-video.mp4'
+
 
 const CardsDisplay = () => {
 
@@ -63,6 +66,18 @@ const CardsDisplay = () => {
         },
         {
             id: 3,
+            title: "My Good Chef",
+            image: chef,
+            media: myGoodChef,
+            text: t('cardMyGoodChef'),
+            techs: [react, redux, typescript, styledComponents],
+            list: ["React", "Redux", "TypeScript", "Styled-Components", "React-Router", "Formik", "Yup", "React Spinner"],
+            api: true,
+            github: "https://github.com/oliveira-victor/avatar_maker",
+            pageLink: "https://mygoodchef.vercel.app/"
+        },
+        {
+            id: 4,
             title: "Mami Moon",
             image: mamimoon,
             media: mamiMoonVideo,
@@ -74,7 +89,7 @@ const CardsDisplay = () => {
             pageLink: "https://doulamamimoon.com/"
         },
         {
-            id: 4,
+            id: 5,
             title: "VFO Stories",
             image: vfostories,
             media: VFOStoriesVideo,
@@ -86,7 +101,7 @@ const CardsDisplay = () => {
             pageLink: "https://vfostories.vercel.app/"
         },
         {
-            id: 5,
+            id: 6,
             title: "VFO Studio",
             image: vfostudio,
             media: VFOStudioVideo,
@@ -98,7 +113,7 @@ const CardsDisplay = () => {
             pageLink: "https://vfostudio.vercel.app/"
         },
         {
-            id: 6,
+            id: 7,
             title: "Guess The Number",
             image: number,
             media: guessTheNumberVideo,
@@ -133,21 +148,21 @@ const CardsDisplay = () => {
                     modal={modalData[1]}
                 />
                 <Card
+                    link="https://mygoodchef.vercel.app/"
+                    id="mygoodchef"
+                    cardTitle="My Good Chef"
+                    image={chef}
+                    text={t('cardMyGoodChef')}
+                    api={true}
+                    modal={modalData[2]}
+                />
+                <Card
                     link="https://doulamamimoon.com"
                     id="mamimoon"
                     cardTitle="Mami Moon"
                     image={mamimoon}
                     text={t('cardMamiMoon')}
                     api={false}
-                    modal={modalData[2]}
-                />
-                <Card
-                    link="https://vfostories.vercel.app/"
-                    id="vfostories"
-                    cardTitle="VFO Stories"
-                    image={vfostories}
-                    text={t('cardVFOstories')}
-                    api={true}
                     modal={modalData[3]}
                 />
                 {!toggleExtraCards ?
@@ -165,13 +180,24 @@ const CardsDisplay = () => {
                     <>
                         <div className="fadeIn">
                             <Card
+                                link="https://vfostories.vercel.app/"
+                                id="vfostories"
+                                cardTitle="VFO Stories"
+                                image={vfostories}
+                                text={t('cardVFOstories')}
+                                api={true}
+                                modal={modalData[4]}
+                            />
+                        </div>
+                        <div className="fadeIn">
+                            <Card
                                 link="https://vfostudio.vercel.app/"
                                 id="vfostudio"
                                 cardTitle="VFO Studio"
                                 image={vfostudio}
                                 text={t('cardVFOstudio')}
                                 api={false}
-                                modal={modalData[4]}
+                                modal={modalData[5]}
                             />
                         </div>
                         <div className="fadeIn">
@@ -182,7 +208,7 @@ const CardsDisplay = () => {
                                 image={number}
                                 text={t('cardNumbersGame')}
                                 api={false}
-                                modal={modalData[5]}
+                                modal={modalData[6]}
                             />
                         </div>
                     </>
