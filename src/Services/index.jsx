@@ -96,6 +96,7 @@ const Services = () => {
                                     <li>JavaScript</li>
                                     <li>Sass</li>
                                     <li>React</li>
+                                    <li>Redux</li>
                                     <li>Styled Components</li>
                                     <li>Gulp</li>
                                     <li>Git</li>
