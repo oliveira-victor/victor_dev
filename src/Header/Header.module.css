@@ -56,11 +56,14 @@
 
 .logo {
     transition: all 1s ease;
-    display: flex;
 
     img {
         display: block;
         width: 30px;
+
+        @media (max-width: 767px) {
+            display: none;
+        }
     }
 
     @media (max-width: 767px) {
