@@ -11,9 +11,7 @@ const Menu = ({ transparentNavbar }) => {
     return (
         <>
             <div className={styles.logo}>
-                <h1>
-                    <a href="#"><img src={transparentNavbar ? darkLogo : lightLogo} alt="Victor Freire Oliveira - Front-End Developer" /></a>
-                </h1>
+                <a href="#"><img src={transparentNavbar ? darkLogo : lightLogo} alt="Victor Freire Oliveira - Front-End Developer" /></a>
             </div>
             <div>
                 <ul className={styles.menu}>
