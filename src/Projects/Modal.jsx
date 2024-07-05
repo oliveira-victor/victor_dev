@@ -5,6 +5,7 @@ import styles from './Modal.module.css'
 
 import close from '../assets/close.svg'
 import api from '../assets/api.svg'
+import groupIcon from '../assets/group-icon.svg'
 
 const Modal = ({ closeModal, modalData }) => {
 
@@ -39,6 +40,7 @@ const Modal = ({ closeModal, modalData }) => {
 
                             {tab === 2 && (
                                 <div className={styles.detailsTab}>
+                                    {modalData.team && <img className={styles.temWorkModal} src={groupIcon} alt="Team work" />}
                                     <p>
                                         {modalData.text}
                                     </p>
@@ -62,7 +64,7 @@ const Modal = ({ closeModal, modalData }) => {
                             {modalData.api && <img src={api} alt="API" />}
                         </div>
                         <div className={styles.btnContainer}>
-                            {modalData.github === "unavailable" ? (
+                            {modalData.github === null ? (
                                 <button type='button' className={styles.offBtn}>{t('codeBtn')}</button>
                             ) : (
                                 <a href={modalData.github} target='_blank'>

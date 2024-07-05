@@ -42,9 +42,8 @@ const CardsDisplay = () => {
 
     const [toggleExtraCards, setToggleExtraCards] = useState(false)
 
-    const modalData = [
+    const cardsData1 = [
         {
-            id: 1,
             title: "Digital Dice",
             image: digitaldice,
             media: digitalDiceVideo,
@@ -57,7 +56,6 @@ const CardsDisplay = () => {
             pageLink: "https://digitaldice.vercel.app/"
         },
         {
-            id: 2,
             title: "Avatar Maker",
             image: avatarmaker,
             media: avatarMakerVideo,
@@ -70,7 +68,6 @@ const CardsDisplay = () => {
             pageLink: "https://theavatarmaker.vercel.app/"
         },
         {
-            id: 3,
             title: "My Good Chef",
             image: chef,
             media: myGoodChef,
@@ -83,20 +80,21 @@ const CardsDisplay = () => {
             pageLink: "https://mygoodchef.vercel.app/"
         },
         {
-            id: 4,
             title: "Weather App",
             image: weatherApp,
             media: weatherAppVideo,
             text: t('cardWeatherApp'),
             techs: [react, redux, typescript, styledComponents],
             list: ["React", "Redux", "TypeScript", "Styled-Components", "React-Router", "React-Multi-Carousel", "WeatherAPI", "Google Maps API", "Big Data Cloud API"],
-            api: false,
+            api: true,
             team: true,
             github: "https://github.com/oliveira-victor/EBAC-WeatherApp",
             pageLink: "https://ebaclima.vercel.app"
-        },
+        }
+    ]
+
+    const cardsData2 = [
         {
-            id: 5,
             title: "Mami Moon",
             image: mamimoon,
             media: mamiMoonVideo,
@@ -105,11 +103,10 @@ const CardsDisplay = () => {
             list: ["HTML", "JavaScript", "Sass", "Gulp", "AOS", "Formsubmit"],
             api: false,
             team: false,
-            github: "unavailable",
+            github: null,
             pageLink: "https://doulamamimoon.com/"
         },
         {
-            id: 6,
             title: "VFO Stories",
             image: vfostories,
             media: VFOStoriesVideo,
@@ -122,7 +119,6 @@ const CardsDisplay = () => {
             pageLink: "https://vfostories.vercel.app/"
         },
         {
-            id: 7,
             title: "VFO Studio",
             image: vfostudio,
             media: VFOStudioVideo,
@@ -135,7 +131,6 @@ const CardsDisplay = () => {
             pageLink: "https://vfostudio.vercel.app/"
         },
         {
-            id: 8,
             title: "Guess The Number",
             image: number,
             media: guessTheNumberVideo,
@@ -152,46 +147,19 @@ const CardsDisplay = () => {
     return (
         <>
             <div className={styles.mainCardsContainer}>
-                <Card
-                    link="https://digitaldice.vercel.app/"
-                    id="digitaldice"
-                    cardTitle="Digital Dice"
-                    image={digitaldice}
-                    text={t('cardDigitalDice')}
-                    api={true}
-                    team={false}
-                    modal={modalData[0]}
-                />
-                <Card
-                    link="https://theavatarmaker.vercel.app/"
-                    id="avatarmaker"
-                    cardTitle="Avatar Maker"
-                    image={avatarmaker}
-                    text={t('cardAvatarMaker')}
-                    api={false}
-                    team={false}
-                    modal={modalData[1]}
-                />
-                <Card
-                    link="https://mygoodchef.vercel.app/"
-                    id="mygoodchef"
-                    cardTitle="My Good Chef"
-                    image={chef}
-                    text={t('cardMyGoodChef')}
-                    api={true}
-                    team={false}
-                    modal={modalData[2]}
-                />
-                <Card
-                    link="https://ebaclima.vercel.app/"
-                    id="weatherapp"
-                    cardTitle="Weather App"
-                    image={weatherApp}
-                    text={t('cardWeatherApp')}
-                    api={true}
-                    team={true}
-                    modal={modalData[3]}
-                />
+                {cardsData1.map((card, index) => (
+                    <div className="fadeIn" key={index}>
+                        <Card
+                            link={card.pageLink}
+                            cardTitle={card.title}
+                            image={card.image}
+                            text={card.text}
+                            api={card.api}
+                            team={card.team}
+                            modal={cardsData1[index]}
+                        />
+                    </div>
+                ))}
                 {!toggleExtraCards ?
                     <div className={styles.loadMoreCardsMobile}>
                         <div>
@@ -203,58 +171,21 @@ const CardsDisplay = () => {
                     </div>
                     : ''
                 }
-                {toggleExtraCards ?
-                    <>
-                        <div className="fadeIn">
+                {toggleExtraCards && (
+                    cardsData2.map((card, index) => (
+                        <div className="fadeIn" key={index}>
                             <Card
-                                link="https://doulamamimoon.com"
-                                id="mamimoon"
-                                cardTitle="Mami Moon"
-                                image={mamimoon}
-                                text={t('cardMamiMoon')}
-                                api={false}
-                                team={false}
-                                modal={modalData[4]}
+                                link={card.pageLink}
+                                cardTitle={card.title}
+                                image={card.image}
+                                text={card.text}
+                                api={card.api}
+                                team={card.team}
+                                modal={cardsData2[index]}
                             />
                         </div>
-                        <div className="fadeIn">
-                            <Card
-                                link="https://vfostories.vercel.app/"
-                                id="vfostories"
-                                cardTitle="VFO Stories"
-                                image={vfostories}
-                                text={t('cardVFOstories')}
-                                api={true}
-                                modal={modalData[5]}
-                            />
-                        </div>
-                        <div className="fadeIn">
-                            <Card
-                                link="https://vfostudio.vercel.app/"
-                                id="vfostudio"
-                                cardTitle="VFO Studio"
-                                image={vfostudio}
-                                text={t('cardVFOstudio')}
-                                api={false}
-                                team={false}
-                                modal={modalData[6]}
-                            />
-                        </div>
-                        <div className="fadeIn">
-                            <Card
-                                link="https://guessthenumber-game.vercel.app/"
-                                id="guessthenumber"
-                                cardTitle="Guess The Number"
-                                image={number}
-                                text={t('cardNumbersGame')}
-                                api={false}
-                                team={false}
-                                modal={modalData[7]}
-                            />
-                        </div>
-                    </>
-                    : ''
-                }
+                    ))
+                )}
             </div>
             {!toggleExtraCards ?
                 <div className={styles.loadMoreCards} onClick={() => setToggleExtraCards(true)}><span>{t('loadMoreCards')}</span> <img className="float" src={arrow} alt="Arrow down icon" /></div>

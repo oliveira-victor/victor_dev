@@ -147,6 +147,11 @@
                     }
 
                     .detailsTab {
+                        .temWorkModal {
+                            height: 32px;
+                            margin-bottom: 10px;
+                        }
+
                         p {
                             margin-bottom: 16px;
                         }
