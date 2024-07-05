@@ -184,12 +184,21 @@ header {
         display: flex;
         justify-content: space-between;
 
-        img {
+        .leftIcons {
+            display: flex;
+            gap: 10px;
+        }
+
+        .linkIcon {
             width: 24px;
         }
 
         .apiBtn {
             width: 32px;
+        }
+
+        .teamBtn {
+            height: 32px;
         }
     }
 

@@ -7,10 +7,11 @@ import './cardsImgs.css'
 
 import linkIcon from '../assets/link-icon.svg'
 import apiIcon from '../assets/api.svg'
+import groupIcon from '../assets/group-icon.svg'
 
 function Card(props) {
 
-    const { cardTitle, image, text, api, modal } = props
+    const { cardTitle, image, text, api, modal, team } = props
 
     let [cardIsVisible, setCardIsVisible] = useState()
 
@@ -39,7 +40,7 @@ function Card(props) {
             {modalIsOpen && <Modal closeModal={closeModal} modalData={modal} />}
             <div ref={cardRef} className={styles.card_container} onClick={() => setModalIsOpen(true)}>
                 <div className={`${styles.card} ${cardIsVisible && screen.availWidth < 1024 ? styles.move_card : ''}`}>
-                    <div className={styles.card__img} style={{backgroundImage: `url(${image})`}}>
+                    <div className={styles.card__img} style={{ backgroundImage: `url(${image})` }}>
                         <div className={styles.card__techs}>
                             {modal.techs.map((tech) => (
                                 <img key={tech} src={tech} />
@@ -53,8 +54,11 @@ function Card(props) {
                                 {text}
                             </p>
                             <div className={styles.bottom}>
-                                {api ? <img className={styles.apiBtn} src={apiIcon} /> : <span></span>}
-                                <img src={linkIcon} alt="Link icon" />
+                                <div className={styles.leftIcons}>
+                                    {api ? <img className={styles.apiBtn} src={apiIcon} /> : <span></span>}
+                                    {team ? <img className={styles.teamBtn} src={groupIcon} /> : <span></span>}
+                                </div>
+                                <img src={linkIcon} className={styles.linkIcon} alt="Link icon" />
                             </div>
                         </div>
                     </div>
