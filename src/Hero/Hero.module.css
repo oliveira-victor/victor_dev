@@ -7,6 +7,8 @@
     align-items: center;
     justify-content: center;
     background-color: #181818;
+    background-image: url('./assets/hero-drawing.png');
+    background-size: cover;
 
     .mainLayer {
         width: 90%;
@@ -105,7 +107,7 @@
         .top {
             height: 100%;
             clip-path: polygon(0 0, 100% 0, 100% calc(100% - 50px), 50% 100%, 0 calc(100% - 50px));
-            background-color: #181818;
+            /* background-color: #181818; */
         }
 
         .bottom {
