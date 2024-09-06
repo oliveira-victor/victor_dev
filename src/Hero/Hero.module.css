@@ -9,6 +9,7 @@
     background-color: #181818;
     background-image: url('./assets/hero-drawing.webp');
     background-size: cover;
+    background-position: center;
 
     .mainLayer {
         width: 90%;
