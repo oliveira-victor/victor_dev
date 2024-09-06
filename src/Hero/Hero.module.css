@@ -7,7 +7,7 @@
     align-items: center;
     justify-content: center;
     background-color: #181818;
-    background-image: url('./assets/hero-drawing.png');
+    background-image: url('./assets/hero-drawing.webp');
     background-size: cover;
 
     .mainLayer {
