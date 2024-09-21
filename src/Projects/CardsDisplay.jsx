@@ -22,6 +22,7 @@ import avatarmaker from './assets/avatarmaker.webp'
 import mamimoon from './assets/mamimoon.webp'
 import vfostories from './assets/vfostories.webp'
 import vfostudio from './assets/vfo-theme.webp'
+import vfoshop from './assets/vfoshop.webp'
 import number from './assets/number.webp'
 import chef from './assets/mygoodchef.webp'
 import weatherApp from './assets/weather.webp'
@@ -31,6 +32,7 @@ import avatarMakerVideo from './assets/avatarmaker-video.mp4'
 import mamiMoonVideo from './assets/mamimoon-video.mp4'
 import VFOStoriesVideo from './assets/vfostories-video.mp4'
 import VFOStudioVideo from './assets/vfostudio-video.mp4'
+import VFOShopVideo from './assets/vfoshop-video.mp4'
 import guessTheNumberVideo from './assets/guessthenumber-video.mp4'
 import myGoodChef from './assets/mygoodchef-video.mp4'
 import weatherAppVideo from './assets/EBAC-Weather-App.mp4'
@@ -129,6 +131,18 @@ const CardsDisplay = () => {
             team: false,
             github: "https://github.com/oliveira-victor/VFO_Studio",
             pageLink: "https://vfostudio.vercel.app/"
+        },
+        {
+            title: "VFO Shop",
+            image: vfoshop,
+            media: VFOShopVideo,
+            text: t('cardVFOShop'),
+            techs: [react, typescript, styledComponents],
+            list: ["React", "TypeScript", "Styled-Components"],
+            api: false,
+            team: false,
+            github: "https://github.com/oliveira-victor/VFO_Shop",
+            pageLink: "https://vfoshop.vercel.app/"
         },
         {
             title: "Guess The Number",

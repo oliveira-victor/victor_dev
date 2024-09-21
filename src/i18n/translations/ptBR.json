@@ -76,6 +76,7 @@
         "cardMamiMoon": "Para este projeto eu tive que criar toda a parte de UI/UX, incluindo a criação da logo e dos ícones. Além disso, decidi quais tecnologias seriam mais apropriadas para um site rápido, responsivo e eficiente, trabalhando no SEO e mantendo uma alta performance.",
         "cardNumbersGame": "Um projeto pessoal de jogo construído inteiramente em Vanilla JavaScript, como um desafio próprio para testar e melhorar minhas habilidades de programação, criando toda a lógica, regras e desafios envolvidos. Todas as imagens foram feitas por mim.",
         "cardVFOstories": "Uma página com histórias ilustradas por VFO Studio que acompanham audio, listadas a partir de dados consumidos por meio de API. Efeitos animados de parallax com o plugin Parallax JS.",
+        "cardVFOShop": "Esta página React foi criada para promover os produtos exclusivos do VFO Studio. Ela tem muitos componentes reutilizáveis, o que é essencial para as muitas páginas de produtos que seguem a mesma estrutura. Dessa forma, é muito prático adicionar e gerenciar novas rotas e itens.",
         "loadMoreCards": "Ver mais projetos",
         "loadMoreCardsMobile": "Mais",
         "vfoDevNote": "Esta página foi desenhada e desenvolvida com ReactJS + Vite, e as ferramentas gráficas Gimp e Inkscape.",
