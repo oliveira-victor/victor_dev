@@ -71,6 +71,14 @@ li {
     100% { opacity: 1; }
 }
 
+.fadeIn3 { animation: fadeIn3 4s; }
+
+@keyframes fadeIn3 {
+    0% { opacity: 0; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
 .upsideDown {
   rotate: 180deg;
 }
