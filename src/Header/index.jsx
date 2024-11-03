@@ -1,7 +1,9 @@
 import { useState } from 'react'
-import styles from './Header.module.css'
+
 import Menu from './Menu'
 import PhoneMenu from './PhoneMenu'
+
+import styles from './Header.module.css'
 
 const Header = () => {
 

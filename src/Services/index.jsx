@@ -1,8 +1,11 @@
 import { useState } from 'react'
-import styles from './Services.module.css'
 
+import { useTranslation } from 'react-i18next'
+import MotionFlip from '../animation/MotionFlip'
+import MotionY from '../animation/MotionY'
 import Accordion from './Accordion'
-import Char from './Char'
+
+import styles from './Services.module.css'
 
 import avatar3d from './assets/vfo-ai.webp'
 import service1 from './assets/service1.svg'
@@ -17,20 +20,36 @@ import art3 from './assets/art3.jpg'
 import art4 from './assets/art4.jpg'
 import vfologo from './assets/vfologo.svg'
 
-import html from '../assets/logo-html.svg'
-import css from '../assets/logo-css.svg'
-import javascript from '../assets/logo-javascript.svg'
-import sass from '../assets/logo-sass.svg'
-import react from '../assets/logo-react.svg'
-import styledComponents from '../assets/logo-styledComponents.png'
-import typescript from '../assets/logo-typescript.svg'
-import { useTranslation } from 'react-i18next'
-
 const Services = () => {
 
     const { t } = useTranslation('servicesSection')
 
     const [switchTab, setSwitchTab] = useState(false);
+
+    const devAccordionData = [
+        { question: t('question1'), answer: t('answer1') },
+        { question: t('question2'), answer: t('answer2') },
+        { question: t('question3'), answer: t('answer3') },
+        { question: t('question4'), answer: t('answer4') },
+        { question: t('question5'), answer: t('answer5') },
+        { question: t('question6'), answer: t('answer6') }
+    ]
+
+    const artAccordionData = [
+        { question: t('designQuestion1'), answer: t('designAnswer1') },
+        { question: t('designQuestion2'), answer: t('designAnswer2') },
+        { question: t('designQuestion3'), answer: t('designAnswer3') },
+        { question: t('designQuestion4'), answer: t('designAnswer4') },
+        { question: t('designQuestion5'), answer: t('designAnswer5') },
+        { question: t('designQuestion6'), answer: t('designAnswer6') }
+    ]
+
+    const servicesData = [
+        { img: service1, alt: 'Laptop and smartphone icons', title: t('responsive'), txt: t('responsiveSub') },
+        { img: service2, alt: 'Clock icon', title: t('fast'), txt: t('fastSub') },
+        { img: service3, alt: 'Thumb up icon', title: t('userFriendly'), txt: t('userFriendlySub') },
+        { img: service4, alt: 'Planets icon', title: t('dynamic'), txt: t('dynamicSub') }
+    ]
 
     return (
         <section className={styles.services} id="services">
@@ -48,43 +67,30 @@ const Services = () => {
                     <div className={`fadeIn ${styles.canvas}`}>
                         <div className={styles.upContainer}>
                             <div className={styles.leftSide}>
-                                <img src={avatar3d} alt="Victor 3D avatar" />
+                                <MotionY delay={0}>
+                                    <img src={avatar3d} alt="Victor 3D avatar" />
+                                </MotionY>
                             </div>
                             <div className={styles.rightSide}>
                                 <span className={styles.rightSideTitle}>{t('devTitle')}</span>
                                 <div className={styles.servicesIcons}>
-                                    <div className={styles.servCard}>
-                                        <img src={service1} alt="Laptop and smartphone icons" />
-                                        <h3 className={styles.servCardTitle}>{t('responsive')}</h3>
-                                        <p>
-                                            {t('responsiveSub')}
-                                        </p>
-                                    </div>
-                                    <div className={styles.servCard}>
-                                        <img src={service2} alt="Clock icon" />
-                                        <h3 className={styles.servCardTitle}>{t('fast')}</h3>
-                                        <p>
-                                            {t('fastSub')}
-                                        </p>
-                                    </div>
-                                    <div className={styles.servCard}>
-                                        <img src={service3} alt="Thumb up icon" />
-                                        <h3 className={styles.servCardTitle}>{t('userFriendly')}</h3>
-                                        <p>
-                                            {t('userFriendlySub')}
-                                        </p>
-                                    </div>
-                                    <div className={styles.servCard}>
-                                        <img src={service4} alt="Planets icon" />
-                                        <h3 className={styles.servCardTitle}>{t('dynamic')}</h3>
-                                        <p>
-                                            {t('dynamicSub')}
-                                        </p>
-                                    </div>
+                                    {servicesData.map((item, index) => (
+                                        <div key={index} className={styles.servCard}>
+                                            <MotionFlip delay={0}>
+                                                <img src={item.img} alt={item.alt} />
+                                            </MotionFlip>
+                                            <h3 className={styles.servCardTitle}>{item.title}</h3>
+                                            <p>
+                                                {item.txt}
+                                            </p>
+                                        </div>
+                                    ))}
                                 </div>
-                                <p>
-                                    {t('devTxt')}
-                                </p>
+                                <MotionY>
+                                    <p>
+                                        {t('devTxt')}
+                                    </p>
+                                </MotionY>
                             </div>
                         </div>
                         <div className={styles.downContainer}>
@@ -104,40 +110,15 @@ const Services = () => {
                                     <li>Linux Ubuntu</li>
                                 </ul>
                             </div>
-                            <div className={styles.charsContainer}>
-                                <Char tech={html} distance={screen.availWidth > 767 ? '90%' : '90%'} />
-                                <Char tech={css} distance={screen.availWidth > 767 ? '87%' : '84%'} />
-                                <Char tech={sass} distance={screen.availWidth > 767 ? '80%' : '73%'} />
-                                <Char tech={javascript} distance={screen.availWidth > 767 ? '63%' : '57%'} />
-                                <Char tech={react} distance={screen.availWidth > 767 ? '55%' : '45%'} />
-                                <Char tech={styledComponents} distance={screen.availWidth > 767 ? '52%' : '36%'} />
-                                <Char tech={typescript} distance={screen.availWidth > 767 ? '23%' : '10%'} />
-                            </div>
                             <p>{t('someExamples')}</p>
-                            <Accordion
-                                question={t('question1')}
-                                answer={t('answer1')}
-                            />
-                            <Accordion
-                                question={t('question2')}
-                                answer={t('answer2')}
-                            />
-                            <Accordion
-                                question={t('question3')}
-                                answer={t('answer3')}
-                            />
-                            <Accordion
-                                question={t('question4')}
-                                answer={t('answer4')}
-                            />
-                            <Accordion
-                                question={t('question5')}
-                                answer={t('answer5')}
-                            />
-                            <Accordion
-                                question={t('question6')}
-                                answer={t('answer6')}
-                            />
+                            {devAccordionData.map(({ question, answer }, index) => (
+                                <MotionY key={index} delay={`0.${index}`}>
+                                    <Accordion
+                                        question={question}
+                                        answer={answer}
+                                    />
+                                </MotionY>
+                            ))}
                             <a href='#services' onClick={() => setSwitchTab(!switchTab)}>
                                 <button className={styles.changeServiceLink}>{t('seeAlsoDesign')}</button>
                             </a>
@@ -147,43 +128,55 @@ const Services = () => {
                     <div className={`fadeIn ${styles.canvas}`}>
                         <div className={styles.upContainer}>
                             <div className={styles.leftSide}>
-                                <img src={artwork} alt="Digital art" />
+                                <MotionY delay={0}>
+                                    <img src={artwork} alt="Digital art" />
+                                </MotionY>
                             </div>
                             <div className={styles.rightSide}>
                                 <span className={styles.rightSideTitle}>{t('designTitle')}</span>
                                 <div className={styles.servicesIcons}>
                                     <div className={styles.servCard}>
-                                        <img src={art1} alt="Ui and UX icon" />
+                                        <MotionFlip delay={0}>
+                                            <img src={art1} alt="Ui and UX icon" />
+                                        </MotionFlip>
                                         <span className={styles.servCardTitle}>{t('uiux')}</span>
                                         <p>
                                             {t('uiuxSub')}
                                         </p>
                                     </div>
                                     <div className={styles.servCard}>
-                                        <img src={art2} alt="Graphic design icon" />
+                                        <MotionFlip delay={0}>
+                                            <img src={art2} alt="Graphic design icon" />
+                                        </MotionFlip>
                                         <span className={styles.servCardTitle}>{t('graphicDesign')}</span>
                                         <p>
                                             {t('graphicDesignSub')}
                                         </p>
                                     </div>
                                     <div className={styles.servCard}>
-                                        <img src={art3} alt="Illustration icon" />
+                                        <MotionFlip delay={0}>
+                                            <img src={art3} alt="Illustration icon" />
+                                        </MotionFlip>
                                         <span className={styles.servCardTitle}>{t('illustration')}</span>
                                         <p>
                                             {t('illustrationSub')}
                                         </p>
                                     </div>
                                     <div className={styles.servCard}>
-                                        <img src={art4} alt="Animation icon" />
+                                        <MotionFlip delay={0}>
+                                            <img src={art4} alt="Animation icon" />
+                                        </MotionFlip>
                                         <span className={styles.servCardTitle}>{t('animation')}</span>
                                         <p>
                                             {t('animationSub')}
                                         </p>
                                     </div>
                                 </div>
-                                <p>
-                                    {t('designTxt')}
-                                </p>
+                                <MotionY delay={0}>
+                                    <p>
+                                        {t('designTxt')}
+                                    </p>
+                                </MotionY>
                             </div>
                         </div>
                         <div className={styles.downContainer}>
@@ -210,31 +203,16 @@ const Services = () => {
                                 </div>
                             </div>
                             <p>{t('designExamṕles')}</p>
-                            <Accordion
-                                question={t('designQuestion1')}
-                                answer={t('designAnswer1')}
-                            />
-                            <Accordion
-                                question={t('designQuestion2')}
-                                answer={t('designAnswer2')}
-                            />
-                            <Accordion
-                                question={t('designQuestion3')}
-                                answer={t('designAnswer3')}
-                            />
-                            <Accordion
-                                question={t('designQuestion4')}
-                                answer={t('designAnswer4')}
-                            />
-                            <Accordion
-                                question={t('designQuestion5')}
-                                answer={t('designAnswer5')}
-                            />
-                            <Accordion
-                                question={t('designQuestion6')}
-                                answer={t('designAnswer6')}
-                            />
-                            
+                            {artAccordionData.map(({ question, answer }, index) => (
+                                <MotionY key={index} delay={`0.${index}`}>
+                                    <Accordion
+                                        key={index}
+                                        question={question}
+                                        answer={answer}
+                                    />
+                                </MotionY>
+                            ))}
+
                             <a href='#services' onClick={() => setSwitchTab(!switchTab)}>
                                 <button className={styles.changeServiceLink}>{t('seeAlsoDev')}</button>
                             </a>

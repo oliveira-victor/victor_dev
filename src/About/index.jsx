@@ -1,9 +1,10 @@
 import { useTranslation } from 'react-i18next'
-import styles from './About.module.css'
-
 import { Trans } from 'react-i18next'
 
+import styles from './About.module.css'
+
 import me from './assets/me.webp'
+import MotionY from '../animation/MotionY'
 
 const About = () => {
 
@@ -18,15 +19,21 @@ const About = () => {
                 </div>
                 <div className={styles.aboutTxtContainer}>
                     <div className={styles.aboutTxt}>
-                        <p>
-                            <Trans i18nKey={t('aboutP1')} />
-                        </p>
-                        <p>
-                            <Trans i18nKey={t('aboutP2')} />
-                        </p>
-                        <p>
-                            {t('aboutP3')} <a href="https://www.linkedin.com/in/victor-fo/" target='_blank' rel="noreferrer"><b>{t('aboutLink')}</b></a>.
-                        </p>
+                        <MotionY>
+                            <p>
+                                <Trans i18nKey={t('aboutP1')} />
+                            </p>
+                        </MotionY>
+                        <MotionY>
+                            <p>
+                                <Trans i18nKey={t('aboutP2')} />
+                            </p>
+                        </MotionY>
+                        <MotionY>
+                            <p>
+                                {t('aboutP3')} <a href="https://www.linkedin.com/in/victor-fo/" target='_blank' rel="noreferrer"><b>{t('aboutLink')}</b></a>.
+                            </p>
+                        </MotionY>
                     </div>
                 </div>
             </div>

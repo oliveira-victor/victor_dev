@@ -36,7 +36,7 @@ import VFOShopVideo from './assets/vfoshop-video.mp4'
 import guessTheNumberVideo from './assets/guessthenumber-video.mp4'
 import myGoodChef from './assets/mygoodchef-video.mp4'
 import weatherAppVideo from './assets/EBAC-Weather-App.mp4'
-
+import MotionY from "../animation/MotionY"
 
 const CardsDisplay = () => {
 
@@ -202,7 +202,9 @@ const CardsDisplay = () => {
                 )}
             </div>
             {!toggleExtraCards ?
-                <div className={styles.loadMoreCards} onClick={() => setToggleExtraCards(true)}><span>{t('loadMoreCards')}</span> <img className="float" src={arrow} alt="Arrow down icon" /></div>
+                <MotionY>
+                    <div className={styles.loadMoreCards} onClick={() => setToggleExtraCards(true)}><span>{t('loadMoreCards')}</span> <img className="float" src={arrow} alt="Arrow down icon" /></div>
+                </MotionY>
                 : ''
             }
         </>

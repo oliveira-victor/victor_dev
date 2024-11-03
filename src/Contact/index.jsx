@@ -1,10 +1,11 @@
+import { useTranslation } from 'react-i18next'
 import Footer from '../Footer'
+
 import styles from './Contact.module.css'
 
 import linkedin from './assets/contact-linkedin.svg'
 import gmail from './assets/contact-gmail.svg'
 import github from '../assets/github.svg'
-import { useTranslation } from 'react-i18next'
 
 const Contact = () => {
 
