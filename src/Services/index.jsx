@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useRef, useEffect, useState } from 'react'
 
 import { useTranslation } from 'react-i18next'
 import MotionFlip from '../animation/MotionFlip'
@@ -8,10 +8,19 @@ import Accordion from './Accordion'
 import styles from './Services.module.css'
 
 import avatar3d from './assets/vfo-ai.webp'
+import topLayer from './assets/vfo-ai-toplayer.webp'
 import service1 from './assets/service1.svg'
 import service2 from './assets/service2.svg'
 import service3 from './assets/service3.svg'
 import service4 from './assets/service4.svg'
+
+import htmlIcon from '../assets/logo-html.svg'
+import cssIcon from '../assets/logo-css.svg'
+import reactIcon from '../assets/logo-react.svg'
+import javascriptIcon from '../assets/logo-javascript.svg'
+import typescriptIcon from '../assets/logo-typescript.svg'
+import gitIcon from '../assets/logo-git.svg'
+import sassIcon from '../assets/logo-sass.svg'
 
 import artwork from './assets/artwork.webp'
 import art1 from './assets/art1.jpg'
@@ -22,9 +31,22 @@ import vfologo from './assets/vfologo.svg'
 
 const Services = () => {
 
+    const avatarRef = useRef()
+
     const { t } = useTranslation('servicesSection')
 
-    const [switchTab, setSwitchTab] = useState(false);
+    const [switchTab, setSwitchTab] = useState(false)
+
+    const [animateIcons, setAnimateIcons] = useState(false)
+
+    useEffect(() => {
+        const observer = new IntersectionObserver((entries) => {
+            if (entries[0].isIntersecting === true) {
+                setAnimateIcons(true)
+            }
+        }, { threshold: [1] })
+        observer.observe(avatarRef.current)
+    }, [])
 
     const devAccordionData = [
         { question: t('question1'), answer: t('answer1') },
@@ -68,7 +90,21 @@ const Services = () => {
                         <div className={styles.upContainer}>
                             <div className={styles.leftSide}>
                                 <MotionY delay={0}>
-                                    <img src={avatar3d} alt="Victor 3D avatar" />
+                                    <div ref={avatarRef} className={styles.avatarContainer}>
+                                        <img className={styles.topLayer} src={topLayer} alt="Laptop lid" />
+                                        {animateIcons && (
+                                            <>
+                                                <img id={styles.anim1} src={htmlIcon} alt="HTML icon" />
+                                                <img id={styles.anim2} src={cssIcon} alt="CSS icon" />
+                                                <img id={styles.anim3} src={reactIcon} alt="React icon" />
+                                                <img id={styles.anim4} src={javascriptIcon} alt="JavaScript icon" />
+                                                <img id={styles.anim5} src={typescriptIcon} alt="TypeScript icon" />
+                                                <img id={styles.anim6} src={gitIcon} alt="Git icon" />
+                                                <img id={styles.anim7} src={sassIcon} alt="Sass icon" />
+                                            </>
+                                        )}
+                                        <img className={styles.leftImg} src={avatar3d} alt="Victor 3D avatar" />
+                                    </div>
                                 </MotionY>
                             </div>
                             <div className={styles.rightSide}>
@@ -129,7 +165,9 @@ const Services = () => {
                         <div className={styles.upContainer}>
                             <div className={styles.leftSide}>
                                 <MotionY delay={0}>
-                                    <img src={artwork} alt="Digital art" />
+                                    <div ref={avatarRef} className={styles.avatarContainer}>
+                                        <img className={styles.leftImg} src={artwork} alt="Digital art" />
+                                    </div>
                                 </MotionY>
                             </div>
                             <div className={styles.rightSide}>
