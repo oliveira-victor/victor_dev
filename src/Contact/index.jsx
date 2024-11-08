@@ -17,14 +17,6 @@ const Contact = () => {
 
     useEffect(() => {
 
-        const debounce = (func, wait = 100) => {
-            let timeout;
-            return function (...args) {
-                clearTimeout(timeout)
-                timeout = setTimeout(() => func.apply(this, args), wait)
-            }
-        }
-
         const handleScroll = () => {
             if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
                 onPageFullyScrolled()
