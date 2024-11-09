@@ -19,7 +19,7 @@ const Contact = () => {
 
         const handleScroll = () => {
             if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
-                onPageFullyScrolled()
+                setPageAtBottom(true)
             } else {
                 setPageAtBottom(false)
             }
@@ -31,10 +31,6 @@ const Contact = () => {
             window.removeEventListener("scroll", handleScroll)
         }
     }, [])
-
-    const onPageFullyScrolled = () => {
-        setPageAtBottom(true)
-    }
 
     return (
         <>
