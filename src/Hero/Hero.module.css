@@ -30,10 +30,19 @@
 
             img {
                 height: 24px;
+                display: hidden;
 
                 @media (max-width: 767px) {
                     height: 18px;
                 }
+            }
+
+            .hideIcon {
+                visibility: hidden;
+            }
+
+            .showIcon {
+                display: block;
             }
         }
 
