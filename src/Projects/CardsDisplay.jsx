@@ -14,13 +14,13 @@ import sass from '../assets/logo-sass.svg'
 import styledComponents from '../assets/logo-styledComponents.png'
 import redux from '../assets/ico-redux.svg'
 import typescript from '../assets/ico-typescript.svg'
+import next from '../assets/next-js.svg'
 
 import arrow from '../assets/arrow.svg'
 
 import digitaldice from './assets/digitaldice.webp'
 import avatarmaker from './assets/avatarmaker.webp'
 import mamimoon from './assets/mamimoon.webp'
-import vfostories from './assets/vfostories.webp'
 import vfostudio from './assets/vfo-theme.webp'
 import vfoshop from './assets/vfoshop.webp'
 import number from './assets/number.webp'
@@ -30,7 +30,6 @@ import weatherApp from './assets/weather.webp'
 import digitalDiceVideo from './assets/digitaldice-video.mp4'
 import avatarMakerVideo from './assets/avatarmaker-video.mp4'
 import mamiMoonVideo from './assets/mamimoon-video.mp4'
-import VFOStoriesVideo from './assets/vfostories-video.mp4'
 import VFOStudioVideo from './assets/vfostudio-video.mp4'
 import VFOShopVideo from './assets/vfoshop-video.mp4'
 import guessTheNumberVideo from './assets/guessthenumber-video.mp4'
@@ -46,16 +45,16 @@ const CardsDisplay = () => {
 
     const cardsData1 = [
         {
-            title: "Digital Dice",
-            image: digitaldice,
-            media: digitalDiceVideo,
-            text: t('cardDigitalDice'),
-            techs: [react, redux, typescript, styledComponents],
-            list: ["React", "Redux", "TyoeScript", "Styled-Components", "React-Router-DOM", "Formik", "Yup", "API"],
+            title: "VFO Studio",
+            image: vfostudio,
+            media: VFOStudioVideo,
+            text: t('cardVFOstudio'),
+            techs: [next, typescript, sass],
+            list: ["Next.js", "TypeScript", "Sass"],
             api: true,
             team: false,
-            github: "https://github.com/oliveira-victor/digital_dice",
-            pageLink: "https://digitaldice.vercel.app/"
+            github: "https://github.com/oliveira-victor/VFO_Studio",
+            pageLink: "https://vfostudio.vercel.app/"
         },
         {
             title: "Avatar Maker",
@@ -97,6 +96,18 @@ const CardsDisplay = () => {
 
     const cardsData2 = [
         {
+            title: "Digital Dice",
+            image: digitaldice,
+            media: digitalDiceVideo,
+            text: t('cardDigitalDice'),
+            techs: [react, redux, typescript, styledComponents],
+            list: ["React", "Redux", "TyoeScript", "Styled-Components", "React-Router-DOM", "Formik", "Yup", "API"],
+            api: true,
+            team: false,
+            github: "https://github.com/oliveira-victor/digital_dice",
+            pageLink: "https://digitaldice.vercel.app/"
+        },
+        {
             title: "Mami Moon",
             image: mamimoon,
             media: mamiMoonVideo,
@@ -107,30 +118,6 @@ const CardsDisplay = () => {
             team: false,
             github: null,
             pageLink: "https://doulamamimoon.com/"
-        },
-        {
-            title: "VFO Stories",
-            image: vfostories,
-            media: VFOStoriesVideo,
-            text: t('cardVFOstories'),
-            techs: [html, javascript, sass, gulp],
-            list: ["HTML", "JavaScript", "Sass", "Gulp", "API"],
-            api: true,
-            team: false,
-            github: "https://github.com/oliveira-victor/VFO_stories",
-            pageLink: "https://vfostories.vercel.app/"
-        },
-        {
-            title: "VFO Studio",
-            image: vfostudio,
-            media: VFOStudioVideo,
-            text: t('cardVFOstudio'),
-            techs: [html, javascript, sass, gulp],
-            list: ["HTML", "JavaScript", "Sass", "Gulp"],
-            api: false,
-            team: false,
-            github: "https://github.com/oliveira-victor/VFO_Studio",
-            pageLink: "https://vfostudio.vercel.app/"
         },
         {
             title: "VFO Shop",

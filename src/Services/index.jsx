@@ -20,7 +20,7 @@ import reactIcon from '../assets/logo-react.svg'
 import javascriptIcon from '../assets/logo-javascript.svg'
 import typescriptIcon from '../assets/logo-typescript.svg'
 import gitIcon from '../assets/logo-git.svg'
-import sassIcon from '../assets/logo-sass.svg'
+import nextIcon from '../assets/logo-nextjs.svg'
 
 import artwork from './assets/artwork.webp'
 import art1 from './assets/art1.jpg'
@@ -97,10 +97,10 @@ const Services = () => {
                                                 <img id={styles.anim1} src={htmlIcon} alt="HTML icon" />
                                                 <img id={styles.anim2} src={cssIcon} alt="CSS icon" />
                                                 <img id={styles.anim3} src={reactIcon} alt="React icon" />
-                                                <img id={styles.anim4} src={javascriptIcon} alt="JavaScript icon" />
+                                                <img id={styles.anim4} src={nextIcon} alt="Next.js icon" />
                                                 <img id={styles.anim5} src={typescriptIcon} alt="TypeScript icon" />
                                                 <img id={styles.anim6} src={gitIcon} alt="Git icon" />
-                                                <img id={styles.anim7} src={sassIcon} alt="Sass icon" />
+                                                <img id={styles.anim7} src={javascriptIcon} alt="JavaScript icon" />
                                             </>
                                         )}
                                         <img className={styles.leftImg} src={avatar3d} alt="Victor 3D avatar" />
@@ -138,12 +138,12 @@ const Services = () => {
                                     <li>JavaScript</li>
                                     <li>Sass</li>
                                     <li>React</li>
+                                    <li>Next.js</li>
                                     <li>Redux</li>
                                     <li>Styled Components</li>
                                     <li>Gulp</li>
                                     <li>Git</li>
                                     <li>Typescript</li>
-                                    <li>Linux Ubuntu</li>
                                 </ul>
                             </div>
                             <p>{t('someExamples')}</p>

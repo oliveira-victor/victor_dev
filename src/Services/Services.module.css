@@ -126,7 +126,7 @@
 
                         #anim7 {
                             width: 10%;
-                            animation: animate7 1s ease-in-out forwards;
+                            animation: animate7 .9s ease-in-out forwards;
                         }
                     }
                 }
@@ -411,10 +411,10 @@
 
 @keyframes animate7 {
     0% {
-        transform: translate(160%, 860%) rotate(0deg);
+        transform: translate(320%, 700%) rotate(0deg);
     }
 
     100% {
-        transform: translate(400%, 750%) rotate(18deg);
+        transform: translate(400%, 550%) rotate(20deg);
     }
 }
