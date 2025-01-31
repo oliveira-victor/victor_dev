@@ -53,7 +53,7 @@ const CardsDisplay = () => {
             list: ["Next.js", "TypeScript", "Sass"],
             api: true,
             team: false,
-            github: "https://github.com/oliveira-victor/VFO_Studio",
+            github: null,
             pageLink: "https://vfostudio.vercel.app/"
         },
         {
@@ -114,7 +114,7 @@ const CardsDisplay = () => {
             text: t('cardMamiMoon'),
             techs: [html, javascript, sass, gulp],
             list: ["HTML", "JavaScript", "Sass", "Gulp", "AOS", "Formsubmit"],
-            api: false,
+            api: true,
             team: false,
             github: null,
             pageLink: "https://doulamamimoon.com/"
