@@ -49,7 +49,10 @@ const CardsDisplay = () => {
             image: vfostudio,
             media: VFOStudioVideo,
             text: t('cardVFOstudio'),
-            techs: [next, typescript, sass],
+            techs: {
+                icons: [next, typescript, sass],
+                titles: ['Next.js', 'TypeScript', 'Sass']
+            },
             list: ["Next.js", "TypeScript", "Sass"],
             api: true,
             team: false,
@@ -61,7 +64,10 @@ const CardsDisplay = () => {
             image: avatarmaker,
             media: avatarMakerVideo,
             text: t('cardAvatarMaker'),
-            techs: [react, redux, typescript, styledComponents],
+            techs: {
+                icons: [react, redux, typescript, styledComponents],
+                titles: ['React', 'Redux', 'TypeScript', 'Styled-Components']
+            },
             list: ["React", "Redux", "TypeScript", "Styled-Components", "i18next", "html2canvas"],
             api: false,
             team: false,
@@ -73,7 +79,10 @@ const CardsDisplay = () => {
             image: chef,
             media: myGoodChef,
             text: t('cardMyGoodChef'),
-            techs: [react, redux, typescript, styledComponents],
+            techs: {
+                icons: [react, redux, typescript, styledComponents],
+                titles: ['React', 'Redux', 'TypeScript', 'Styled-Components']
+            },
             list: ["React", "Redux", "TypeScript", "Styled-Components", "React-Router", "Formik", "Yup", "React Spinner"],
             api: true,
             team: false,
@@ -85,7 +94,10 @@ const CardsDisplay = () => {
             image: weatherApp,
             media: weatherAppVideo,
             text: t('cardWeatherApp'),
-            techs: [react, redux, typescript, styledComponents],
+            techs: {
+                icons: [react, redux, typescript, styledComponents],
+                titles: ['React', 'Redux', 'TypeScript', 'Styled-Components']
+            },
             list: ["React", "Redux", "TypeScript", "Styled-Components", "React-Router", "React-Multi-Carousel", "WeatherAPI", "Google Maps API", "Big Data Cloud API"],
             api: true,
             team: true,
@@ -100,7 +112,10 @@ const CardsDisplay = () => {
             image: digitaldice,
             media: digitalDiceVideo,
             text: t('cardDigitalDice'),
-            techs: [react, redux, typescript, styledComponents],
+            techs: {
+                icons: [react, redux, typescript, styledComponents],
+                titles: ['React', 'Redux', 'TypeScript', 'Styled-Components']
+            },
             list: ["React", "Redux", "TyoeScript", "Styled-Components", "React-Router-DOM", "Formik", "Yup", "API"],
             api: true,
             team: false,
@@ -112,7 +127,10 @@ const CardsDisplay = () => {
             image: mamimoon,
             media: mamiMoonVideo,
             text: t('cardMamiMoon'),
-            techs: [html, javascript, sass, gulp],
+            techs: {
+                icons: [html, javascript, sass, gulp],
+                titles: ['HTML', 'JavaScript', 'Sass', 'Gulp']
+            },
             list: ["HTML", "JavaScript", "Sass", "Gulp", "AOS", "Formsubmit"],
             api: true,
             team: false,
@@ -124,7 +142,10 @@ const CardsDisplay = () => {
             image: vfoshop,
             media: VFOShopVideo,
             text: t('cardVFOShop'),
-            techs: [react, typescript, styledComponents],
+            techs: {
+                icons: [react, typescript, styledComponents],
+                titles: ['React', 'TypeScript', 'Styled-Components']
+            },
             list: ["React", "TypeScript", "Styled-Components"],
             api: false,
             team: false,
@@ -136,7 +157,10 @@ const CardsDisplay = () => {
             image: number,
             media: guessTheNumberVideo,
             text: t('cardNumbersGame'),
-            techs: [html, css, javascript],
+            techs: {
+                icons: [html, css, javascript],
+                titles: ['HTML', 'CSS', 'JavaScript']
+            },
             list: ["HTML", "CSS", "JavaScript"],
             api: false,
             team: false,
@@ -154,6 +178,7 @@ const CardsDisplay = () => {
                             link={card.pageLink}
                             cardTitle={card.title}
                             image={card.image}
+                            ico={card.techs}
                             text={card.text}
                             api={card.api}
                             team={card.team}
@@ -179,6 +204,7 @@ const CardsDisplay = () => {
                                 link={card.pageLink}
                                 cardTitle={card.title}
                                 image={card.image}
+                                ico={card.techs}
                                 text={card.text}
                                 api={card.api}
                                 team={card.team}

@@ -126,14 +126,41 @@ header {
     font-size: 26px;
     background-color: rgba(0, 0, 0, 0.7);
     backdrop-filter: blur(3px);
+    display: flex;
+    justify-content: center;
 
-    & img {
-        height: 46px;
-        padding-top: 6px;
-        margin: 0 2px;
+    .techContainer {
+        position: relative;
+        width: fit-content;
+        height: fit-content;
 
-        &:hover {
-            transform: translateY(-3px);
+        .techTitle {
+            display: none;
+            background-color: #fff;
+            padding: 4px;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 6px;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translate(-50%, -34px);
+            box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.7);
+            z-index: 2;
+        }
+
+        & img {
+            height: 46px;
+            padding-top: 6px;
+            margin: 0 2px;
+
+            &:hover {
+                transform: translateY(-3px);
+            }
+        }
+
+        &:hover .techTitle {
+            display: block;
         }
     }
 }

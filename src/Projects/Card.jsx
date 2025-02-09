@@ -11,7 +11,7 @@ import groupIcon from '../assets/group-icon.svg'
 
 function Card(props) {
 
-    const { cardTitle, image, text, api, modal, team } = props
+    const { cardTitle, image, ico, text, api, modal, team } = props
 
     let [cardIsVisible, setCardIsVisible] = useState()
 
@@ -42,8 +42,11 @@ function Card(props) {
                 <div className={`${styles.card} ${cardIsVisible && screen.availWidth < 1024 ? styles.move_card : ''}`}>
                     <div className={styles.card__img} style={{ backgroundImage: `url(${image})` }}>
                         <div className={styles.card__techs}>
-                            {modal.techs.map((tech) => (
-                                <img key={tech} src={tech} />
+                            {ico.icons.map((item, index) => (
+                                <div key={index} className={styles.techContainer}>
+                                    <span className={`${styles.techTitle} fastFadeIn`}>{ico.titles[index]}</span>
+                                    <img src={item} />
+                                </div>
                             ))}
                         </div>
                     </div>

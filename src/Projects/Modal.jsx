@@ -58,7 +58,7 @@ const Modal = ({ closeModal, modalData }) => {
                     </div>
                     <div className={styles.bottomContainer}>
                         <div>
-                            {modalData.techs.map((tech) => (
+                            {modalData.techs.icons.map((tech) => (
                                 <img key={tech} src={tech} />
                             ))}
                             {modalData.api && <img src={api} alt="API" />}
