@@ -161,8 +161,9 @@
 
 
             .bottomContainer {
-                background-color: #f0f0f0;
+                background-color: #272727;
                 border-radius: 0 0 30px 30px;
+                border-top: 3px solid #a4a4a4;
                 padding-top: 20px;
                 display: flex;
                 justify-content: space-between;
@@ -212,6 +213,7 @@
                     }
 
                     .offBtn {
+                        cursor: default;
                         border: 1px solid #a4a4a4;
                         background-color: transparent;
                         color: #a4a4a4;
