@@ -159,12 +159,8 @@
                 }
             }
 
-
             .bottomContainer {
-                background-color: #272727;
                 border-radius: 0 0 30px 30px;
-                border-top: 3px solid #a4a4a4;
-                padding-top: 20px;
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
