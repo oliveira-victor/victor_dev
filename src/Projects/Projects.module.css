@@ -38,6 +38,14 @@ header {
             border: 2px solid #202020;
             color: #202020;
         }
+
+        @media (max-width: 767px) {
+            flex-wrap: nowrap;
+            overflow-x: auto;
+            padding: 10px 20px;
+            justify-content: left;
+            margin: 0;
+        }
     }
 }
 
