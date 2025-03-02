@@ -2,6 +2,7 @@ import { useState } from "react"
 import { useTranslation } from "react-i18next"
 
 import Card from "./Card"
+import MotionY from "../animation/MotionY"
 
 import styles from "./Projects.module.css"
 
@@ -15,7 +16,6 @@ import styledComponents from '../assets/logo-styledComponents.png'
 import redux from '../assets/ico-redux.svg'
 import typescript from '../assets/ico-typescript.svg'
 import next from '../assets/next-js.svg'
-
 import arrow from '../assets/arrow.svg'
 
 import digitaldice from './assets/digitaldice.webp'
@@ -26,6 +26,7 @@ import vfoshop from './assets/vfoshop.webp'
 import number from './assets/number.webp'
 import chef from './assets/mygoodchef.webp'
 import weatherApp from './assets/weather.webp'
+import riverCrossing from './assets/river-crossing.webp'
 
 import digitalDiceVideo from './assets/digitaldice-video.mp4'
 import avatarMakerVideo from './assets/avatarmaker-video.mp4'
@@ -35,7 +36,7 @@ import VFOShopVideo from './assets/vfoshop-video.mp4'
 import guessTheNumberVideo from './assets/guessthenumber-video.mp4'
 import myGoodChef from './assets/mygoodchef-video.mp4'
 import weatherAppVideo from './assets/EBAC-Weather-App.mp4'
-import MotionY from "../animation/MotionY"
+import riverCrossingVideo from './assets/river-crossing-video.mp4'
 
 const CardsDisplay = () => {
 
@@ -169,6 +170,22 @@ const CardsDisplay = () => {
             team: false,
             github: "https://github.com/oliveira-victor/guess_the_number",
             pageLink: "https://guessthenumber-game.vercel.app/"
+        },
+        {
+            id: 9,
+            title: "River Crossing Puzzle",
+            image: riverCrossing,
+            media: riverCrossingVideo,
+            text: t('cardRiverCrossing'),
+            techs: {
+                icons: [html, css, javascript],
+                titles: ['HTML', 'CSS', 'JavaScript']
+            },
+            list: ["HTML", "CSS", "JavaScript"],
+            api: false,
+            team: false,
+            github: "https://github.com/oliveira-victor/river-crossing-puzzle",
+            pageLink: "http://rivercrossing.vercel.app/"
         }
     ]
 
@@ -182,7 +199,7 @@ const CardsDisplay = () => {
         highlights: [1, 2, 3, 4, 5, 6, 7, 8],
         real: [1, 6],
         ecommerce: [3, 5],
-        games: [2, 8],
+        games: [2, 8, 9],
         api: [1, 3, 4, 5, 6],
         team: [4]
     }
