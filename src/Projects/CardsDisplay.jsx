@@ -41,10 +41,9 @@ const CardsDisplay = () => {
 
     const { t } = useTranslation("projectsSection")
 
-    const [toggleExtraCards, setToggleExtraCards] = useState(false)
-
-    const cardsData1 = [
+    const cardsData = [
         {
+            id: 1,
             title: "VFO Studio",
             image: vfostudio,
             media: VFOStudioVideo,
@@ -60,6 +59,7 @@ const CardsDisplay = () => {
             pageLink: "https://vfostudio.vercel.app/"
         },
         {
+            id: 2,
             title: "Avatar Maker",
             image: avatarmaker,
             media: avatarMakerVideo,
@@ -75,6 +75,7 @@ const CardsDisplay = () => {
             pageLink: "https://theavatarmaker.vercel.app/"
         },
         {
+            id: 3,
             title: "My Good Chef",
             image: chef,
             media: myGoodChef,
@@ -90,6 +91,7 @@ const CardsDisplay = () => {
             pageLink: "https://mygoodchef.vercel.app/"
         },
         {
+            id: 4,
             title: "Weather App",
             image: weatherApp,
             media: weatherAppVideo,
@@ -103,11 +105,9 @@ const CardsDisplay = () => {
             team: true,
             github: "https://github.com/oliveira-victor/EBAC-WeatherApp",
             pageLink: "https://ebaclima.vercel.app"
-        }
-    ]
-
-    const cardsData2 = [
+        },
         {
+            id: 5,
             title: "Digital Dice",
             image: digitaldice,
             media: digitalDiceVideo,
@@ -123,6 +123,7 @@ const CardsDisplay = () => {
             pageLink: "https://digitaldice.vercel.app/"
         },
         {
+            id: 6,
             title: "Mami Moon",
             image: mamimoon,
             media: mamiMoonVideo,
@@ -138,6 +139,7 @@ const CardsDisplay = () => {
             pageLink: "https://doulamamimoon.com/"
         },
         {
+            id: 7,
             title: "VFO Shop",
             image: vfoshop,
             media: VFOShopVideo,
@@ -153,6 +155,7 @@ const CardsDisplay = () => {
             pageLink: "https://vfoshop.vercel.app/"
         },
         {
+            id: 8,
             title: "Guess The Number",
             image: number,
             media: guessTheNumberVideo,
@@ -169,11 +172,65 @@ const CardsDisplay = () => {
         }
     ]
 
+    const [showExtraCards, setShowExtraCards] = useState(false)
+    const [isSelected, setIsSelected] = useState("Highlights")
+    const [currentCards, setCurrentCards] = useState(cardsData.slice(0, 4))
+    const [extraCards, setExtraCards] = useState(cardsData.slice(4, 8))
+
+    const filterOptions = {
+        all: cardsData.map(card => card.id),
+        highlights: [1, 2, 3, 4, 5, 6, 7, 8],
+        real: [1, 6],
+        ecommerce: [3, 5],
+        games: [2, 8],
+        api: [1, 3, 4, 5, 6],
+        team: [4]
+    }
+
+    const filterBtns = [
+        { txt: t('filterBtns.btn1'), title: "Highlights", action: filterOptions.highlights },
+        { txt: t('filterBtns.btn2'), title: "Real businesses", action: filterOptions.real },
+        { txt: t('filterBtns.btn3'), title: "eCommerce", action: filterOptions.ecommerce },
+        { txt: t('filterBtns.btn4'), title: "Games & entertainment", action: filterOptions.games },
+        { txt: t('filterBtns.btn5'), title: "API", action: filterOptions.api },
+        { txt: t('filterBtns.btn6'), title: "Team work", action: filterOptions.team },
+        { txt: t('filterBtns.btn7'), title: "All", action: filterOptions.all }
+    ]
+
+    const btnAction = (title, action) => {
+        setIsSelected(title)
+
+        const newCardsList = []
+        for (let i = 0; i < cardsData.length; i++) {
+            if (action.includes(cardsData[i].id)) {
+                newCardsList.push(cardsData[i]);
+            }
+        }
+
+        if (newCardsList.length > 4 && title === "Highlights") {
+            setCurrentCards(newCardsList.slice(0, 4))
+            setExtraCards(newCardsList.slice(4, 8))
+        } else {
+            setCurrentCards(newCardsList)
+        }
+    }
+
     return (
         <>
+            <ul>
+                {filterBtns.map((btn, index) => (
+                    <li
+                        key={index}
+                        className={isSelected === btn.title ? styles.selectedBtn : ''}
+                        onClick={() => btnAction(btn.title, btn.action)}
+                    >
+                        {btn.txt}
+                    </li>
+                ))}
+            </ul>
             <div className={styles.mainCardsContainer}>
-                {cardsData1.map((card, index) => (
-                    <div className="fadeIn" key={index}>
+                {currentCards.map((card, index) => (
+                    <div className="fadeIn" key={card.id}>
                         <Card
                             link={card.pageLink}
                             cardTitle={card.title}
@@ -182,14 +239,15 @@ const CardsDisplay = () => {
                             text={card.text}
                             api={card.api}
                             team={card.team}
-                            modal={cardsData1[index]}
+                            modal={currentCards[index]}
                         />
                     </div>
                 ))}
-                {!toggleExtraCards ?
+
+                {!showExtraCards && isSelected === "Highlights" ?
                     <div className={styles.loadMoreCardsMobile}>
                         <div>
-                            <button className={styles.loadMoreCardsMobile} onClick={() => setToggleExtraCards(true)}>
+                            <button className={styles.loadMoreCardsMobile} onClick={() => setShowExtraCards(true)}>
                                 +
                             </button>
                             <span>{t('loadMoreCardsMobile')}</span>
@@ -197,8 +255,9 @@ const CardsDisplay = () => {
                     </div>
                     : ''
                 }
-                {toggleExtraCards && (
-                    cardsData2.map((card, index) => (
+
+                {showExtraCards && isSelected === "Highlights" && (
+                    extraCards.map((card, index) => (
                         <div className="fadeIn" key={index}>
                             <Card
                                 link={card.pageLink}
@@ -208,15 +267,16 @@ const CardsDisplay = () => {
                                 text={card.text}
                                 api={card.api}
                                 team={card.team}
-                                modal={cardsData2[index]}
+                                modal={extraCards[index]}
                             />
                         </div>
                     ))
                 )}
             </div>
-            {!toggleExtraCards ?
+            
+            {!showExtraCards && isSelected === "Highlights" ?
                 <MotionY>
-                    <div className={styles.loadMoreCards} onClick={() => setToggleExtraCards(true)}><span>{t('loadMoreCards')}</span> <img className="float" src={arrow} alt="Arrow down icon" /></div>
+                    <div className={styles.loadMoreCards} onClick={() => setShowExtraCards(true)}><span>{t('loadMoreCards')}</span> <img className="float" src={arrow} alt="Arrow down icon" /></div>
                 </MotionY>
                 : ''
             }

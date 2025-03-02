@@ -4,12 +4,48 @@ header {
 
 .projects {
     background-color: #f2f2f2;
+
+    & ul {
+        width: 100%;
+        margin: 10px 0;
+        padding: 10px 20px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 14px;
+
+        & li {
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+            padding: 8px 18px;
+            border-radius: 6px;
+            background-color: #fff;
+            color: #aaa;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            transition: all .3s ease;
+            border: 2px solid #fff;
+            white-space: nowrap;
+
+
+            &:hover {
+                transform: translateY(-4px);
+                box-shadow: rgba(99, 99, 99, 0.6) 0px 6px 8px 0px;
+            }
+        }
+
+        .selectedBtn {
+            border: 2px solid #202020;
+            color: #202020;
+        }
+    }
 }
 
 .container {
 
     .mainCardsContainer {
-        width: 80%;
+        max-width: 80%;
+        width: fit-content;
         margin: 20px auto;
         padding-top: 30px;
         display: flex;
@@ -18,7 +54,8 @@ header {
         gap: 2em;
 
         @media (max-width: 767px) {
-            padding: 36px 30px;
+            max-width: 100%;
+            padding: 36px;
             width: 100%;
             flex-wrap: nowrap;
             overflow-x: scroll;

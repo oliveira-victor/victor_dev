@@ -68,6 +68,15 @@
     },
     "projectsSection": {
         "projects": "Projetos",
+        "filterBtns": {
+            "btn1": "Destaques",
+            "btn2": "Negócios reais",
+            "btn3": "eCommerce",
+            "btn4": "Jogos & entretenimento",
+            "btn5": "API",
+            "btn6": "Trabalho em equipe",
+            "btn7": "Tudo"
+        },
         "cardDigitalDice": "Um eCommerce fictício criado por mim com React JS, Redux, TypeScript e Styled-Components. Todos os jogos fictícios inclusos, consumidos por uma API, foram criados por mim e suas imagens geradas por I.A., a partir de prompts que forneci.",
         "cardVFOstudio": "Este é um portfólio, um estúdio de arte e design criado por mim, onde eu divulgo meus serviços e posto minhas artes. A ideia é ser simples, porém artistico e inspirador, com atenção aos detalhes.",
         "cardAvatarMaker": "Uma aplicação web interativa na qual criei o conceito, desenvolvi todo o código e os aspectos visuais, inclusive fazendo todas as ilustrações digitais. É possível criar diferentes avatares e salvá-los (função possibilitada com a implementação do html2canvas).",
@@ -77,7 +86,7 @@
         "cardNumbersGame": "Um projeto pessoal de jogo construído inteiramente em Vanilla JavaScript, como um desafio próprio para testar e melhorar minhas habilidades de programação, criando toda a lógica, regras e desafios envolvidos. Todas as imagens foram feitas por mim.",
         "cardVFOstories": "Uma página com histórias ilustradas por VFO Studio que acompanham audio, listadas a partir de dados consumidos por meio de API. Efeitos animados de parallax com o plugin Parallax JS.",
         "cardVFOShop": "Esta página React foi criada para promover os produtos exclusivos do VFO Studio. Ela tem muitos componentes reutilizáveis, o que é essencial para as muitas páginas de produtos que seguem a mesma estrutura. Dessa forma, é muito prático adicionar e gerenciar novas rotas e itens.",
-        "loadMoreCards": "Ver mais projetos",
+        "loadMoreCards": "Ver mais destaques",
         "loadMoreCardsMobile": "Mais",
         "vfoDevNote": "Esta página foi desenhada e desenvolvida com ReactJS + Vite, e as ferramentas gráficas Gimp e Inkscape.",
         "modalTab1": "Apresentação",
