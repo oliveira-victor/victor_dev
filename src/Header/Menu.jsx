@@ -4,14 +4,14 @@ import styles from './Header.module.css'
 import lightLogo from '../assets/vfo_white.svg'
 import darkLogo from '../assets/vfo_dark.svg'
 
-const Menu = ({ transparentNavbar }) => {
+const Menu = ({ solidNavbar }) => {
 
     const { t } = useTranslation()
 
     return (
         <>
             <div className={styles.logo}>
-                <a href="#"><img src={transparentNavbar ? darkLogo : lightLogo} alt="Victor Freire Oliveira - Front-End Developer" /></a>
+                <a href="#"><img src={solidNavbar ? darkLogo : lightLogo} alt="Victor Freire Oliveira - Front-End Developer" /></a>
             </div>
             <div>
                 <ul className={styles.menu}>

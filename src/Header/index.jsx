@@ -7,18 +7,23 @@ import styles from './Header.module.css'
 
 const Header = () => {
 
-    let [transparentNavbar, setTransparentNavbar] = useState(false)
+    const [solidNavbar, setSolidNavbar] = useState(false)
 
     const changeNavbar = () => {
-        window.scrollY < 100 ? setTransparentNavbar(false) : setTransparentNavbar(true)
+
+        if (window.scrollY < 100 || window.innerHeight + window.scrollY >= document.body.offsetHeight) {
+            setSolidNavbar(false)
+        } else {
+            setSolidNavbar(true)
+        }
     }
 
     window.addEventListener('scroll', changeNavbar)
 
     return (
-        <header className={`${styles.header} ${transparentNavbar ? styles.solidHeader : styles.transparentHeader}`}>
+        <header className={`${styles.header} ${solidNavbar ? styles.solidHeader : styles.transparentHeader}`}>
             <nav className={styles.headerContainer}>
-                <Menu transparentNavbar={transparentNavbar} />
+                <Menu solidNavbar={solidNavbar} />
                 <PhoneMenu />
             </nav>
         </header>
