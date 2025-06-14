@@ -4,7 +4,7 @@ import MotionY from '../animation/MotionY'
 
 import styles from './About.module.css'
 
-import me from './assets/me.webp'
+import vicIcon from './assets/vic-icon.png'
 import gptImage from './assets/chatgpt.png'
 
 const About = () => {
@@ -15,49 +15,46 @@ const About = () => {
         <section className={styles.about} id="about">
             <h2>{t('about')}</h2>
             <div className={styles.aboutContent}>
-                <div className={styles.imgContainer}>
-                    <img src={me} alt="Victor's picture" />
+                <div className={styles.aboutTxt}>
+                    <MotionY>
+                        <p className={`${styles.txtRight} ${styles.imgDialogue}`}>
+                            <img className={styles.txtImage} src={vicIcon} alt="ChatGPT logo" />
+                            <Trans i18nKey={t('aboutP1')} />
+                        </p>
+                    </MotionY>
+                    <MotionY>
+                        <p className={styles.txtRight}>
+                            <Trans i18nKey={t('aboutP2')} />
+                        </p>
+                    </MotionY>
+                    <MotionY>
+                        <p className={styles.txtRight}>
+                            <Trans i18nKey={t('aboutP3')} />
+                        </p>
+                    </MotionY>
                 </div>
-                <div className={styles.aboutTxtContainer}>
+                <MotionY>
                     <div className={styles.aboutTxt}>
-                        <MotionY>
-                            <p>
-                                <Trans i18nKey={t('aboutP1')} />
-                            </p>
-                        </MotionY>
-                        <MotionY>
-                            <p>
-                                <Trans i18nKey={t('aboutP2')} />
-                            </p>
-                        </MotionY>
-                        <MotionY>
-                            <p>
-                                <Trans i18nKey={t('aboutP3')} />
-                            </p>
-                        </MotionY>
-                        <MotionY>
-                            <p>
-                                {t('aboutP4')} <a href="https://www.linkedin.com/in/victor-fo/" target='_blank' rel="noreferrer"><b>{t('aboutLink')}</b></a>.
-                            </p>
-                        </MotionY>
-                    </div>
-                </div>
-            </div>
-            <MotionY>
-                <div className={styles.gptContainer}>
-                    <div className={styles.gpt}>
-                        <img className={styles.gptImage} src={gptImage} alt="ChatGPT logo" />
-                        <p>
+                        <p className={`${styles.imgDialogue} ${styles.quote}`}>
+                            <img className={styles.txtImage} src={gptImage} alt="ChatGPT logo" />
                             &quot;{t('gptP1')}
                             <br /><br />
                             {t('gptP2')}&quot;
-                        </p>
-                        <p className={styles.chatgpt}>
-                            - ChatGPT {t('gptAuthor')}
+                            <span className={styles.author}>
+                                - ChatGPT {t('gptAuthor')}
+                            </span>
                         </p>
                     </div>
+                </MotionY>
+                <div className={styles.aboutTxt}>
+                    <MotionY>
+                        <p className={`${styles.txtRight} ${styles.imgDialogue}`}>
+                            <img className={styles.txtImage} src={vicIcon} alt="ChatGPT logo" />
+                            {t('aboutP4')} <a href="https://www.linkedin.com/in/victor-fo/" target='_blank' rel="noreferrer"><b>{t('aboutLink')}</b></a>.
+                        </p>
+                    </MotionY>
                 </div>
-            </MotionY>
+            </div>
         </section>
     )
 }

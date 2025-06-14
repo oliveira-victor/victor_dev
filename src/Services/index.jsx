@@ -136,14 +136,13 @@ const Services = () => {
                                     <li>HTML</li>
                                     <li>CSS</li>
                                     <li>JavaScript</li>
-                                    <li>Sass</li>
+                                    <li>Typescript</li>
                                     <li>React</li>
                                     <li>Next.js</li>
                                     <li>Redux</li>
-                                    <li>Styled Components</li>
                                     <li>Gulp</li>
                                     <li>Git</li>
-                                    <li>Typescript</li>
+                                    <li>Supabase</li>
                                 </ul>
                             </div>
                             <p>{t('someExamples')}</p>
