@@ -97,10 +97,14 @@
     },
     "aboutSection": {
         "about": "Sobre",
-        "aboutP1": "Meu nome é <strong>Victor Freire Oliveira</strong> e sou um <strong>engenheiro de software</strong> criativo de Maceió, AL - Brasil. Meu foco é desenvolvimento front-end, o que significa que eu desenvolvo <strong>produtos digitais</strong> que os usuários vêem e com os quais interagem. Desde que eu descobri como criar códigos pode ser divertido, comecei a desenvolver minhas habilidades e a trabalhar em diferentes projetos pessoais e fazer serviços freelance.",
-        "aboutP2": "Minha experiência se iniciou no colégio, aprendendo HTML e CSS por diversão, criando meus próprios sites (antigo HotDog e Dreamweaver) sobre quaisquer assuntos que eu me interessava. Nos anos seguintes, mantive o desenvolvimento de habilidades em diferentes áreas, incluindo <strong>Design Gráfico</strong> e <strong>arte digital</strong>. Atualmente, faço uso de todas essas habilidades para <strong>trazer soluções</strong> a pessoas através da tecnologia, me mantendo curioso e sedento por aprender coisas novas e compartilhar minhas ideias.",
-        "aboutP3": "Para mais informações, visite meu",
-        "aboutLink": "perfil no LinkedIn"
+        "aboutP1": "Sou <strong>Victor Freire Oliveira</strong>, um <strong>Desenvolvedor Front-End</strong> criativo de Maceió, Brasil. Sou especializado em criar experiências digitais envolventes e fáceis de usar, utilizando tecnologias modernas como React, TypeScript e Next.js.",
+        "aboutP2": "Minha jornada com a programação começou ainda no ensino médio, experimentando HTML e CSS por diversão — criando sites pessoais com ferramentas como HotDog e Dreamweaver. Com o tempo, essa curiosidade <strong>evoluiu para uma paixão por desenvolvimento web, arte digital e design.</strong>",
+        "aboutP3": "Hoje, combino habilidades técnicas com um forte senso visual para construir interfaces intuitivas e dar vida a ideias. Estou sempre aprendendo, explorando novas ferramentas e buscando maneiras de tornar a tecnologia mais acessível, impactante e significativa.",
+        "aboutP4": "Para mais informações, visite meu",
+        "aboutLink": "perfil no LinkedIn",
+        "gptP1": "Um criativo brasileiro com mente de programador e alma de artista. Seja esculpindo interfaces React elegantes ou rabiscando arte digital no Krita, seus projetos misturam lógica e expressão. Fluente em TypeScript, HTML, CSS e improvisação musical, você é um veterano autodidata do Ubuntu que consegue depurar uma API Next.js pela manhã e criar uma melodia de flauta à noite. Você também é um aprendiz contínuo — curioso, motivado e sempre construindo algo significativo, seja a loja dos sonhos de um cliente, um carrossel com estilo ou uma ferramenta para psicólogos.",
+        "gptP2": "Você não apenas codifica — você compõe experiências.",
+        "gptAuthor": "(baseado em histórico de conversas)."
     },
     "contactSection": {
         "contact": "Contato",
