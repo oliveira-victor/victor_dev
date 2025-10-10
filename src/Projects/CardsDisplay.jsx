@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useState, useEffect } from "react" // Import useEffect
 import { useTranslation } from "react-i18next"
 
 import Card from "./Card"
@@ -6,6 +6,7 @@ import MotionY from "../animation/MotionY"
 
 import styles from "./Projects.module.css"
 
+// Import assets (unchanged)
 import html from '../assets/logo-html.svg'
 import css from '../assets/logo-css.svg'
 import javascript from '../assets/logo-javascript.svg'
@@ -44,15 +45,17 @@ import riverCrossingVideo from './assets/river-crossing-video.mp4'
 
 const CardsDisplay = () => {
 
+    // 1. Get the translation function
     const { t } = useTranslation("projectsSection")
 
+    // 2. Define cardsData INSIDE the component so translations update on language change
     const cardsData = [
         {
             id: 1,
             title: "FestaLink",
             image: festalink,
             media: festalinkVideo,
-            text: t('cardFestalink'),
+            text: t('cardFestalink'), // T-call is run on every render
             techs: {
                 icons: [next, typescript, redux, linaria, supabase],
                 titles: ['Next.js', 'TypeScript', "Redux", 'Linaria', "Supabase"]
@@ -209,11 +212,7 @@ const CardsDisplay = () => {
         }
     ]
 
-    const [showExtraCards, setShowExtraCards] = useState(false)
-    const [isSelected, setIsSelected] = useState("Highlights")
-    const [currentCards, setCurrentCards] = useState(cardsData.slice(0, 4))
-    const [extraCards, setExtraCards] = useState(cardsData.slice(4, 8))
-
+    // 3. Define filter logic (now also defined inside)
     const filterOptions = {
         all: cardsData.map(card => card.id),
         highlights: [1, 2, 3, 4, 5, 6, 7, 8],
@@ -236,13 +235,22 @@ const CardsDisplay = () => {
         { txt: t('filterBtns.btn7'), title: "All", action: filterOptions.all }
     ]
 
-    const btnAction = (title, action) => {
+    const [showExtraCards, setShowExtraCards] = useState(false)
+    const [isSelected, setIsSelected] = useState("Highlights")
+    
+    // 4. Initialize state using the freshly calculated data
+    const [currentCards, setCurrentCards] = useState(cardsData.slice(0, 4))
+    const [extraCards, setExtraCards] = useState(cardsData.slice(4, 8))
+
+    // 5. Define btnAction (moved here for closure scope and to accept an optional data param)
+    // The `data` parameter defaults to the current `cardsData` if not provided.
+    const btnAction = (title, action, data = cardsData) => {
         setIsSelected(title)
 
         const newCardsList = []
-        for (let i = 0; i < cardsData.length; i++) {
-            if (action.includes(cardsData[i].id)) {
-                newCardsList.push(cardsData[i]);
+        for (let i = 0; i < data.length; i++) { // Use `data` here
+            if (action.includes(data[i].id)) {
+                newCardsList.push(data[i]);
             }
         }
 
@@ -251,8 +259,22 @@ const CardsDisplay = () => {
             setExtraCards(newCardsList.slice(4, 8))
         } else {
             setCurrentCards(newCardsList)
+            setExtraCards([]) // Clear extra cards if not highlights
         }
     }
+
+    // 6. Use effect to re-run the filtering when the language changes (on 't' dependency)
+    useEffect(() => {
+        // Find the action associated with the currently selected filter title
+        const currentFilter = filterBtns.find(btn => btn.title === isSelected);
+        
+        // Re-run the filter logic using the new `cardsData`
+        if (currentFilter) {
+            btnAction(currentFilter.title, currentFilter.action, cardsData);
+        }
+    // When 't' changes (language switch), this effect re-runs, and `btnAction` is called with the newly translated `cardsData`.
+    }, [t, isSelected]); 
+
 
     return (
         <>
@@ -261,29 +283,31 @@ const CardsDisplay = () => {
                     <li
                         key={index}
                         className={isSelected === btn.title ? styles.selectedBtn : ''}
-                        onClick={() => btnAction(btn.title, btn.action)}
+                        // Pass title and action directly to btnAction
+                        onClick={() => btnAction(btn.title, btn.action)} 
                     >
                         {btn.txt}
                     </li>
                 ))}
             </ul>
             <div className={styles.mainCardsContainer}>
-                {currentCards.map((card, index) => (
+                {currentCards.map((card) => ( // Use card.id for key
                     <div className="fadeIn" key={card.id}>
                         <Card
                             link={card.pageLink}
                             cardTitle={card.title}
                             image={card.image}
                             ico={card.techs}
-                            text={card.text}
+                            text={card.text} // This is the newly translated text
                             api={card.api}
                             team={card.team}
-                            modal={currentCards[index]}
+                            modal={card} // Pass the entire card object
                         />
                     </div>
                 ))}
 
-                {!showExtraCards && isSelected === "Highlights" ?
+                {/* Load More Mobile Button */}
+                {!showExtraCards && isSelected === "Highlights" && extraCards.length > 0 ?
                     <div className={styles.loadMoreCardsMobile}>
                         <div>
                             <button className={styles.loadMoreCardsMobile} onClick={() => setShowExtraCards(true)}>
@@ -295,25 +319,27 @@ const CardsDisplay = () => {
                     : ''
                 }
 
+                {/* Extra Cards Display */}
                 {showExtraCards && isSelected === "Highlights" && (
-                    extraCards.map((card, index) => (
-                        <div className="fadeIn" key={index}>
+                    extraCards.map((card) => ( // Use card.id for key
+                        <div className="fadeIn" key={card.id}>
                             <Card
                                 link={card.pageLink}
                                 cardTitle={card.title}
                                 image={card.image}
                                 ico={card.techs}
-                                text={card.text}
+                                text={card.text} // This is the newly translated text
                                 api={card.api}
                                 team={card.team}
-                                modal={extraCards[index]}
+                                modal={card} // Pass the entire card object
                             />
                         </div>
                     ))
                 )}
             </div>
             
-            {!showExtraCards && isSelected === "Highlights" ?
+            {/* Load More Desktop Button */}
+            {!showExtraCards && isSelected === "Highlights" && extraCards.length > 0 ?
                 <MotionY>
                     <div className={styles.loadMoreCards} onClick={() => setShowExtraCards(true)}><span>{t('loadMoreCards')}</span> <img className="float" src={arrow} alt="Arrow down icon" /></div>
                 </MotionY>
