@@ -77,6 +77,7 @@
             "btn6": "Trabalho em equipe",
             "btn7": "Tudo"
         },
+        "cardFestalink": "FestaLink é um SaaS full-stack construído com Next.js e TypeScript que permite aos usuários criar convites animados e personalizáveis para festas infantis, apresentando efeitos de paralaxe e links compartilháveis.",
         "cardDigitalDice": "Um eCommerce fictício criado por mim com React JS, Redux, TypeScript e Styled-Components. Todos os jogos fictícios inclusos, consumidos por uma API, foram criados por mim e suas imagens geradas por I.A., a partir de prompts que forneci.",
         "cardVFOstudio": "Este é um portfólio, um estúdio de arte e design criado por mim, onde eu divulgo meus serviços e posto minhas artes. A ideia é ser simples, porém artistico e inspirador, com atenção aos detalhes.",
         "cardAvatarMaker": "Uma aplicação web interativa na qual criei o conceito, desenvolvi todo o código e os aspectos visuais, inclusive fazendo todas as ilustrações digitais. É possível criar diferentes avatares e salvá-los (função possibilitada com a implementação do html2canvas).",

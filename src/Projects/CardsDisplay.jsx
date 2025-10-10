@@ -31,6 +31,7 @@ import chef from './assets/mygoodchef.webp'
 import weatherApp from './assets/weather.webp'
 import riverCrossing from './assets/river-crossing.webp'
 
+import festalinkVideo from './assets/festalink-video.mp4'
 import digitalDiceVideo from './assets/digitaldice-video.mp4'
 import avatarMakerVideo from './assets/avatarmaker-video.mp4'
 import mamiMoonVideo from './assets/mamimoon-video.mp4'
@@ -50,8 +51,8 @@ const CardsDisplay = () => {
             id: 1,
             title: "FestaLink",
             image: festalink,
-            media: VFOStudioVideo,
-            text: t('cardVFOstudio'),
+            media: festalinkVideo,
+            text: t('cardFestalink'),
             techs: {
                 icons: [next, typescript, redux, linaria, supabase],
                 titles: ['Next.js', 'TypeScript', "Redux", 'Linaria', "Supabase"]
@@ -60,7 +61,7 @@ const CardsDisplay = () => {
             api: true,
             team: false,
             github: null,
-            pageLink: "https://vfostudio.vercel.app/"
+            pageLink: "https://festalink.com"
         },
         {
             id: 2,
