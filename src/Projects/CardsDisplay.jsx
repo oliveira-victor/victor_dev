@@ -16,8 +16,11 @@ import styledComponents from '../assets/logo-styledComponents.png'
 import redux from '../assets/ico-redux.svg'
 import typescript from '../assets/ico-typescript.svg'
 import next from '../assets/next-js.svg'
+import linaria from '../assets/logo-linaria.svg'
+import supabase from '../assets/logo-supabase.svg'
 import arrow from '../assets/arrow.svg'
 
+import festalink from './assets/festalink.webp'
 import digitaldice from './assets/digitaldice.webp'
 import avatarmaker from './assets/avatarmaker.webp'
 import mamimoon from './assets/mamimoon.webp'
@@ -28,6 +31,7 @@ import chef from './assets/mygoodchef.webp'
 import weatherApp from './assets/weather.webp'
 import riverCrossing from './assets/river-crossing.webp'
 
+import festalinkVideo from './assets/festalink-video.mp4'
 import digitalDiceVideo from './assets/digitaldice-video.mp4'
 import avatarMakerVideo from './assets/avatarmaker-video.mp4'
 import mamiMoonVideo from './assets/mamimoon-video.mp4'
@@ -45,6 +49,22 @@ const CardsDisplay = () => {
     const cardsData = [
         {
             id: 1,
+            title: "FestaLink",
+            image: festalink,
+            media: festalinkVideo,
+            text: t('cardFestalink'),
+            techs: {
+                icons: [next, typescript, redux, linaria, supabase],
+                titles: ['Next.js', 'TypeScript', "Redux", 'Linaria', "Supabase"]
+            },
+            list: ["Next.js", "TypeScript", "Redux", "Linaria", "Supabase"],
+            api: true,
+            team: false,
+            github: null,
+            pageLink: "https://festalink.com"
+        },
+        {
+            id: 2,
             title: "VFO Studio",
             image: vfostudio,
             media: VFOStudioVideo,
@@ -60,7 +80,7 @@ const CardsDisplay = () => {
             pageLink: "https://vfostudio.vercel.app/"
         },
         {
-            id: 2,
+            id: 3,
             title: "Avatar Maker",
             image: avatarmaker,
             media: avatarMakerVideo,
@@ -76,7 +96,7 @@ const CardsDisplay = () => {
             pageLink: "https://theavatarmaker.vercel.app/"
         },
         {
-            id: 3,
+            id: 4,
             title: "My Good Chef",
             image: chef,
             media: myGoodChef,
@@ -92,7 +112,7 @@ const CardsDisplay = () => {
             pageLink: "https://mygoodchef.vercel.app/"
         },
         {
-            id: 4,
+            id: 5,
             title: "Weather App",
             image: weatherApp,
             media: weatherAppVideo,
@@ -108,7 +128,7 @@ const CardsDisplay = () => {
             pageLink: "https://ebaclima.vercel.app"
         },
         {
-            id: 5,
+            id: 6,
             title: "Digital Dice",
             image: digitaldice,
             media: digitalDiceVideo,
@@ -124,7 +144,7 @@ const CardsDisplay = () => {
             pageLink: "https://digitaldice.vercel.app/"
         },
         {
-            id: 6,
+            id: 7,
             title: "Mami Moon",
             image: mamimoon,
             media: mamiMoonVideo,
@@ -140,7 +160,7 @@ const CardsDisplay = () => {
             pageLink: "https://doulamamimoon.com/"
         },
         {
-            id: 7,
+            id: 8,
             title: "VFO Shop",
             image: vfoshop,
             media: VFOShopVideo,
@@ -156,7 +176,7 @@ const CardsDisplay = () => {
             pageLink: "https://vfoshop.vercel.app/"
         },
         {
-            id: 8,
+            id: 9,
             title: "Guess The Number",
             image: number,
             media: guessTheNumberVideo,
@@ -172,7 +192,7 @@ const CardsDisplay = () => {
             pageLink: "https://guessthenumber-game.vercel.app/"
         },
         {
-            id: 9,
+            id: 10,
             title: "River Crossing Puzzle",
             image: riverCrossing,
             media: riverCrossingVideo,
@@ -197,15 +217,17 @@ const CardsDisplay = () => {
     const filterOptions = {
         all: cardsData.map(card => card.id),
         highlights: [1, 2, 3, 4, 5, 6, 7, 8],
-        real: [1, 6],
-        ecommerce: [3, 5],
-        games: [2, 8, 9],
-        api: [1, 3, 4, 5, 6],
-        team: [4]
+        saas: [1],
+        real: [2, 7],
+        ecommerce: [4, 6],
+        games: [3, 9, 10],
+        api: [1, 2, 4, 5, 6, 7],
+        team: [5]
     }
 
     const filterBtns = [
         { txt: t('filterBtns.btn1'), title: "Highlights", action: filterOptions.highlights },
+        { txt: 'SaaS', title: "Software As A Service", action: filterOptions.saas },
         { txt: t('filterBtns.btn2'), title: "Real businesses", action: filterOptions.real },
         { txt: t('filterBtns.btn3'), title: "eCommerce", action: filterOptions.ecommerce },
         { txt: t('filterBtns.btn4'), title: "Games & entertainment", action: filterOptions.games },
