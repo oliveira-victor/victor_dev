@@ -88,6 +88,7 @@
         "cardVFOstories": "A page with short stories illustrated by VFO Studio that include audio, listed through API data consumption. Animated parallax effects made with Parallax JS plugin.",
         "cardVFOShop": "This React page was created to promote VFO Studio's exclusive products. It has many reusable components, which is essential for the many product pages that follow the same structure. That way, it's very practical to add and manage new routes and items.",
         "cardRiverCrossing": "This is a classical logical reasoning puzzle, where you need to cross a river taking a few items to the opposite side, under some rules. All the graphics in this game were created by me with Krita, GIMP, and Inkscape. Made with Vanilla JavaScript.",
+        "cardMandado": "A Full Stack investigation game built with React & Redux. Featuring complex state management, dynamic time systems, and geographic logic. A high-performance UX project focused on immersive animations and seamless gameplay mechanics.",
         "loadMoreCards": "See more highlights",
         "loadMoreCardsMobile": "More",
         "modalTab1": "Presentation",

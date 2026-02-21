@@ -31,6 +31,7 @@ import number from './assets/number.webp'
 import chef from './assets/mygoodchef.webp'
 import weatherApp from './assets/weather.webp'
 import riverCrossing from './assets/river-crossing.webp'
+import mandado from './assets/mandado.webp'
 
 import festalinkVideo from './assets/festalink-video.mp4'
 import digitalDiceVideo from './assets/digitaldice-video.mp4'
@@ -42,6 +43,7 @@ import guessTheNumberVideo from './assets/guessthenumber-video.mp4'
 import myGoodChef from './assets/mygoodchef-video.mp4'
 import weatherAppVideo from './assets/EBAC-Weather-App.mp4'
 import riverCrossingVideo from './assets/river-crossing-video.mp4'
+import mandadoVideo from './assets/mandado-video.mp4'
 
 const CardsDisplay = () => {
 
@@ -97,6 +99,22 @@ const CardsDisplay = () => {
             team: false,
             github: "https://github.com/oliveira-victor/avatar_maker",
             pageLink: "https://theavatarmaker.vercel.app/"
+        },
+        {
+            id: 11,
+            title: "Mandado",
+            image: mandado,
+            media: mandadoVideo,
+            text: t('cardMandado'),
+            techs: {
+                icons: [react, redux, typescript, linaria],
+                titles: ['React', 'Redux', 'TypeScript', 'Linaria']
+            },
+            list: ["React", "Redux", "TypeScript", "Linaria"],
+            api: false,
+            team: false,
+            github: null,
+            pageLink: "https://mandadojogo.vercel.app/"
         },
         {
             id: 4,
@@ -209,17 +227,17 @@ const CardsDisplay = () => {
             team: false,
             github: "https://github.com/oliveira-victor/river-crossing-puzzle",
             pageLink: "http://rivercrossing.vercel.app/"
-        }
+        },
     ]
 
     // 3. Define filter logic (now also defined inside)
     const filterOptions = {
         all: cardsData.map(card => card.id),
-        highlights: [1, 2, 3, 4, 5, 6, 7, 8],
+        highlights: [1, 2, 3, 11, 4, 5, 6, 7],
         saas: [1],
         real: [2, 7],
         ecommerce: [4, 6],
-        games: [3, 9, 10],
+        games: [11, 3, 9, 10],
         api: [1, 2, 4, 5, 6, 7],
         team: [5]
     }
